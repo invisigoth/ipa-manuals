@@ -1,0 +1,14 @@
+uuid: 1e68f4cf-5d2a-4a87-a48f-07af6ed567fa
+name: 'IPA Manuals'
+mail: root@localhost.localdomain
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
