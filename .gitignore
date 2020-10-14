@@ -1,0 +1,6 @@
+web/sites/default/
+vendor/
+private/
+node_modules/
+package-lock.json
+drush/
