@@ -1,0 +1,99 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/mixins';
+
+// Sketch colour refs
+//
+$white:                                       #ffffff;
+
+$colour-black:                                #231f20;
+$colour-classic-blue:                         #2E78BD;
+$colour-bright-blue:                          #46B3E6;
+$colour-dark-blue:                            #1E4486;
+$colour-navy:                                 #145091;
+$colour-light-blue:                           #CED8DD;
+$colour-orange:                               #fdb525;
+$colour-rollover-orange:                      #C28100;
+$colour-red:                                  #801A19;
+
+$colour-light-grey:                           #EAEFF2;
+$colour-grey:                                 #c4c4c4;
+$colour-banner-shape:                         #424244;
+$colour-semi-grey:                            #71767b;
+$colour-dark-grey:                            #4B4A4C;
+
+// Fonts
+//
+$font-family-base:                            'Roboto', sans-serif;
+$headings-font-family:                        'Open Sans Condensed', sans-serif;
+$body-font-family:                            $font-family-base;
+$font-family1:                                $font-family-base;
+$font-family2:                                $headings-font-family;
+$font-size-base:                              1rem; // Assumes the browser default, typically `16px`
+
+$h1-font-size:                                $font-size-base * 3; // 48px
+$h2-font-size:                                $font-size-base * 2.25; // 36px
+$h3-font-size:                                $font-size-base * 1.75; // 28px
+$h4-font-size:                                $font-size-base * 1.5; // 24px
+$h5-font-size:                                $font-size-base * 1.375; //22px
+$h6-font-size:                                $font-size-base;
+$main-nav-font-size:                          20px; // 20px
+
+$h1-font-size-md: 42px;
+$h2-font-size-md: 32px;
+$h3-font-size-md: 26px;
+$h4-font-size-md: $font-size-base * 1.5;
+$h5-font-size-md: $font-size-base * 1.375;
+
+$h1-font-size-sm: 35px;
+$h2-font-size-sm: 30px;
+$h3-font-size-sm: 24px;
+$h4-font-size-sm: $font-size-base * 1.375;
+$h5-font-size-sm: 21px;
+
+$display1-size: 6rem;
+$display2-size: 5.5rem;
+$display3-size: 4.5rem;
+$display4-size: 3.5rem;
+
+$super-mini-font-size: 10px;
+$mini-font-size: 0.75rem; //12px
+$small-font-size: 0.875rem; //14px
+$med-font-size: 18px;
+$large-font-size: 22px;
+
+
+$input-btn-font-family:                       $font-family2;
+$input-font-family:                           $font-family2;
+$input-btn-font-size:                         $small-font-size;
+
+$main-header-nav-link-height:                 44px;
+
+$weight-bolder: 900;
+$weight-bold: 700;
+$weight-semi: 600;
+$weight-normal: 400;
+$weight-light: 300;
+
+$form-check-size:                             1.25rem;
+
+$tile-border-radius: 4px;
+$btn-border-radius: 10px;
+$link-border-width: 3px;
+
+$global-transition-speed: 0.1s;
+$arrow-animation-movement: 5px;
+$global-img-zoom: 1.1;
+
+// Spacers
+//
+$spacer: 1rem;
+$spacers: ();
+$small-gutter: $spacer/2;
+
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+                (
+                        6: $spacer * 5
+                ),
+                $spacers
+);

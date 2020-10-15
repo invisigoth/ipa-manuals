@@ -1,0 +1,113 @@
+form {
+  legend,
+  .form-type-select label,
+  .form-type-textarea label,
+  .form-type-textfield label,
+  .form-type-number label,
+  .form-type-datelist label,
+  .form-type-date label,
+  .form-type-email label{
+    font-size: $font-size-base;
+    font-weight: $weight-semi;
+  }
+
+  .form-control:focus,
+  .custom-select:focus {
+    border-color: $colour-navy !important;
+    outline-color: $colour-navy;
+  }
+
+  h2 {
+    color: $colour-classic-blue;
+  }
+
+  .form-control,
+  .custom-select {
+    font-family: $font-family-base;
+  }
+
+  .custom-control-label {
+    padding-left: .5rem;
+
+    &::before,
+    &::after {
+      height: $form-check-size;
+      width: $form-check-size;
+      border-color: $colour-navy;
+    }
+  }
+
+  .custom-checkbox .custom-control-label {
+    &::before,
+    &::after {
+      border-radius: 0;
+    }
+  }
+
+  .form-radio.custom-control-input:checked~.custom-control-label {
+    font-weight: $weight-semi;
+
+    &::before,
+    &::after {
+      background-color: $colour-classic-blue;
+      border-color: $colour-classic-blue;
+      border-radius: 50%;
+    }
+  }
+
+  .custom-checkbox {
+    padding-bottom: .5rem;
+  }
+
+  .form-checkbox.custom-control-input:checked~.custom-control-label {
+    font-weight: $weight-semi;
+
+    &::before,
+    &::after {
+      background-color: $colour-classic-blue;
+    }
+  }
+
+  .field-required {
+    font-size: $h4-font-size;
+    color: $colour-red;
+    margin-left: .25rem;
+  }
+
+  &#views-exposed-form-content-search-page-1 {
+    .form-row {
+      display: flex;
+      width: 100%;
+      margin: 0;
+
+      fieldset {
+        width: 75%;
+        padding: 0;
+
+        label {
+          display: none;
+        }
+
+        input {
+          border-radius: 4px 0 0 4px;
+          border: 2px solid $colour-classic-blue;
+        }
+      }
+
+      .form-actions {
+        width: 25%;
+        padding: 0;
+      }
+
+      .form-control {
+        height: 55px;
+
+        &.btn {
+          border-radius: 0 4px 4px 0;
+          font-family: $headings-font-family;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

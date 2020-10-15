@@ -1,0 +1,191 @@
+*:not([class^="slick-"]),
+*:not([class^="slick-"])::before,
+*:not([class^="slick-"])::after {
+  transition: all $global-transition-speed ease-out;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100vw;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: hidden;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $white !important;
+}
+
+//Colours
+.colour-classic-blue {
+  color: $colour-classic-blue;
+}
+
+.colour-dark-blue {
+  color: $colour-dark-blue;
+}
+
+.colour-bright-blue {
+  color: $colour-bright-blue;
+}
+
+//Fonts
+.weight-bold {
+  font-weight: $weight-bold !important;
+}
+
+.weight-semi {
+  font-weight: $weight-semi !important;
+}
+
+.weight-normal {
+  font-weight: $weight-normal !important;
+}
+
+.weight-light {
+  font-weight: $weight-light !important;
+}
+
+a {
+  color: $colour-classic-blue;
+}
+
+.text-formatted {
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+      color: $colour-dark-blue;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings-font-family;
+  font-weight: $weight-bold;
+}
+
+h1 {
+  line-height: 56px;
+}
+
+h2 {
+  line-height: 38px;
+}
+
+h3 {
+  line-height: 30px;
+  margin-top: $spacer;
+}
+
+h4 {
+  line-height: 26px;
+}
+
+h2 + p,
+.h2 + p,
+h2 + blockquote,
+.h2 + blockquote {
+  margin-top: $spacer * 1.5;
+}
+
+h3 + p,
+.h3 + p,
+h3 + blockquote,
+.h3 + blockquote {
+  margin-top: $spacer;
+}
+
+p + h2,
+p + .h2 {
+  margin-top: $spacer * 2;
+}
+
+.font-label {
+  font-family: $headings-font-family;
+  font-weight: $weight-bold;
+}
+
+.font-label-small {
+  @extend .font-label;
+  font-size: $small-font-size;
+}
+
+.font-heading {
+  font-family: $body-font-family;
+  font-weight: $weight-normal;
+}
+
+.font-section-heading {
+  @extend .font-heading;
+  font-size: $h2-font-size;
+}
+
+.font-body-title {
+  @extend .font-heading;
+  font-size: $large-font-size;
+}
+
+.font-body-small {
+  @extend .font-heading;
+  font-size: $small-font-size;
+}
+
+blockquote {
+  font-family: $headings-font-family;
+  font-weight: $weight-light;
+  font-size: 28px;
+  line-height: 1.43;
+}
+
+//Buttons
+.btn {
+  @extend .font-label;
+  font-size: $font-size-base;
+  border-radius: $btn-border-radius;
+  font-weight: $weight-bold;
+}
+
+.btn-primary {
+  background-color: $colour-classic-blue;
+  color: $white;
+  border-color: $colour-classic-blue;
+
+  &:hover {
+    background-color: $colour-bright-blue;
+    border-color: $colour-bright-blue;
+    color: $colour-black !important;
+  }
+}
+
+.btn-secondary {
+  background-color: $colour-light-blue;
+  color: $colour-classic-blue;
+  border-color: $colour-light-blue;
+
+  &:hover {
+    background-color: $colour-dark-grey;
+    border-color: $colour-dark-grey;
+    color: $white;
+  }
+}
+
+.btn-light {
+  background-color: $colour-light-blue;
+  color: $colour-classic-blue;
+  border-color: $colour-classic-blue;
+
+  &:hover {
+    background-color: $white;
+    border-color: $colour-bright-blue;
+    color: $colour-black !important;
+  }
+}
+
+.uikit-btn {
+  @extend .btn;
+  @extend .btn-primary;
+}

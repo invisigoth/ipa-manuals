@@ -1,0 +1,24 @@
+name: IP Australia Manuals
+type: theme
+description: 'Patent Examiners Manual - IP Australia'
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: bootstrap_barrio
+
+libraries:
+  - ipam/bootstrap_cdn
+  - ipam/global-styling
+  - ipam/global-js
+
+regions:
+  top_header: 'Top header'
+  top_header_form: 'Top header form'
+  header: Header
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: 'Sidebar first'
+  footer: 'Footer'
+
+version: '1.0.0'
+project: 'ipam'
+datestamp: 1602443784
