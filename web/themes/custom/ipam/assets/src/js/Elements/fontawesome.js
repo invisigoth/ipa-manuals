@@ -73,7 +73,8 @@ import {
   faFilePdf,
   faFileVideo,
   faArrowAltRight,
-  faQuestionCircle
+  faQuestionCircle,
+  faBookOpen
 } from '@fortawesome/pro-light-svg-icons'
 
 export default class FontAwesome {
@@ -146,7 +147,8 @@ export default class FontAwesome {
       faArrowCircleRight,
       faArrowAltRight,
       faQuestionCircle,
-      faFileVideo
+      faFileVideo,
+      faBookOpen
     );
 
     dom.watch();

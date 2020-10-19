@@ -12,7 +12,7 @@
     align-items: center;
 
     img {
-      height: 70px;
+      height: 66px;
       width: auto;
       padding-right: 1rem;
       border-right: 1px solid $white;
@@ -26,9 +26,7 @@
     }
     
     &:hover {
-      span {
-        text-decoration: none;
-      }
+      text-decoration: none;
     }
   }
 
@@ -58,15 +56,15 @@
     input.form-control {
       font-family: $body-font-family;
       padding: 1rem;
-      text-align: center;
       color: $colour-black;
+      border-radius: 0;
     }
 
     button {
       border: none;
       background-color: transparent;
       position: absolute;
-      right: 1rem;
+      right: 0;
       padding: 7px 1rem;
       z-index: 10;
       height: 100%;

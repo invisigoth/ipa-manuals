@@ -17,16 +17,11 @@ new Modaal();
 
   'use strict';
 
-  Drupal.behaviors.eso_bootstrap = {
+  Drupal.behaviors.ipam = {
     attach: function (context, settings) {
       // Document.ready function
       $(document).ready(function() {
-        $("a").each(function () {
-          var external = $('#block-eso-bootstrap-content a[href]').filter(function () {
-            return this.hostname != location.hostname;
-          });
-          external.attr('target','_blank').addClass('external');
-        });
+        
       });
     }
   };
@@ -37,18 +32,27 @@ new Modaal();
  * Mobile menu
  */
 
-$(window).on('resize', () => {
-  let width = document.documentElement.clientWidth;
-  let done = document.body.classList.contains('mm-once');
-  document.body.classList.add('mm-once')
-
-  import(
-    './Elements/mmenu'
-    ).then(module => {
-    new module.default()
-  })
+// $(window).on('resize', () => {
+//   let width = document.documentElement.clientWidth;
+//   let done = document.body.classList.contains('mm-once');
+//   document.body.classList.add('mm-once')
+//
+//   import(
+//     './Elements/mmenu'
+//     ).then(module => {
+//     new module.default()
+//   })
+// });
+//
+// $(window).resize();
+$(document).ready(function() {
+  $("a.folder").each(function () {
+    $(this).parent().next().hide();
+    $(this).parent().click(function (e) {
+      e.preventDefault();
+      $(this).next().toggle();
+      $(this).children().toggleClass("active");
+    })
+  });
 });
-
-$(window).resize();
-
 

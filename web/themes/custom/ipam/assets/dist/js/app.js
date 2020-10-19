@@ -32,11 +32,6 @@
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
-/******/ 	// object to store loaded CSS chunks
-/******/ 	var installedCssChunks = {
-/******/ 		"app": 0
-/******/ 	}
-/******/
 /******/ 	// object to store loaded and loading chunks
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
@@ -48,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "js/chunk/" + ({"vendors~mmenu":"vendors~mmenu"}[chunkId]||chunkId) + "-" + {"0":"2d13d1efcd3dd58887fd","1":"1cb42eb90f5a7fdbb8f5","2":"1e87cf767019ea91c204","3":"e5126df73304358ff30c","vendors~mmenu":"7dbc7373e6877ad53991"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "js/chunk/" + ({}[chunkId]||chunkId) + "-" + {"0":"2d13d1efcd3dd58887fd","2":"5ff59aadfe64ab622a09"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -80,45 +75,6 @@
 /******/ 	__webpack_require__.e = function requireEnsure(chunkId) {
 /******/ 		var promises = [];
 /******/
-/******/
-/******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"1":1,"3":1};
-/******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
-/******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
-/******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "css/chunks/" + ({"vendors~mmenu":"vendors~mmenu"}[chunkId]||chunkId) + "-" + "28f53aebd9faae0b" + ".css";
-/******/ 				var fullhref = __webpack_require__.p + href;
-/******/ 				var existingLinkTags = document.getElementsByTagName("link");
-/******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
-/******/ 					var tag = existingLinkTags[i];
-/******/ 					var dataHref = tag.getAttribute("data-href") || tag.getAttribute("href");
-/******/ 					if(tag.rel === "stylesheet" && (dataHref === href || dataHref === fullhref)) return resolve();
-/******/ 				}
-/******/ 				var existingStyleTags = document.getElementsByTagName("style");
-/******/ 				for(var i = 0; i < existingStyleTags.length; i++) {
-/******/ 					var tag = existingStyleTags[i];
-/******/ 					var dataHref = tag.getAttribute("data-href");
-/******/ 					if(dataHref === href || dataHref === fullhref) return resolve();
-/******/ 				}
-/******/ 				var linkTag = document.createElement("link");
-/******/ 				linkTag.rel = "stylesheet";
-/******/ 				linkTag.type = "text/css";
-/******/ 				linkTag.onload = resolve;
-/******/ 				linkTag.onerror = function(event) {
-/******/ 					var request = event && event.target && event.target.src || fullhref;
-/******/ 					var err = new Error("Loading CSS chunk " + chunkId + " failed.\n(" + request + ")");
-/******/ 					err.request = request;
-/******/ 					delete installedCssChunks[chunkId]
-/******/ 					linkTag.parentNode.removeChild(linkTag)
-/******/ 					reject(err);
-/******/ 				};
-/******/ 				linkTag.href = fullhref;
-/******/ 				var head = document.getElementsByTagName("head")[0];
-/******/ 				head.appendChild(linkTag);
-/******/ 			}).then(function() {
-/******/ 				installedCssChunks[chunkId] = 0;
-/******/ 			}));
-/******/ 		}
 /******/
 /******/ 		// JSONP chunk loading for javascript
 /******/
@@ -415,34 +371,41 @@ new _Elements_modaal__WEBPACK_IMPORTED_MODULE_3__["default"]();
 (function ($, Drupal) {
   'use strict';
 
-  Drupal.behaviors.eso_bootstrap = {
+  Drupal.behaviors.ipam = {
     attach: function attach(context, settings) {
       // Document.ready function
-      $(document).ready(function () {
-        $("a").each(function () {
-          var external = $('#block-eso-bootstrap-content a[href]').filter(function () {
-            return this.hostname != location.hostname;
-          });
-          external.attr('target', '_blank').addClass('external');
-        });
-      });
+      $(document).ready(function () {});
     }
   };
 })(jQuery, Drupal);
 /**
  * Mobile menu
  */
+// $(window).on('resize', () => {
+//   let width = document.documentElement.clientWidth;
+//   let done = document.body.classList.contains('mm-once');
+//   document.body.classList.add('mm-once')
+//
+//   import(
+//     './Elements/mmenu'
+//     ).then(module => {
+//     new module.default()
+//   })
+// });
+//
+// $(window).resize();
 
 
-jquery__WEBPACK_IMPORTED_MODULE_1___default()(window).on('resize', function () {
-  var width = document.documentElement.clientWidth;
-  var done = document.body.classList.contains('mm-once');
-  document.body.classList.add('mm-once');
-  Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(1)]).then(__webpack_require__.bind(null, /*! ./Elements/mmenu */ "./assets/src/js/Elements/mmenu.js")).then(function (module) {
-    new module.default();
+jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).ready(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()("a.folder").each(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parent().next().hide();
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parent().click(function (e) {
+      e.preventDefault();
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).next().toggle();
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).children().toggleClass("active");
+    });
   });
 });
-jquery__WEBPACK_IMPORTED_MODULE_1___default()(window).resize();
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "jquery"), __webpack_require__(/*! drupal */ "drupal")))
 
 /***/ }),

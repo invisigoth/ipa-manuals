@@ -517,12 +517,12 @@ pre {
 .no-gutters {
   margin-right: 0;
   margin-left: 0; }
-  .no-gutters > .col, .view-content-search .views-list .no-gutters > .views-row,
+  .no-gutters > .col,
   .no-gutters > [class*="col-"] {
     padding-right: 0;
     padding-left: 0; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .view-content-search .views-list .views-row,
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
@@ -533,7 +533,7 @@ pre {
   padding-right: 15px;
   padding-left: 15px; }
 
-.col, .view-content-search .views-list .views-row {
+.col {
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
   -webkit-box-flex: 1;
@@ -1917,7 +1917,7 @@ textarea.form-control {
       flex-wrap: wrap;
   margin-right: -5px;
   margin-left: -5px; }
-  .form-row > .col, .view-content-search .views-list .form-row > .views-row,
+  .form-row > .col,
   .form-row > [class*="col-"] {
     padding-right: 5px;
     padding-left: 5px; }
@@ -2201,8 +2201,7 @@ textarea.form-control {
     .form-inline .custom-control-label {
       margin-bottom: 0; } }
 
-.btn, .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a, .field--name-field-sidebar-components > .field__item .field--name-field-links a, .field--name-field-sidebar-components > .field__item .field--name-field-button a,
-.field--name-field-sidebar-components > .field__item .sidebar-button a {
+.btn, .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a {
   display: inline-block;
   font-family: "montserratregular", sans-serif;
   font-weight: 400;
@@ -2224,139 +2223,83 @@ textarea.form-control {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
-    .btn, .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a, .field--name-field-sidebar-components > .field__item .field--name-field-links a, .field--name-field-sidebar-components > .field__item .field--name-field-button a,
-    .field--name-field-sidebar-components > .field__item .sidebar-button a {
+    .btn, .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a {
       -webkit-transition: none;
       transition: none; } }
-  .btn:hover, .uikit-btn:hover, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:hover, .field--name-field-sidebar-components > .field__item .field--name-field-links a:hover, .field--name-field-sidebar-components > .field__item .field--name-field-button a:hover,
-  .field--name-field-sidebar-components > .field__item .sidebar-button a:hover {
+  .btn:hover, .uikit-btn:hover, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:hover {
     color: #212529;
     text-decoration: none; }
-  .btn:focus, .uikit-btn:focus, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:focus, .field--name-field-sidebar-components > .field__item .field--name-field-links a:focus, .field--name-field-sidebar-components > .field__item .field--name-field-button a:focus,
-  .field--name-field-sidebar-components > .field__item .sidebar-button a:focus, .btn.focus, .focus.uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a.focus, .field--name-field-sidebar-components > .field__item .field--name-field-links a.focus, .field--name-field-sidebar-components > .field__item .field--name-field-button a.focus,
-  .field--name-field-sidebar-components > .field__item .sidebar-button a.focus {
+  .btn:focus, .uikit-btn:focus, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:focus, .btn.focus, .focus.uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a.focus {
     outline: 0;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
             box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
-  .btn.disabled, .disabled.uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a.disabled, .field--name-field-sidebar-components > .field__item .field--name-field-links a.disabled, .field--name-field-sidebar-components > .field__item .field--name-field-button a.disabled,
-  .field--name-field-sidebar-components > .field__item .sidebar-button a.disabled, .btn:disabled, .uikit-btn:disabled, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:disabled, .field--name-field-sidebar-components > .field__item .field--name-field-links a:disabled, .field--name-field-sidebar-components > .field__item .field--name-field-button a:disabled,
-  .field--name-field-sidebar-components > .field__item .sidebar-button a:disabled {
+  .btn.disabled, .disabled.uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a.disabled, .btn:disabled, .uikit-btn:disabled, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:disabled {
     opacity: 0.65; }
-  .btn:not(:disabled):not(.disabled), .uikit-btn:not(:disabled):not(.disabled), .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:not(:disabled):not(.disabled), .field--name-field-sidebar-components > .field__item .field--name-field-links a:not(:disabled):not(.disabled), .field--name-field-sidebar-components > .field__item .field--name-field-button a:not(:disabled):not(.disabled),
-  .field--name-field-sidebar-components > .field__item .sidebar-button a:not(:disabled):not(.disabled) {
+  .btn:not(:disabled):not(.disabled), .uikit-btn:not(:disabled):not(.disabled), .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:not(:disabled):not(.disabled) {
     cursor: pointer; }
 
-a.btn.disabled, a.disabled.uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a.disabled, .field--name-field-sidebar-components > .field__item .field--name-field-links a.disabled, .field--name-field-sidebar-components > .field__item .field--name-field-button a.disabled,
-.field--name-field-sidebar-components > .field__item .sidebar-button a.disabled,
+a.btn.disabled, a.disabled.uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a.disabled,
 fieldset:disabled a.btn,
 fieldset:disabled a.uikit-btn,
 fieldset:disabled .path-frontpage .field--name-field-components .banner-text .field--name-field-link a,
-.path-frontpage .field--name-field-components .banner-text .field--name-field-link fieldset:disabled a,
-fieldset:disabled .field--name-field-sidebar-components > .field__item .field--name-field-links a,
-.field--name-field-sidebar-components > .field__item .field--name-field-links fieldset:disabled a,
-fieldset:disabled .field--name-field-sidebar-components > .field__item .field--name-field-button a,
-.field--name-field-sidebar-components > .field__item .field--name-field-button fieldset:disabled a,
-fieldset:disabled .field--name-field-sidebar-components > .field__item .sidebar-button a,
-.field--name-field-sidebar-components > .field__item .sidebar-button fieldset:disabled a {
+.path-frontpage .field--name-field-components .banner-text .field--name-field-link fieldset:disabled a {
   pointer-events: none; }
 
-.btn-primary, .uikit-btn, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:first-child a, .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:first-child a,
-.field--name-field-sidebar-components > .field__item .sidebar-button .field__item:first-child a, .field--name-field-sidebar-components > .field__item .field--name-field-button a,
-.field--name-field-sidebar-components > .field__item .sidebar-button a {
+.btn-primary, .uikit-btn {
   color: #ffffff;
   background-color: #007bff;
   border-color: #007bff; }
-  .btn-primary:hover, .uikit-btn:hover, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:first-child a:hover, .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:first-child a:hover,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .field__item:first-child a:hover, .field--name-field-sidebar-components > .field__item .field--name-field-button a:hover,
-  .field--name-field-sidebar-components > .field__item .sidebar-button a:hover {
+  .btn-primary:hover, .uikit-btn:hover {
     color: #ffffff;
     background-color: #0069d9;
     border-color: #0062cc; }
-  .btn-primary:focus, .uikit-btn:focus, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:first-child a:focus, .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:first-child a:focus,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .field__item:first-child a:focus, .field--name-field-sidebar-components > .field__item .field--name-field-button a:focus,
-  .field--name-field-sidebar-components > .field__item .sidebar-button a:focus, .btn-primary.focus, .focus.uikit-btn, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:first-child a.focus, .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:first-child a.focus,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .field__item:first-child a.focus, .field--name-field-sidebar-components > .field__item .field--name-field-button a.focus,
-  .field--name-field-sidebar-components > .field__item .sidebar-button a.focus {
+  .btn-primary:focus, .uikit-btn:focus, .btn-primary.focus, .focus.uikit-btn {
     color: #ffffff;
     background-color: #0069d9;
     border-color: #0062cc;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
             box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
-  .btn-primary.disabled, .disabled.uikit-btn, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:first-child a.disabled, .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:first-child a.disabled,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .field__item:first-child a.disabled, .field--name-field-sidebar-components > .field__item .field--name-field-button a.disabled,
-  .field--name-field-sidebar-components > .field__item .sidebar-button a.disabled, .btn-primary:disabled, .uikit-btn:disabled, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:first-child a:disabled, .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:first-child a:disabled,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .field__item:first-child a:disabled, .field--name-field-sidebar-components > .field__item .field--name-field-button a:disabled,
-  .field--name-field-sidebar-components > .field__item .sidebar-button a:disabled {
+  .btn-primary.disabled, .disabled.uikit-btn, .btn-primary:disabled, .uikit-btn:disabled {
     color: #ffffff;
     background-color: #007bff;
     border-color: #007bff; }
-  .btn-primary:not(:disabled):not(.disabled):active, .uikit-btn:not(:disabled):not(.disabled):active, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:first-child a:not(:disabled):not(.disabled):active, .field--name-field-sidebar-components > .field__item .field--name-field-button a:not(:disabled):not(.disabled):active,
-  .field--name-field-sidebar-components > .field__item .sidebar-button a:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .uikit-btn:not(:disabled):not(.disabled).active, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:first-child a:not(:disabled):not(.disabled).active, .field--name-field-sidebar-components > .field__item .field--name-field-button a:not(:disabled):not(.disabled).active,
-  .field--name-field-sidebar-components > .field__item .sidebar-button a:not(:disabled):not(.disabled).active,
+  .btn-primary:not(:disabled):not(.disabled):active, .uikit-btn:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .uikit-btn:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle,
-  .show > .dropdown-toggle.uikit-btn,
-  .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:first-child .show > a.dropdown-toggle,
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:first-child .show > a.dropdown-toggle,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .field__item:first-child .show > a.dropdown-toggle,
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .show > a.dropdown-toggle,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .show > a.dropdown-toggle {
+  .show > .dropdown-toggle.uikit-btn {
     color: #ffffff;
     background-color: #0062cc;
     border-color: #005cbf; }
-    .btn-primary:not(:disabled):not(.disabled):active:focus, .uikit-btn:not(:disabled):not(.disabled):active:focus, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:first-child a:not(:disabled):not(.disabled):active:focus, .field--name-field-sidebar-components > .field__item .field--name-field-button a:not(:disabled):not(.disabled):active:focus,
-    .field--name-field-sidebar-components > .field__item .sidebar-button a:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .uikit-btn:not(:disabled):not(.disabled).active:focus, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:first-child a:not(:disabled):not(.disabled).active:focus, .field--name-field-sidebar-components > .field__item .field--name-field-button a:not(:disabled):not(.disabled).active:focus,
-    .field--name-field-sidebar-components > .field__item .sidebar-button a:not(:disabled):not(.disabled).active:focus,
+    .btn-primary:not(:disabled):not(.disabled):active:focus, .uikit-btn:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .uikit-btn:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary.dropdown-toggle:focus,
-    .show > .dropdown-toggle.uikit-btn:focus,
-    .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:first-child .show > a.dropdown-toggle:focus,
-    .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:first-child .show > a.dropdown-toggle:focus,
-    .field--name-field-sidebar-components > .field__item .sidebar-button .field__item:first-child .show > a.dropdown-toggle:focus,
-    .field--name-field-sidebar-components > .field__item .field--name-field-button .show > a.dropdown-toggle:focus,
-    .field--name-field-sidebar-components > .field__item .sidebar-button .show > a.dropdown-toggle:focus {
+    .show > .dropdown-toggle.uikit-btn:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
               box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
 
-.btn-secondary, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:nth-child(2) a, .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:nth-child(2) a,
-.field--name-field-sidebar-components > .field__item .sidebar-button .field__item:nth-child(2) a {
+.btn-secondary {
   color: #ffffff;
   background-color: #6c757d;
   border-color: #6c757d; }
-  .btn-secondary:hover, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:nth-child(2) a:hover, .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:nth-child(2) a:hover,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .field__item:nth-child(2) a:hover {
+  .btn-secondary:hover {
     color: #ffffff;
     background-color: #5a6268;
     border-color: #545b62; }
-  .btn-secondary:focus, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:nth-child(2) a:focus, .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:nth-child(2) a:focus,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .field__item:nth-child(2) a:focus, .btn-secondary.focus, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:nth-child(2) a.focus, .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:nth-child(2) a.focus,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .field__item:nth-child(2) a.focus {
+  .btn-secondary:focus, .btn-secondary.focus {
     color: #ffffff;
     background-color: #5a6268;
     border-color: #545b62;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
             box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5); }
-  .btn-secondary.disabled, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:nth-child(2) a.disabled, .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:nth-child(2) a.disabled,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .field__item:nth-child(2) a.disabled, .btn-secondary:disabled, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:nth-child(2) a:disabled, .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:nth-child(2) a:disabled,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .field__item:nth-child(2) a:disabled {
+  .btn-secondary.disabled, .btn-secondary:disabled {
     color: #ffffff;
     background-color: #6c757d;
     border-color: #6c757d; }
-  .btn-secondary:not(:disabled):not(.disabled):active, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:nth-child(2) a:not(:disabled):not(.disabled):active, .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:nth-child(2) a:not(:disabled):not(.disabled):active,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .field__item:nth-child(2) a:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:nth-child(2) a:not(:disabled):not(.disabled).active, .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:nth-child(2) a:not(:disabled):not(.disabled).active,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .field__item:nth-child(2) a:not(:disabled):not(.disabled).active,
-  .show > .btn-secondary.dropdown-toggle,
-  .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:nth-child(2) .show > a.dropdown-toggle,
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:nth-child(2) .show > a.dropdown-toggle,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .field__item:nth-child(2) .show > a.dropdown-toggle {
+  .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
+  .show > .btn-secondary.dropdown-toggle {
     color: #ffffff;
     background-color: #545b62;
     border-color: #4e555b; }
-    .btn-secondary:not(:disabled):not(.disabled):active:focus, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:nth-child(2) a:not(:disabled):not(.disabled):active:focus, .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:nth-child(2) a:not(:disabled):not(.disabled):active:focus,
-    .field--name-field-sidebar-components > .field__item .sidebar-button .field__item:nth-child(2) a:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:nth-child(2) a:not(:disabled):not(.disabled).active:focus, .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:nth-child(2) a:not(:disabled):not(.disabled).active:focus,
-    .field--name-field-sidebar-components > .field__item .sidebar-button .field__item:nth-child(2) a:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-secondary.dropdown-toggle:focus,
-    .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:nth-child(2) .show > a.dropdown-toggle:focus,
-    .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:nth-child(2) .show > a.dropdown-toggle:focus,
-    .field--name-field-sidebar-components > .field__item .sidebar-button .field__item:nth-child(2) .show > a.dropdown-toggle:focus {
+    .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-secondary.dropdown-toggle:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
               box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5); }
 
@@ -2727,15 +2670,13 @@ fieldset:disabled .field--name-field-sidebar-components > .field__item .sidebar-
     color: #6c757d;
     pointer-events: none; }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-lg > a, .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group-lg > a, .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group-lg > a,
-.field--name-field-sidebar-components > .field__item .sidebar-button .btn-group-lg > a {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-lg > a {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-sm > a, .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group-sm > a, .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group-sm > a,
-.field--name-field-sidebar-components > .field__item .sidebar-button .btn-group-sm > a {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-sm > a {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -2985,49 +2926,29 @@ input[type="button"].btn-block {
   display: -ms-inline-flexbox;
   display: inline-flex;
   vertical-align: middle; }
-  .btn-group > .btn, .btn-group > .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a, .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group > a, .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group > a,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group > a,
+  .btn-group > .btn, .btn-group > .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a,
   .btn-group-vertical > .btn,
   .btn-group-vertical > .uikit-btn,
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group-vertical > a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group-vertical > a,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group-vertical > a {
+  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a {
     position: relative;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto; }
-    .btn-group > .btn:hover, .btn-group > .uikit-btn:hover, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a:hover, .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group > a:hover, .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group > a:hover,
-    .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group > a:hover,
+    .btn-group > .btn:hover, .btn-group > .uikit-btn:hover, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a:hover,
     .btn-group-vertical > .btn:hover,
     .btn-group-vertical > .uikit-btn:hover,
-    .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a:hover,
-    .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group-vertical > a:hover,
-    .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group-vertical > a:hover,
-    .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group-vertical > a:hover {
+    .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a:hover {
       z-index: 1; }
-    .btn-group > .btn:focus, .btn-group > .uikit-btn:focus, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a:focus, .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group > a:focus, .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group > a:focus,
-    .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group > a:focus, .btn-group > .btn:active, .btn-group > .uikit-btn:active, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a:active, .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group > a:active, .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group > a:active,
-    .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group > a:active, .btn-group > .btn.active, .btn-group > .active.uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a.active, .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group > a.active, .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group > a.active,
-    .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group > a.active,
+    .btn-group > .btn:focus, .btn-group > .uikit-btn:focus, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a:focus, .btn-group > .btn:active, .btn-group > .uikit-btn:active, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a:active, .btn-group > .btn.active, .btn-group > .active.uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a.active,
     .btn-group-vertical > .btn:focus,
     .btn-group-vertical > .uikit-btn:focus,
     .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a:focus,
-    .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group-vertical > a:focus,
-    .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group-vertical > a:focus,
-    .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group-vertical > a:focus,
     .btn-group-vertical > .btn:active,
     .btn-group-vertical > .uikit-btn:active,
     .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a:active,
-    .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group-vertical > a:active,
-    .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group-vertical > a:active,
-    .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group-vertical > a:active,
     .btn-group-vertical > .btn.active,
     .btn-group-vertical > .active.uikit-btn,
-    .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a.active,
-    .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group-vertical > a.active,
-    .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group-vertical > a.active,
-    .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group-vertical > a.active {
+    .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a.active {
       z-index: 1; }
 
 .btn-toolbar {
@@ -3042,30 +2963,21 @@ input[type="button"].btn-block {
   .btn-toolbar .input-group {
     width: auto; }
 
-.btn-group > .btn:not(:first-child), .btn-group > .uikit-btn:not(:first-child), .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a:not(:first-child), .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group > a:not(:first-child), .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group > a:not(:first-child),
-.field--name-field-sidebar-components > .field__item .sidebar-button .btn-group > a:not(:first-child),
+.btn-group > .btn:not(:first-child), .btn-group > .uikit-btn:not(:first-child), .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a:not(:first-child),
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px; }
 
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .uikit-btn:not(:last-child):not(.dropdown-toggle), .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a:not(:last-child):not(.dropdown-toggle), .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group > a:not(:last-child):not(.dropdown-toggle), .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group > a:not(:last-child):not(.dropdown-toggle),
-.field--name-field-sidebar-components > .field__item .sidebar-button .btn-group > a:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .uikit-btn:not(:last-child):not(.dropdown-toggle), .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn-group:not(:last-child) > .btn,
 .btn-group > .btn-group:not(:last-child) > .uikit-btn,
-.path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > .btn-group:not(:last-child) > a,
-.field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group > .btn-group:not(:last-child) > a,
-.field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group > .btn-group:not(:last-child) > a,
-.field--name-field-sidebar-components > .field__item .sidebar-button .btn-group > .btn-group:not(:last-child) > a {
+.path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > .btn-group:not(:last-child) > a {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.btn-group > .btn:not(:first-child), .btn-group > .uikit-btn:not(:first-child), .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a:not(:first-child), .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group > a:not(:first-child), .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group > a:not(:first-child),
-.field--name-field-sidebar-components > .field__item .sidebar-button .btn-group > a:not(:first-child),
+.btn-group > .btn:not(:first-child), .btn-group > .uikit-btn:not(:first-child), .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a:not(:first-child),
 .btn-group > .btn-group:not(:first-child) > .btn,
 .btn-group > .btn-group:not(:first-child) > .uikit-btn,
-.path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > .btn-group:not(:first-child) > a,
-.field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group > .btn-group:not(:first-child) > a,
-.field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group > .btn-group:not(:first-child) > a,
-.field--name-field-sidebar-components > .field__item .sidebar-button .btn-group > .btn-group:not(:first-child) > a {
+.path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > .btn-group:not(:first-child) > a {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
@@ -3079,11 +2991,11 @@ input[type="button"].btn-block {
   .dropleft .dropdown-toggle-split::before {
     margin-right: 0; }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .uikit-btn + .dropdown-toggle-split, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-sm > a + .dropdown-toggle-split, .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group-sm > a + .dropdown-toggle-split, .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group-sm > a + .dropdown-toggle-split, .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group-sm > a + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .uikit-btn + .dropdown-toggle-split, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-sm > a + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem; }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .uikit-btn + .dropdown-toggle-split, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-lg > a + .dropdown-toggle-split, .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group-lg > a + .dropdown-toggle-split, .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group-lg > a + .dropdown-toggle-split, .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group-lg > a + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .uikit-btn + .dropdown-toggle-split, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-lg > a + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
 
@@ -3102,64 +3014,39 @@ input[type="button"].btn-block {
   .btn-group-vertical > .btn,
   .btn-group-vertical > .uikit-btn,
   .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group-vertical > a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group-vertical > a,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group-vertical > a,
   .btn-group-vertical > .btn-group {
     width: 100%; }
-  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .uikit-btn:not(:first-child), .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a:not(:first-child), .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group-vertical > a:not(:first-child), .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group-vertical > a:not(:first-child),
-  .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group-vertical > a:not(:first-child),
+  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .uikit-btn:not(:first-child), .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a:not(:first-child),
   .btn-group-vertical > .btn-group:not(:first-child) {
     margin-top: -1px; }
-  .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .uikit-btn:not(:last-child):not(.dropdown-toggle), .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle), .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle), .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle),
-  .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle),
+  .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .uikit-btn:not(:last-child):not(.dropdown-toggle), .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle),
   .btn-group-vertical > .btn-group:not(:last-child) > .btn,
   .btn-group-vertical > .btn-group:not(:last-child) > .uikit-btn,
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > .btn-group:not(:last-child) > a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group-vertical > .btn-group:not(:last-child) > a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group-vertical > .btn-group:not(:last-child) > a,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group-vertical > .btn-group:not(:last-child) > a {
+  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > .btn-group:not(:last-child) > a {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
-  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .uikit-btn:not(:first-child), .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a:not(:first-child), .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group-vertical > a:not(:first-child), .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group-vertical > a:not(:first-child),
-  .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group-vertical > a:not(:first-child),
+  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .uikit-btn:not(:first-child), .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a:not(:first-child),
   .btn-group-vertical > .btn-group:not(:first-child) > .btn,
   .btn-group-vertical > .btn-group:not(:first-child) > .uikit-btn,
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > .btn-group:not(:first-child) > a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group-vertical > .btn-group:not(:first-child) > a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group-vertical > .btn-group:not(:first-child) > a,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group-vertical > .btn-group:not(:first-child) > a {
+  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > .btn-group:not(:first-child) > a {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
 
-.btn-group-toggle > .btn, .btn-group-toggle > .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-toggle > a, .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group-toggle > a, .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group-toggle > a,
-.field--name-field-sidebar-components > .field__item .sidebar-button .btn-group-toggle > a,
+.btn-group-toggle > .btn, .btn-group-toggle > .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-toggle > a,
 .btn-group-toggle > .btn-group > .btn,
 .btn-group-toggle > .btn-group > .uikit-btn,
-.path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-toggle > .btn-group > a,
-.field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group-toggle > .btn-group > a,
-.field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group-toggle > .btn-group > a,
-.field--name-field-sidebar-components > .field__item .sidebar-button .btn-group-toggle > .btn-group > a {
+.path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-toggle > .btn-group > a {
   margin-bottom: 0; }
-  .btn-group-toggle > .btn input[type="radio"], .btn-group-toggle > .uikit-btn input[type="radio"], .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-toggle > a input[type="radio"], .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group-toggle > a input[type="radio"], .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group-toggle > a input[type="radio"], .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group-toggle > a input[type="radio"],
+  .btn-group-toggle > .btn input[type="radio"], .btn-group-toggle > .uikit-btn input[type="radio"], .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-toggle > a input[type="radio"],
   .btn-group-toggle > .btn input[type="checkbox"],
   .btn-group-toggle > .uikit-btn input[type="checkbox"],
   .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-toggle > a input[type="checkbox"],
-  .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group-toggle > a input[type="checkbox"],
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group-toggle > a input[type="checkbox"],
-  .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group-toggle > a input[type="checkbox"],
   .btn-group-toggle > .btn-group > .btn input[type="radio"],
   .btn-group-toggle > .btn-group > .uikit-btn input[type="radio"],
   .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-toggle > .btn-group > a input[type="radio"],
-  .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group-toggle > .btn-group > a input[type="radio"],
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group-toggle > .btn-group > a input[type="radio"],
-  .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group-toggle > .btn-group > a input[type="radio"],
   .btn-group-toggle > .btn-group > .btn input[type="checkbox"],
   .btn-group-toggle > .btn-group > .uikit-btn input[type="checkbox"],
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-toggle > .btn-group > a input[type="checkbox"],
-  .field--name-field-sidebar-components > .field__item .field--name-field-links .btn-group-toggle > .btn-group > a input[type="checkbox"],
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .btn-group-toggle > .btn-group > a input[type="checkbox"],
-  .field--name-field-sidebar-components > .field__item .sidebar-button .btn-group-toggle > .btn-group > a input[type="checkbox"] {
+  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-toggle > .btn-group > a input[type="checkbox"] {
     position: absolute;
     clip: rect(0, 0, 0, 0);
     pointer-events: none; }
@@ -3233,133 +3120,52 @@ input[type="button"].btn-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .input-group-prepend .btn, .input-group-prepend .uikit-btn, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link a, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend a, .input-group-prepend .field--name-field-sidebar-components > .field__item .field--name-field-links a, .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-prepend a, .input-group-prepend .field--name-field-sidebar-components > .field__item .field--name-field-button a, .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-prepend a,
-  .input-group-prepend .field--name-field-sidebar-components > .field__item .sidebar-button a, .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-prepend a,
+  .input-group-prepend .btn, .input-group-prepend .uikit-btn, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link a, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend a,
   .input-group-append .btn,
   .input-group-append .uikit-btn,
   .input-group-append .path-frontpage .field--name-field-components .banner-text .field--name-field-link a,
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-append a,
-  .input-group-append .field--name-field-sidebar-components > .field__item .field--name-field-links a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-append a,
-  .input-group-append .field--name-field-sidebar-components > .field__item .field--name-field-button a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-append a,
-  .input-group-append .field--name-field-sidebar-components > .field__item .sidebar-button a,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-append a {
+  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-append a {
     position: relative;
     z-index: 2; }
-    .input-group-prepend .btn:focus, .input-group-prepend .uikit-btn:focus, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:focus, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend a:focus, .input-group-prepend .field--name-field-sidebar-components > .field__item .field--name-field-links a:focus, .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-prepend a:focus, .input-group-prepend .field--name-field-sidebar-components > .field__item .field--name-field-button a:focus, .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-prepend a:focus,
-    .input-group-prepend .field--name-field-sidebar-components > .field__item .sidebar-button a:focus, .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-prepend a:focus,
+    .input-group-prepend .btn:focus, .input-group-prepend .uikit-btn:focus, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:focus, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend a:focus,
     .input-group-append .btn:focus,
     .input-group-append .uikit-btn:focus,
     .input-group-append .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:focus,
-    .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-append a:focus,
-    .input-group-append .field--name-field-sidebar-components > .field__item .field--name-field-links a:focus,
-    .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-append a:focus,
-    .input-group-append .field--name-field-sidebar-components > .field__item .field--name-field-button a:focus,
-    .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-append a:focus,
-    .input-group-append .field--name-field-sidebar-components > .field__item .sidebar-button a:focus,
-    .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-append a:focus {
+    .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-append a:focus {
       z-index: 3; }
-  .input-group-prepend .btn + .btn, .input-group-prepend .uikit-btn + .btn, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link a + .btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend a + .btn, .input-group-prepend .field--name-field-sidebar-components > .field__item .field--name-field-links a + .btn, .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-prepend a + .btn, .input-group-prepend .field--name-field-sidebar-components > .field__item .field--name-field-button a + .btn, .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-prepend a + .btn, .input-group-prepend .field--name-field-sidebar-components > .field__item .sidebar-button a + .btn, .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-prepend a + .btn, .input-group-prepend .btn + .uikit-btn, .input-group-prepend .uikit-btn + .uikit-btn, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link a + .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend a + .uikit-btn, .input-group-prepend .field--name-field-sidebar-components > .field__item .field--name-field-links a + .uikit-btn, .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-prepend a + .uikit-btn, .input-group-prepend .field--name-field-sidebar-components > .field__item .field--name-field-button a + .uikit-btn, .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-prepend a + .uikit-btn, .input-group-prepend .field--name-field-sidebar-components > .field__item .sidebar-button a + .uikit-btn, .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-prepend a + .uikit-btn, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn + a, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend .btn + a, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link .uikit-btn + a, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend .uikit-btn + a, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link a + a, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend a + a, .input-group-prepend .field--name-field-sidebar-components > .field__item .field--name-field-links .btn + a, .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-prepend .btn + a, .input-group-prepend .field--name-field-sidebar-components > .field__item .field--name-field-links .uikit-btn + a, .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-prepend .uikit-btn + a, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link .field--name-field-sidebar-components > .field__item .field--name-field-links a + a, .input-group-prepend .field--name-field-sidebar-components > .field__item .field--name-field-links a + a, .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-prepend a + a, .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-prepend .field--name-field-links a + a, .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-prepend .field--name-field-links a + a, .input-group-prepend .field--name-field-sidebar-components > .field__item .field--name-field-button .btn + a, .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-prepend .btn + a, .input-group-prepend .field--name-field-sidebar-components > .field__item .field--name-field-button .uikit-btn + a, .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-prepend .uikit-btn + a, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link .field--name-field-sidebar-components > .field__item .field--name-field-button a + a, .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-prepend .field--name-field-button a + a, .input-group-prepend .field--name-field-sidebar-components > .field__item .field--name-field-button a + a, .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-prepend a + a, .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-prepend .field--name-field-button a + a,
-  .input-group-prepend .field--name-field-sidebar-components > .field__item .sidebar-button .btn + a, .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-prepend .btn + a,
-  .input-group-prepend .field--name-field-sidebar-components > .field__item .sidebar-button .uikit-btn + a, .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-prepend .uikit-btn + a,
-  .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link .field--name-field-sidebar-components > .field__item .sidebar-button a + a, .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-prepend .sidebar-button a + a, .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-prepend .sidebar-button a + a,
-  .input-group-prepend .field--name-field-sidebar-components > .field__item .sidebar-button a + a, .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-prepend a + a,
+  .input-group-prepend .btn + .btn, .input-group-prepend .uikit-btn + .btn, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link a + .btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend a + .btn, .input-group-prepend .btn + .uikit-btn, .input-group-prepend .uikit-btn + .uikit-btn, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link a + .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend a + .uikit-btn, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn + a, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend .btn + a, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link .uikit-btn + a, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend .uikit-btn + a, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link a + a, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend a + a,
   .input-group-prepend .btn + .input-group-text,
   .input-group-prepend .uikit-btn + .input-group-text,
   .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link a + .input-group-text,
   .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend a + .input-group-text,
-  .input-group-prepend .field--name-field-sidebar-components > .field__item .field--name-field-links a + .input-group-text,
-  .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-prepend a + .input-group-text,
-  .input-group-prepend .field--name-field-sidebar-components > .field__item .field--name-field-button a + .input-group-text,
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-prepend a + .input-group-text,
-  .input-group-prepend .field--name-field-sidebar-components > .field__item .sidebar-button a + .input-group-text,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-prepend a + .input-group-text,
   .input-group-prepend .input-group-text + .input-group-text,
   .input-group-prepend .input-group-text + .btn,
   .input-group-prepend .input-group-text + .uikit-btn,
   .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-text + a,
   .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend .input-group-text + a,
-  .input-group-prepend .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-text + a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-prepend .input-group-text + a,
-  .input-group-prepend .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-text + a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-prepend .input-group-text + a,
-  .input-group-prepend .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-text + a,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-prepend .input-group-text + a,
   .input-group-append .btn + .btn,
   .input-group-append .uikit-btn + .btn,
   .input-group-append .path-frontpage .field--name-field-components .banner-text .field--name-field-link a + .btn,
   .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-append a + .btn,
-  .input-group-append .field--name-field-sidebar-components > .field__item .field--name-field-links a + .btn,
-  .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-append a + .btn,
-  .input-group-append .field--name-field-sidebar-components > .field__item .field--name-field-button a + .btn,
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-append a + .btn,
-  .input-group-append .field--name-field-sidebar-components > .field__item .sidebar-button a + .btn,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-append a + .btn,
   .input-group-append .btn + .uikit-btn,
   .input-group-append .uikit-btn + .uikit-btn,
   .input-group-append .path-frontpage .field--name-field-components .banner-text .field--name-field-link a + .uikit-btn,
   .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-append a + .uikit-btn,
-  .input-group-append .field--name-field-sidebar-components > .field__item .field--name-field-links a + .uikit-btn,
-  .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-append a + .uikit-btn,
-  .input-group-append .field--name-field-sidebar-components > .field__item .field--name-field-button a + .uikit-btn,
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-append a + .uikit-btn,
-  .input-group-append .field--name-field-sidebar-components > .field__item .sidebar-button a + .uikit-btn,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-append a + .uikit-btn,
   .input-group-append .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn + a,
   .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-append .btn + a,
   .input-group-append .path-frontpage .field--name-field-components .banner-text .field--name-field-link .uikit-btn + a,
   .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-append .uikit-btn + a,
   .input-group-append .path-frontpage .field--name-field-components .banner-text .field--name-field-link a + a,
   .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-append a + a,
-  .input-group-append .field--name-field-sidebar-components > .field__item .field--name-field-links .btn + a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-append .btn + a,
-  .input-group-append .field--name-field-sidebar-components > .field__item .field--name-field-links .uikit-btn + a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-append .uikit-btn + a,
-  .input-group-append .path-frontpage .field--name-field-components .banner-text .field--name-field-link .field--name-field-sidebar-components > .field__item .field--name-field-links a + a,
-  .input-group-append .field--name-field-sidebar-components > .field__item .field--name-field-links a + a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-append a + a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-append .field--name-field-links a + a,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-append .field--name-field-links a + a,
-  .input-group-append .field--name-field-sidebar-components > .field__item .field--name-field-button .btn + a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-append .btn + a,
-  .input-group-append .field--name-field-sidebar-components > .field__item .field--name-field-button .uikit-btn + a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-append .uikit-btn + a,
-  .input-group-append .path-frontpage .field--name-field-components .banner-text .field--name-field-link .field--name-field-sidebar-components > .field__item .field--name-field-button a + a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-append .field--name-field-button a + a,
-  .input-group-append .field--name-field-sidebar-components > .field__item .field--name-field-button a + a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-append a + a,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-append .field--name-field-button a + a,
-  .input-group-append .field--name-field-sidebar-components > .field__item .sidebar-button .btn + a,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-append .btn + a,
-  .input-group-append .field--name-field-sidebar-components > .field__item .sidebar-button .uikit-btn + a,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-append .uikit-btn + a,
-  .input-group-append .path-frontpage .field--name-field-components .banner-text .field--name-field-link .field--name-field-sidebar-components > .field__item .sidebar-button a + a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-append .sidebar-button a + a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-append .sidebar-button a + a,
-  .input-group-append .field--name-field-sidebar-components > .field__item .sidebar-button a + a,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-append a + a,
   .input-group-append .btn + .input-group-text,
   .input-group-append .uikit-btn + .input-group-text,
   .input-group-append .path-frontpage .field--name-field-components .banner-text .field--name-field-link a + .input-group-text,
   .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-append a + .input-group-text,
-  .input-group-append .field--name-field-sidebar-components > .field__item .field--name-field-links a + .input-group-text,
-  .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-append a + .input-group-text,
-  .input-group-append .field--name-field-sidebar-components > .field__item .field--name-field-button a + .input-group-text,
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-append a + .input-group-text,
-  .input-group-append .field--name-field-sidebar-components > .field__item .sidebar-button a + .input-group-text,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-append a + .input-group-text,
   .input-group-append .input-group-text + .input-group-text,
   .input-group-append .input-group-text + .btn,
   .input-group-append .input-group-text + .uikit-btn,
   .input-group-append .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-text + a,
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-append .input-group-text + a,
-  .input-group-append .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-text + a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-append .input-group-text + a,
-  .input-group-append .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-text + a,
-  .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-append .input-group-text + a,
-  .input-group-append .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-text + a,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .input-group-append .input-group-text + a {
+  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-append .input-group-text + a {
     margin-left: -1px; }
 
 .input-group-prepend {
@@ -3401,15 +3207,9 @@ input[type="button"].btn-block {
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-prepend > .uikit-btn,
 .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-lg > .input-group-prepend > a,
-.field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-lg > .input-group-prepend > a,
-.field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-lg > .input-group-prepend > a,
-.field--name-field-sidebar-components > .field__item .sidebar-button .input-group-lg > .input-group-prepend > a,
 .input-group-lg > .input-group-append > .btn,
 .input-group-lg > .input-group-append > .uikit-btn,
-.path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-lg > .input-group-append > a,
-.field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-lg > .input-group-append > a,
-.field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-lg > .input-group-append > a,
-.field--name-field-sidebar-components > .field__item .sidebar-button .input-group-lg > .input-group-append > a {
+.path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-lg > .input-group-append > a {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -3426,15 +3226,9 @@ input[type="button"].btn-block {
 .input-group-sm > .input-group-prepend > .btn,
 .input-group-sm > .input-group-prepend > .uikit-btn,
 .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-sm > .input-group-prepend > a,
-.field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-sm > .input-group-prepend > a,
-.field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-sm > .input-group-prepend > a,
-.field--name-field-sidebar-components > .field__item .sidebar-button .input-group-sm > .input-group-prepend > a,
 .input-group-sm > .input-group-append > .btn,
 .input-group-sm > .input-group-append > .uikit-btn,
-.path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-sm > .input-group-append > a,
-.field--name-field-sidebar-components > .field__item .field--name-field-links .input-group-sm > .input-group-append > a,
-.field--name-field-sidebar-components > .field__item .field--name-field-button .input-group-sm > .input-group-append > a,
-.field--name-field-sidebar-components > .field__item .sidebar-button .input-group-sm > .input-group-append > a {
+.path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-sm > .input-group-append > a {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -3444,42 +3238,28 @@ input[type="button"].btn-block {
 .input-group-sm > .custom-select {
   padding-right: 1.75rem; }
 
-.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group > .input-group-prepend > a, .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group > .input-group-prepend > a, .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group > .input-group-prepend > a,
-.field--name-field-sidebar-components > .field__item .sidebar-button .input-group > .input-group-prepend > a,
+.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group > .input-group-prepend > a,
 .input-group > .input-group-prepend > .input-group-text,
 .input-group > .input-group-append:not(:last-child) > .btn,
 .input-group > .input-group-append:not(:last-child) > .uikit-btn,
 .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group > .input-group-append:not(:last-child) > a,
-.field--name-field-sidebar-components > .field__item .field--name-field-links .input-group > .input-group-append:not(:last-child) > a,
-.field--name-field-sidebar-components > .field__item .field--name-field-button .input-group > .input-group-append:not(:last-child) > a,
-.field--name-field-sidebar-components > .field__item .sidebar-button .input-group > .input-group-append:not(:last-child) > a,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
 .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .uikit-btn:not(:last-child):not(.dropdown-toggle),
 .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group > .input-group-append:last-child > a:not(:last-child):not(.dropdown-toggle),
-.field--name-field-sidebar-components > .field__item .field--name-field-links .input-group > .input-group-append:last-child > a:not(:last-child):not(.dropdown-toggle),
-.field--name-field-sidebar-components > .field__item .field--name-field-button .input-group > .input-group-append:last-child > a:not(:last-child):not(.dropdown-toggle),
-.field--name-field-sidebar-components > .field__item .sidebar-button .input-group > .input-group-append:last-child > a:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.input-group > .input-group-append > .btn, .input-group > .input-group-append > .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group > .input-group-append > a, .field--name-field-sidebar-components > .field__item .field--name-field-links .input-group > .input-group-append > a, .field--name-field-sidebar-components > .field__item .field--name-field-button .input-group > .input-group-append > a,
-.field--name-field-sidebar-components > .field__item .sidebar-button .input-group > .input-group-append > a,
+.input-group > .input-group-append > .btn, .input-group > .input-group-append > .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group > .input-group-append > a,
 .input-group > .input-group-append > .input-group-text,
 .input-group > .input-group-prepend:not(:first-child) > .btn,
 .input-group > .input-group-prepend:not(:first-child) > .uikit-btn,
 .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group > .input-group-prepend:not(:first-child) > a,
-.field--name-field-sidebar-components > .field__item .field--name-field-links .input-group > .input-group-prepend:not(:first-child) > a,
-.field--name-field-sidebar-components > .field__item .field--name-field-button .input-group > .input-group-prepend:not(:first-child) > a,
-.field--name-field-sidebar-components > .field__item .sidebar-button .input-group > .input-group-prepend:not(:first-child) > a,
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
 .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
 .input-group > .input-group-prepend:first-child > .uikit-btn:not(:first-child),
 .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group > .input-group-prepend:first-child > a:not(:first-child),
-.field--name-field-sidebar-components > .field__item .field--name-field-links .input-group > .input-group-prepend:first-child > a:not(:first-child),
-.field--name-field-sidebar-components > .field__item .field--name-field-button .input-group > .input-group-prepend:first-child > a:not(:first-child),
-.field--name-field-sidebar-components > .field__item .sidebar-button .input-group > .input-group-prepend:first-child > a:not(:first-child),
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
@@ -4589,7 +4369,7 @@ input[type="button"].btn-block {
   .badge:empty {
     display: none; }
 
-.btn .badge, .uikit-btn .badge, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a .badge, .field--name-field-sidebar-components > .field__item .field--name-field-links a .badge, .field--name-field-sidebar-components > .field__item .field--name-field-button a .badge, .field--name-field-sidebar-components > .field__item .sidebar-button a .badge {
+.btn .badge, .uikit-btn .badge, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a .badge {
   position: relative;
   top: -1px; }
 
@@ -9705,8 +9485,7 @@ form#views-exposed-form-content-search-page-1 .form-row {
     padding: 0; }
   form#views-exposed-form-content-search-page-1 .form-row .form-control {
     height: 55px; }
-    form#views-exposed-form-content-search-page-1 .form-row .form-control.btn, form#views-exposed-form-content-search-page-1 .form-row .form-control.uikit-btn, form#views-exposed-form-content-search-page-1 .form-row .path-frontpage .field--name-field-components .banner-text .field--name-field-link a.form-control, .path-frontpage .field--name-field-components .banner-text .field--name-field-link form#views-exposed-form-content-search-page-1 .form-row a.form-control, form#views-exposed-form-content-search-page-1 .form-row .field--name-field-sidebar-components > .field__item .field--name-field-links a.form-control, .field--name-field-sidebar-components > .field__item .field--name-field-links form#views-exposed-form-content-search-page-1 .form-row a.form-control, form#views-exposed-form-content-search-page-1 .form-row .field--name-field-sidebar-components > .field__item .field--name-field-button a.form-control, .field--name-field-sidebar-components > .field__item .field--name-field-button form#views-exposed-form-content-search-page-1 .form-row a.form-control,
-    form#views-exposed-form-content-search-page-1 .form-row .field--name-field-sidebar-components > .field__item .sidebar-button a.form-control, .field--name-field-sidebar-components > .field__item .sidebar-button form#views-exposed-form-content-search-page-1 .form-row a.form-control {
+    form#views-exposed-form-content-search-page-1 .form-row .form-control.btn, form#views-exposed-form-content-search-page-1 .form-row .form-control.uikit-btn, form#views-exposed-form-content-search-page-1 .form-row .path-frontpage .field--name-field-components .banner-text .field--name-field-link a.form-control, .path-frontpage .field--name-field-components .banner-text .field--name-field-link form#views-exposed-form-content-search-page-1 .form-row a.form-control {
       border-radius: 0 4px 4px 0;
       font-family: "montserratregular", sans-serif;
       text-transform: uppercase; }
@@ -9800,7 +9579,7 @@ div.loading {
         -ms-flex-align: center;
             align-items: center; }
     #header .site-logo img {
-      height: 70px;
+      height: 66px;
       width: auto;
       padding-right: 1rem;
       border-right: 1px solid #ffffff; }
@@ -9809,7 +9588,7 @@ div.loading {
       color: #ffffff;
       font-weight: 700;
       margin-left: 1rem; }
-    #header .site-logo:hover span {
+    #header .site-logo:hover {
       text-decoration: none; }
   #header .header-menu {
     list-style: none;
@@ -9832,13 +9611,13 @@ div.loading {
     #header form input.form-control {
       font-family: "Roboto", sans-serif;
       padding: 1rem;
-      text-align: center;
-      color: #231f20; }
+      color: #231f20;
+      border-radius: 0; }
     #header form button {
       border: none;
       background-color: transparent;
       position: absolute;
-      right: 1rem;
+      right: 0;
       padding: 7px 1rem;
       z-index: 10;
       height: 100%; }
@@ -10101,8 +9880,7 @@ p + h2,
 p + .h2 {
   margin-top: 2rem; }
 
-.font-label, .font-label-small, .btn, .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a, .field--name-field-sidebar-components > .field__item .field--name-field-links a, .field--name-field-sidebar-components > .field__item .field--name-field-button a,
-.field--name-field-sidebar-components > .field__item .sidebar-button a {
+.font-label, .font-label-small, .btn, .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a {
   font-family: "montserratregular", sans-serif;
   font-weight: 700; }
 
@@ -10128,32 +9906,25 @@ blockquote {
   font-size: 28px;
   line-height: 1.43; }
 
-.btn, .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a, .field--name-field-sidebar-components > .field__item .field--name-field-links a, .field--name-field-sidebar-components > .field__item .field--name-field-button a,
-.field--name-field-sidebar-components > .field__item .sidebar-button a {
+.btn, .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a {
   font-size: 1rem;
   border-radius: 10px;
   font-weight: 700; }
 
-.btn-primary, .uikit-btn, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:first-child a, .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:first-child a,
-.field--name-field-sidebar-components > .field__item .sidebar-button .field__item:first-child a, .field--name-field-sidebar-components > .field__item .field--name-field-button a,
-.field--name-field-sidebar-components > .field__item .sidebar-button a {
+.btn-primary, .uikit-btn {
   background-color: #2E78BD;
   color: #ffffff;
   border-color: #2E78BD; }
-  .btn-primary:hover, .uikit-btn:hover, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:first-child a:hover, .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:first-child a:hover,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .field__item:first-child a:hover, .field--name-field-sidebar-components > .field__item .field--name-field-button a:hover,
-  .field--name-field-sidebar-components > .field__item .sidebar-button a:hover {
+  .btn-primary:hover, .uikit-btn:hover {
     background-color: #46B3E6;
     border-color: #46B3E6;
     color: #231f20 !important; }
 
-.btn-secondary, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:nth-child(2) a, .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:nth-child(2) a,
-.field--name-field-sidebar-components > .field__item .sidebar-button .field__item:nth-child(2) a {
+.btn-secondary {
   background-color: #CED8DD;
   color: #2E78BD;
   border-color: #CED8DD; }
-  .btn-secondary:hover, .field--name-field-sidebar-components > .field__item .field--name-field-links .field__item:nth-child(2) a:hover, .field--name-field-sidebar-components > .field__item .field--name-field-button .field__item:nth-child(2) a:hover,
-  .field--name-field-sidebar-components > .field__item .sidebar-button .field__item:nth-child(2) a:hover {
+  .btn-secondary:hover {
     background-color: #4B4A4C;
     border-color: #4B4A4C;
     color: #ffffff; }
@@ -10353,62 +10124,37 @@ a.external {
         -ms-flex-direction: row;
             flex-direction: row; }
     #footer ul li {
-      padding: 10px 10px 0 0; }
+      padding-right: 20px; }
       #footer ul li a {
+        position: relative;
         font-size: 0.875rem;
         font-family: "Roboto", sans-serif;
         font-weight: 400; }
+        #footer ul li a:after {
+          content: '|';
+          position: absolute;
+          right: -10px; }
         #footer ul li a:hover {
           text-decoration: underline; }
+      #footer ul li:last-child a:after {
+        content: ''; }
 
-.view-taxonomy-term {
-  margin-bottom: 2rem; }
-  .view-taxonomy-term .view-content {
-    margin-left: -30px;
-    margin-right: -30px; }
-  .view-taxonomy-term .views-row .views-wrapper {
-    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
-            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
-    border: solid 1px #EAEFF2;
-    border-radius: 4px;
-    padding: 2rem;
-    height: 100%; }
-    .view-taxonomy-term .views-row .views-wrapper h2 {
-      font-size: 1.75rem; }
-
-.view-content-search {
-  margin-left: -15px;
-  margin-right: -15px; }
-  .view-content-search .view-header {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-size: 0.875rem; }
-  .view-content-search .views-list ul {
-    list-style: none;
-    padding-left: 0; }
-  .view-content-search .views-list .views-row {
-    margin-bottom: 2rem; }
-    .view-content-search .views-list .views-row .search {
-      -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
-              box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
-      border: solid 1px #EAEFF2;
-      border-radius: 4px;
-      padding: 2rem;
-      height: 100%; }
-      .view-content-search .views-list .views-row .search .search__title {
-        margin-top: 0;
-        margin-bottom: 1rem; }
-      .view-content-search .views-list .views-row .search .search__info {
-        font-family: "montserratregular", sans-serif;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: #46B3E6;
-        margin-bottom: 1rem; }
-
-.faq-wrapper {
-  padding: 2rem;
+.chapter-tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 1rem;
   background-color: #EAEFF2;
-  margin-bottom: 2rem; }
+  height: 100%; }
+  .chapter-tile svg {
+    font-size: 56px; }
 
 .text-formatted {
   font-size: 1rem;
@@ -10796,61 +10542,28 @@ a.external {
   .field--name-field-transcript .field__item p {
     font-size: 0.875rem; }
 
-.field--name-field-sidebar-components > .field__item {
-  background-color: #EAEFF2;
-  margin-bottom: 2rem;
-  padding: 1.5rem 1rem; }
-  .field--name-field-sidebar-components > .field__item .field--name-field-heading {
-    font-family: "montserratregular", sans-serif;
-    font-size: 22px;
-    color: #1E4486;
-    font-weight: 600;
-    margin-bottom: 2rem; }
-  .field--name-field-sidebar-components > .field__item .field--name-field-file {
-    margin: 0; }
-  .field--name-field-sidebar-components > .field__item .field--name-field-image {
-    margin: 0;
-    width: 100%; }
-    .field--name-field-sidebar-components > .field__item .field--name-field-image img {
-      width: 100%;
-      height: 100%;
-      -o-object-fit: cover;
-         object-fit: cover;
-      margin-bottom: 1rem; }
-  .field--name-field-sidebar-components > .field__item .field--name-field-links a, .field--name-field-sidebar-components > .field__item .field--name-field-button a,
-  .field--name-field-sidebar-components > .field__item .sidebar-button a {
-    display: block;
-    width: 100%;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    font-size: 18px;
-    margin-top: 0.5rem; }
-
-.field--name-field-related-links {
-  background-color: #EAEFF2;
-  margin-bottom: 2rem;
-  padding: 1.5rem 1rem; }
-  .field--name-field-related-links .field__label {
-    font-family: "montserratregular", sans-serif;
-    font-size: 22px;
-    color: #1E4486;
-    font-weight: 600;
-    margin-bottom: 2rem; }
-  .field--name-field-related-links .field__items .field__item {
-    padding-bottom: 1rem; }
-    .field--name-field-related-links .field__items .field__item a {
-      position: relative;
-      padding-left: 1rem;
-      display: inline-block; }
-      .field--name-field-related-links .field__items .field__item a:before {
-        content: '';
-        border-left: 3px solid #fdb525;
-        position: absolute;
-        height: calc(100% + 1rem);
-        left: 0;
-        top: -2px; }
-      .field--name-field-related-links .field__items .field__item a:hover:before {
-        border-left-color: #C28100; }
+.nested-nav ul {
+  list-style: none;
+  padding-left: 0; }
+  .nested-nav ul li {
+    padding-left: 1rem; }
+    .nested-nav ul li:hover {
+      background-color: #CED8DD; }
+    .nested-nav ul li a {
+      display: inline-block;
+      padding: 0.5rem 1rem; }
+      .nested-nav ul li a.folder {
+        position: relative; }
+        .nested-nav ul li a.folder:before {
+          font-family: 'Font Awesome 5 Pro';
+          content: '\F105';
+          position: absolute;
+          left: 0;
+          -webkit-transition: all .35s;
+          transition: all .35s; }
+        .nested-nav ul li a.folder.active:before {
+          -webkit-transform: rotate(90deg);
+                  transform: rotate(90deg); }
 
 @media (max-width: 1460px) {
   .path-frontpage .field--name-field-components .banner-hero .field--name-field-slide-image img {

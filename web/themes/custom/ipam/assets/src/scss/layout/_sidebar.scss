@@ -1,108 +1,39 @@
-.field--name-field-sidebar-components {
-  > .field__item {
-    background-color: $colour-light-grey;
-    margin-bottom: 2rem;
-    padding: 1.5rem 1rem;
+.nested-nav {
+  ul {
+    list-style: none;
+    padding-left: 0;
 
-    .field--name-field-heading {
-      font-family: $headings-font-family;
-      font-size: $large-font-size;
-      color: $colour-dark-blue;
-      font-weight: $weight-semi;
-      margin-bottom: 2rem;
-    }
+    li {
+      padding-left: 1rem;
 
-    .field--name-field-file {
-      margin: 0;
-    }
-
-    .field--name-field-image {
-      margin: 0;
-      width: 100%;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        margin-bottom: 1rem;
-      }
-    }
-
-    .field--name-field-links, .field--name-field-button,
-    .sidebar-button {
-      .field__item {
-
-        &:first-child {
-          a {
-            @extend .btn-primary;
-          }
-        }
-
-        &:nth-child(2) {
-          a {
-            @extend .btn-secondary;
-          }
-        }
+      &:hover {
+        background-color: $colour-light-blue;
       }
 
       a {
-        @extend .btn;
-        display: block;
-        width: 100%;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        font-size: $med-font-size;
-        margin-top: 0.5rem;
-      }
-
-    }
-
-    .field--name-field-button,
-    .sidebar-button {
-      a {
-        @extend .btn-primary;
-      }
-    }
-  }
-}
-
-.field--name-field-related-links {
-  background-color: $colour-light-grey;
-  margin-bottom: 2rem;
-  padding: 1.5rem 1rem;
-
-  .field__label {
-    font-family: $headings-font-family;
-    font-size: $large-font-size;
-    color: $colour-dark-blue;
-    font-weight: $weight-semi;
-    margin-bottom: 2rem;
-  }
-
-  .field__items {
-    .field__item {
-      padding-bottom: 1rem;
-
-      a {
-        position: relative;
-        padding-left: 1rem;
         display: inline-block;
+        padding: 0.5rem 1rem;
 
-        &:before {
-          content: '';
-          border-left: 3px solid $colour-orange;
-          position: absolute;
-          height: calc(100% + 1rem);
-          left: 0;
-          top: -2px;
-        }
+        &.folder {
+          position: relative;
 
-        &:hover {
           &:before {
-            border-left-color: $colour-rollover-orange;
+            font-family: 'Font Awesome 5 Pro';
+            content: '\f105';
+            position: absolute;
+            left: 0;
+            transition: all .35s;
+          }
+
+          &.active {
+            &:before {
+              transform: rotate(90deg);
+            }
           }
         }
       }
     }
   }
+
 }
+

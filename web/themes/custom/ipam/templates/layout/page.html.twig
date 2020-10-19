@@ -114,23 +114,18 @@
                         <main{{ content_attributes }}>
                             <section class="section">
                                 <a id="main-content" tabindex="-1"></a>
-                                {{ page.content }}
+                                <div class="row mt-5">
+                                    <div class="col-md-4 nested-nav">
+                                        {% include  directory ~ '/templates/_includes/nested-nav-test.html' %}
+                                    </div>
+                                    <div class="col-md-8">
+                                        {{ page.content }}
+                                    </div>
+                                </div>
+
                             </section>
                         </main>
-                        {% if page.sidebar_first %}
-                            <div{{ sidebar_first_attributes }}>
-                                <aside class="section" role="complementary">
-                                    {{ page.sidebar_first }}
-                                </aside>
-                            </div>
-                        {% endif %}
-                        {% if page.sidebar_second %}
-                            <div{{ sidebar_second_attributes }}>
-                                <aside class="section" role="complementary">
-                                    {{ page.sidebar_second }}
-                                </aside>
-                            </div>
-                        {% endif %}
+
                     </div>
                 </div>
                 {% if page.content_footer %}

@@ -26,15 +26,30 @@
     flex-direction: row;
 
     li {
-      padding: 10px 10px 0 0;
+      padding-right: 20px;
 
       a {
+        position: relative;
         font-size: $small-font-size;
         font-family: $font-family-base;
         font-weight: $weight-normal;
 
+        &:after {
+          content: '|';
+          position: absolute;
+          right: -10px;
+        }
+
         &:hover {
           text-decoration: underline;
+        }
+      }
+
+      &:last-child {
+        a {
+          &:after {
+            content: '';
+          }
         }
       }
     }
