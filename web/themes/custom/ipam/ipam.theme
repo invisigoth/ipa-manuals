@@ -14,21 +14,78 @@ use Drupal\Core\Form\FormStateInterface;
  *
  * Example on how to alter theme settings form
  */
-function bootstrap_barrio_subtheme_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
-  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = [
-    'bg-primary' => t('Primary'),
-    'bg-secondary' => t('Secondary'),
-    'bg-light' => t('Light'),
-    'bg-dark' => t('Dark'),
-    'bg-white' => t('White'),
-    'bg-transparent' => t('Transparent'),
-  ];
-  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = [
-    'bg-primary' => t('Primary'),
-    'bg-secondary' => t('Secondary'),
-    'bg-light' => t('Light'),
-    'bg-dark' => t('Dark'),
-    'bg-white' => t('White'),
-    'bg-transparent' => t('Transparent'),
-  ];
+function ipam_preprocess_block(&$variables) {
+    try {
+        $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+    }
+    catch (Exception $e) {
+        $variables['is_front'] = FALSE;
+    }
+    $block_id = $variables['elements']['#id'];
+    $block = \Drupal\block\Entity\Block::load($block_id);
+
+    // Add region as variable
+    $variables['region'] = $block->getRegion();
+}
+
+function ipam_preprocess(&$variables, $hook) {
+    try {
+        $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+    }
+    catch (Exception $e) {
+        $variables['is_front'] = FALSE;
+    }
+    // Ensure the cache varies correctly (new in Drupal 8.3).
+    $variables['#cache']['contexts'][] = 'url.path.is_front';
+}
+
+function ipam_preprocess_page(&$variables)
+{
+    // ESO mobile menu.
+
+    $block_manager = \Drupal::service('plugin.manager.block');
+    $config = [];
+    $header_block = $block_manager->createInstance('system_menu_block:main', $config);
+
+    $render_header = $header_block->build();
+
+    $variables['menu_global_navigation'] = render($render_header);
+
+    // Mobile menus
+    $menus = ["main"];
+
+    $combined_tree = [];
+    $menu_tree = \Drupal::menuTree();
+    $parameters = $menu_tree->getCurrentRouteMenuTreeParameters(trim($menus[0]));
+    $manipulators = [
+        // Show links to nodes that are accessible for the current user.
+        ['callable' => 'menu.default_tree_manipulators:checkNodeAccess'],
+        // Only show links that are accessible for the current user.
+        ['callable' => 'menu.default_tree_manipulators:checkAccess'],
+        // Use the default sorting of menu links.
+        ['callable' => 'menu.default_tree_manipulators:generateIndexAndSort'],
+    ];
+    // Force the entire tree to be build by setting expandParents to an
+    // empty array.
+    $parameters->expandedParents = [];
+    // Iterate over the menus and merge them together.
+    foreach ($menus as $menu_name) {
+        $tree_items = $menu_tree->load(trim($menu_name), $parameters);
+        $tree_manipulated = $menu_tree->transform($tree_items, $manipulators);
+        $combined_tree = array_merge($combined_tree, $tree_manipulated);
+    }
+
+    $menu = $menu_tree->build($combined_tree);
+
+    $menu['#theme'] = 'menu__mobile';
+    $menu['#menu_name'] = 'mobile';
+
+    $variables['mobile_menu'] = [
+        '#prefix' => '<nav id="mobile-menu" role="navigation" aria-hidden="true" hidden style="dislay: none">',
+        '#suffix' => '</nav>',
+        '#markup' => \Drupal::service("renderer")->renderRoot($menu),
+    ];
+
+    // Enable wrapper by default
+    $variables['add_content_outer_wrap'] = TRUE;
 }

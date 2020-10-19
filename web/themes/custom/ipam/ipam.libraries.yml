@@ -1,3 +1,7 @@
+fonts:
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700%7CRoboto:400,600,700': { type: external, minified: true  }
 global-styling:
   version: 1.x
   header: true
@@ -6,35 +10,14 @@ global-styling:
       assets/fonts/fontawesome/css/all.css: {}
       assets/dist/css/app.css: {}
   dependencies:
-  - core/jquery
-  - core/jquery.once
-  - core/drupal
-  - core/drupalSettings
+      - core/jquery
+      - core/jquery.once
+      - core/drupal
+      - core/drupalSettings
 global-js:
   version: VERSION
   header: false
   js:
     assets/dist/js/app.js: {}
-bootstrap:
-  js:
-    /libraries/popper.js/dist/umd/popper.min.js: {}
-    /libraries/bootstrap/dist/js/bootstrap.min.js: {}
-  css:
-    component:
-      /libraries/bootstrap/dist/css/bootstrap.min.css: {}
-bootstrap_cdn:
-  js:
-    //cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js: {}
-    //stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js: {}
-  css:
-    component:
-      //stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css: {}
-color.preview:
-  version: VERSION
-  css:
-    theme:
-      color/preview.css: {}
-  js:
-    color/preview.js: {}
-  dependencies:
-    - color/drupal.color
+
+

@@ -1,0 +1,60 @@
+
+<header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
+    {% block head %}
+        <div class="container site-header site-header--hero">
+            <div class="row align-items-center py-4">
+                <a href="/" class="col-md-8 col-sm-6 site-logo">
+                    <img src="{{ base_path ~ directory }}/logo.png" alt="Electrical safety">
+                    <span>Patent Manual of Practice and Procedure</span>
+                </a>
+                <div class="col-md-4">
+                    <form action="/search" class="input-group">
+                        <input type="text" name="keys" class="form-control h-100" placeholder="Search" aria-label="Search" aria-describedby="search">
+                        <button type="submit" role="button" aria-label="Search"><i class="far fa-search"></i></button>
+                    </form>
+                </div>
+
+                {# Button to clone in menu #}
+                {# Button to clone in menu #}
+                <button id="mobile-menu-button" class="hamburger hamburger--spin" type="button" aria-hidden="true" hidden aria-controls="mobile-menu">
+                <span class="mobile-wrapper">
+                  <span class="label font-label">
+                    <span class="sr-only">Mobile</span>MENU
+                </span>
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </span>
+                </button>
+            </div>
+        </div>
+</header>
+
+
+        <nav{{ navbar_attributes }}>
+            {% if container_navbar %}
+            <div class="container">
+                {% endif %}
+                {{ page.header }}
+                {% if page.primary_menu or page.header_form %}
+
+                    <div class="collapse navbar-collapse justify-content-center container" id="CollapsingNavbar">
+                        <div class="row w-100">
+                            {{ page.primary_menu }}
+                            {% if page.header_form %}
+                                <div class="form-inline navbar-form justify-content-center">
+                                    {{ page.header_form }}
+                                </div>
+                            {% endif %}
+
+                        </div>
+                    </div>
+                {% endif %}
+                {% if sidebar_collapse %}
+                    <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
+                {% endif %}
+                {% if container_navbar %}
+            </div>
+            {% endif %}
+        </nav>
+    {% endblock %}
