@@ -1,19 +1,39 @@
+.views-element-container {
+  margin-right: -15px;
+}
+
+#block-ipam-breadcrumbs {
+  @extend .row;
+}
+
 .view-patent-manual-of-practice-and-procedure {
   margin-bottom: 5rem;
+  padding-top: 3rem;
 
-  .view-filters,
   .view-footer {
     margin-top: 3rem;
   }
   
   .view-header {
     position: relative;
+
+    h1 {
+      font-size: $h3-font-size-sm;
+      color: $colour-classic-green;
+      margin-top: 3rem;
+      text-align: center;
+    }
   }
 
   .help-link {
     position: absolute;
     right: 0;
     top: -3rem;
+    color: $colour-theme;
+
+    &:hover {
+      color: $colour-classic-green;
+    }
   }
 
   .view-footer {
@@ -31,7 +51,7 @@ table {
 
     tr {
       border-bottom: none;
-      background-color: $colour-classic-green;
+      background-color: $colour-bright-green;
     }
 
     th {
@@ -83,7 +103,7 @@ table {
       &:after {
         content: '';
         display: block;
-        border-bottom: 4px solid $colour-bright-blue;
+        border-bottom: 4px solid $colour-bright-green;
         position: absolute;
         bottom: -1rem;
         width: 70%;
@@ -96,12 +116,12 @@ table {
   .page-item.active {
     .page-link {
       background-color: transparent;
-      color: $colour-dark-blue;
+      color: $colour-theme;
 
       &:after {
         content: '';
         display: block;
-        border-bottom: 4px solid $colour-bright-blue;
+        border-bottom: 4px solid $colour-bright-green;
         position: absolute;
         bottom: -1rem;
         width: 70%;
@@ -111,4 +131,29 @@ table {
     }
   }
 
+}
+
+.flyout-container {
+  display: none;
+  position: absolute;
+  top: 115px;
+  right: 0;
+  padding: 2rem 4rem;
+  background-color: $colour-light-grey;
+  width: 700px;
+  z-index: 10;
+
+  .close-link {
+    position: relative;
+    color: $colour-classic-green;
+    padding-left: 0.5rem;
+
+    &:before {
+      content: '\f057';
+      font-family: 'Font Awesome 5 Pro';
+      position: absolute;
+      left: -1rem;
+      font-weight: $weight-light;
+    }
+  }
 }

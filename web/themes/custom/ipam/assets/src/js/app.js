@@ -81,5 +81,13 @@ $(document).ready(function() {
       $(this).children().toggleClass("active");
     })
   });
+
+  $(".help-link").click(function () {
+    $(".flyout-container").show("slide", { direction: "left" }, 500);
+  });
+
+  $(".close-link").click(function () {
+    $(".flyout-container").hide("slide", { direction: "right" }, 500);
+  });
 });
 

@@ -1,6 +1,10 @@
 .nested-nav {
   padding-left: 0;
 
+  > ul {
+    margin-left: -30px;
+  }
+
   ul {
     list-style: none;
     padding-left: 1rem;
@@ -9,12 +13,13 @@
       padding-left: 1rem;
 
       &:hover {
-        background-color: $colour-light-blue;
+        background-color: $colour-bright-green;
       }
 
       a {
         display: inline-block;
         padding: 0.5rem 1rem;
+        color: $colour-theme;
 
         &.folder {
           position: relative;

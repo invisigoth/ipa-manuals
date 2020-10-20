@@ -433,6 +433,16 @@ jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).ready(function () {
       jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).children().toggleClass("active");
     });
   });
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()(".help-link").click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()(".flyout-container").show("slide", {
+      direction: "left"
+    }, 500);
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()(".close-link").click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()(".flyout-container").hide("slide", {
+      direction: "right"
+    }, 500);
+  });
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "jquery"), __webpack_require__(/*! drupal */ "drupal")))
 
