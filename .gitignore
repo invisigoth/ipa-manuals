@@ -1,7 +1,5 @@
 web/sites/default/
-vendor/
 private/
 node_modules/
-composer.lock
 package-lock.json
 drush/
