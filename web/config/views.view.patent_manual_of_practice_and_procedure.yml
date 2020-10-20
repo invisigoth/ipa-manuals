@@ -564,7 +564,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<a href="#" class="help-link">Help</a>'
+            value: '<a href="#" class="help-link">Help<i class="fal fa-question-circle ml-2"></i></a>'
             format: full_html
           plugin_id: text
         area_1:
@@ -577,7 +577,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<div class=\"row\">\r\n\t<div class=\"col-md-3\">\r\n\t<a class=\"chapter-tile\" href=\"/\">\r\n\t\t<i class=\"fal fa-book-open\"></i>\r\n\t\t<span>Chapter 1</span>\r\n\t\t<span><strong>International</strong></span>\r\n\t</a>\r\n</div>\r\n<div class=\"col-md-3\">\r\n\t<a class=\"chapter-tile\" href=\"/\">\r\n\t\t<i class=\"fal fa-book-open\"></i>\r\n\t\t<span>Chapter 2</span>\r\n\t\t<span><strong>National</strong></span>\r\n\t</a>\r\n</div>\r\n<div class=\"col-md-3\">\r\n\t<a class=\"chapter-tile\" href=\"/\">\r\n\t\t<i class=\"fal fa-book-open\"></i>\r\n\t\t<span>Chapter 3</span>\r\n\t\t<span><strong>Oppositions, Disputes and Extensions</strong></span>\r\n\t</a>\r\n</div>\r\n<div class=\"col-md-3\">\r\n\t<a class=\"chapter-tile\" href=\"/\">\r\n\t\t<i class=\"fal fa-book-open\"></i>\r\n\t\t<span>Chapter 4</span>\r\n\t\t<span><strong>Search</strong></span>\r\n\t</a>\r\n</div>\r\n</div>\r\n<h1>Recent updates</h1>"
+            value: "<div class=\"row\">\r\n\t<div class=\"col-md-3\">\r\n\t<a class=\"chapter-tile\" href=\"/\">\r\n\t\t<i class=\"fal fa-book-open\"></i>\r\n\t\t<span>Chapter 1</span>\r\n\t\t<span><strong>International</strong></span>\r\n\t</a>\r\n</div>\r\n<div class=\"col-md-3\">\r\n\t<a class=\"chapter-tile\" href=\"/\">\r\n\t\t<i class=\"fal fa-book-open\"></i>\r\n\t\t<span>Chapter 2</span>\r\n\t\t<span><strong>National</strong></span>\r\n\t</a>\r\n</div>\r\n<div class=\"col-md-3\">\r\n\t<a class=\"chapter-tile\" href=\"/\">\r\n\t\t<i class=\"fal fa-book-open\"></i>\r\n\t\t<span>Chapter 3</span>\r\n\t\t<span><strong>Oppositions, Disputes and Extensions</strong></span>\r\n\t</a>\r\n</div>\r\n<div class=\"col-md-3\">\r\n\t<a class=\"chapter-tile\" href=\"/\">\r\n\t\t<i class=\"fal fa-book-open\"></i>\r\n\t\t<span>Chapter 4</span>\r\n\t\t<span><strong>Search</strong></span>\r\n\t</a>\r\n</div>\r\n</div>\r\n<h1>Recent updates</h1>\r\n"
             format: full_html
           plugin_id: text
       footer:
