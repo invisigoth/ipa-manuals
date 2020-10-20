@@ -9,6 +9,8 @@ module:
   color: 0
   comment: 0
   config: 0
+  config_filter: 0
+  config_ignore: 0
   contact: 0
   contextual: 0
   ctools: 0
@@ -54,7 +56,6 @@ module:
   views: 10
   standard: 1000
 theme:
-  bartik: 0
   seven: 0
   bootstrap_barrio: 0
   ipam: 0
