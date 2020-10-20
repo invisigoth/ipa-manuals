@@ -132,6 +132,10 @@
                     {{ page.content_footer }}
                 {% endif %}
 
+                {% if page.flyout %}
+                    {{ page.flyout }}
+                {% endif %}
+
         </div>
 
         {% include  directory ~ '/templates/_includes/footer.html.twig' %}
