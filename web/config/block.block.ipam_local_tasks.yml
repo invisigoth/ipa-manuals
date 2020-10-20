@@ -1,0 +1,22 @@
+uuid: c78077ab-ef01-44cd-bced-6c9889d78b76
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ipam
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: ipam_local_tasks
+theme: ipam
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

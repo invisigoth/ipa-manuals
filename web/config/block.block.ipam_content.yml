@@ -1,0 +1,22 @@
+uuid: c49d1dd5-ac84-4eec-8f44-97648204f5c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ipam
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: ipam_content
+theme: ipam
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

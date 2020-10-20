@@ -1,0 +1,8 @@
+uuid: bb954dc5-cebc-4d98-b468-7db1c94f6162
+langcode: en
+status: true
+dependencies: {  }
+id: cus
+label: Custom
+locked: false
+pattern: 'M d Y'

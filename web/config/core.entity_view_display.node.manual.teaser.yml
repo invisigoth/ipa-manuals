@@ -1,0 +1,36 @@
+uuid: 2a68e14b-a073-4757-9908-2a0ba1e183be
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.manual.body
+    - field.field.node.manual.field_amended_reason
+    - field.field.node.manual.field_date_amended
+    - field.field.node.manual.field_status
+    - node.type.manual
+  module:
+    - text
+    - user
+id: node.manual.teaser
+targetEntityType: node
+bundle: manual
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_amended_reason: true
+  field_date_amended: true
+  field_status: true

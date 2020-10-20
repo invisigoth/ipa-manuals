@@ -1,0 +1,25 @@
+uuid: 418805b3-0510-4cb3-9c51-9e7a91a5487d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:47b68953-e9c3-45cb-a289-58590a4d2fbb'
+  module:
+    - block_content
+  theme:
+    - ipam
+id: helpflyout_2
+theme: ipam
+region: flyout
+weight: 0
+provider: null
+plugin: 'block_content:47b68953-e9c3-45cb-a289-58590a4d2fbb'
+settings:
+  id: 'block_content:47b68953-e9c3-45cb-a289-58590a4d2fbb'
+  label: 'Help Flyout'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

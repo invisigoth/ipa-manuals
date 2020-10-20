@@ -1,0 +1,56 @@
+uuid: 4e8edde7-e30e-430d-a333-47d775a319fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.manual.body
+    - field.field.node.manual.field_amended_reason
+    - field.field.node.manual.field_date_amended
+    - field.field.node.manual.field_status
+    - node.type.manual
+  module:
+    - datetime
+    - options
+    - text
+    - user
+id: node.manual.default
+targetEntityType: node
+bundle: manual
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_amended_reason:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_date_amended:
+    weight: 104
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_status:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

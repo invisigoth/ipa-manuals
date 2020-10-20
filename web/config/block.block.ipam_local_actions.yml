@@ -1,0 +1,20 @@
+uuid: e88e1989-1cf5-402e-b9b3-68e0a5fcda26
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ipam
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: ipam_local_actions
+theme: ipam
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

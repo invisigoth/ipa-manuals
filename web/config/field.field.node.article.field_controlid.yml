@@ -1,0 +1,21 @@
+uuid: c3e18482-5c12-4efb-a9a7-657d64b7b4f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_controlid
+    - node.type.article
+  module:
+    - text
+id: node.article.field_controlid
+field_name: field_controlid
+entity_type: node
+bundle: article
+label: controlid
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

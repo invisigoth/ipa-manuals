@@ -1,0 +1,19 @@
+uuid: 2461b746-ced3-4a0f-a62a-0bfbe34cdfd7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_zoneid
+field_name: field_zoneid
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

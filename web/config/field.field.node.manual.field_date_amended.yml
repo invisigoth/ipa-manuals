@@ -1,0 +1,21 @@
+uuid: 53bab2d2-6a5f-4148-8a5a-e8db31c508b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_amended
+    - node.type.manual
+  module:
+    - datetime
+id: node.manual.field_date_amended
+field_name: field_date_amended
+entity_type: node
+bundle: manual
+label: 'Date Amended'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
