@@ -5,8 +5,14 @@
   padding: 2rem 1rem;
   background-color: $colour-light-grey;
   height: 100%;
+  color: $colour-theme;
 
   svg {
     font-size: 56px;
+  }
+
+  &:hover {
+    color: $white !important;
+    background-color: $colour-semi-grey;
   }
 }

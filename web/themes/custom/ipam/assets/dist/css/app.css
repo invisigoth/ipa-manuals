@@ -2201,7 +2201,7 @@ textarea.form-control {
     .form-inline .custom-control-label {
       margin-bottom: 0; } }
 
-.btn, .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a {
+.btn, .uikit-btn {
   display: inline-block;
   font-family: "montserratregular", sans-serif;
   font-weight: 400;
@@ -2223,26 +2223,24 @@ textarea.form-control {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
-    .btn, .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a {
+    .btn, .uikit-btn {
       -webkit-transition: none;
       transition: none; } }
-  .btn:hover, .uikit-btn:hover, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:hover {
+  .btn:hover, .uikit-btn:hover {
     color: #212529;
     text-decoration: none; }
-  .btn:focus, .uikit-btn:focus, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:focus, .btn.focus, .focus.uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a.focus {
+  .btn:focus, .uikit-btn:focus, .btn.focus, .focus.uikit-btn {
     outline: 0;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
             box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
-  .btn.disabled, .disabled.uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a.disabled, .btn:disabled, .uikit-btn:disabled, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:disabled {
+  .btn.disabled, .disabled.uikit-btn, .btn:disabled, .uikit-btn:disabled {
     opacity: 0.65; }
-  .btn:not(:disabled):not(.disabled), .uikit-btn:not(:disabled):not(.disabled), .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:not(:disabled):not(.disabled) {
+  .btn:not(:disabled):not(.disabled), .uikit-btn:not(:disabled):not(.disabled) {
     cursor: pointer; }
 
-a.btn.disabled, a.disabled.uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a.disabled,
+a.btn.disabled, a.disabled.uikit-btn,
 fieldset:disabled a.btn,
-fieldset:disabled a.uikit-btn,
-fieldset:disabled .path-frontpage .field--name-field-components .banner-text .field--name-field-link a,
-.path-frontpage .field--name-field-components .banner-text .field--name-field-link fieldset:disabled a {
+fieldset:disabled a.uikit-btn {
   pointer-events: none; }
 
 .btn-primary, .uikit-btn {
@@ -2415,33 +2413,31 @@ fieldset:disabled .path-frontpage .field--name-field-components .banner-text .fi
       -webkit-box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
               box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5); }
 
-.btn-light, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a {
+.btn-light {
   color: #212529;
   background-color: #f8f9fa;
   border-color: #f8f9fa; }
-  .btn-light:hover, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:hover {
+  .btn-light:hover {
     color: #212529;
     background-color: #e2e6ea;
     border-color: #dae0e5; }
-  .btn-light:focus, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:focus, .btn-light.focus, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a.focus {
+  .btn-light:focus, .btn-light.focus {
     color: #212529;
     background-color: #e2e6ea;
     border-color: #dae0e5;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
             box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5); }
-  .btn-light.disabled, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a.disabled, .btn-light:disabled, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:disabled {
+  .btn-light.disabled, .btn-light:disabled {
     color: #212529;
     background-color: #f8f9fa;
     border-color: #f8f9fa; }
-  .btn-light:not(:disabled):not(.disabled):active, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:not(:disabled):not(.disabled).active,
-  .show > .btn-light.dropdown-toggle,
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .show > a.dropdown-toggle {
+  .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active,
+  .show > .btn-light.dropdown-toggle {
     color: #212529;
     background-color: #dae0e5;
     border-color: #d3d9df; }
-    .btn-light:not(:disabled):not(.disabled):active:focus, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-light.dropdown-toggle:focus,
-    .path-frontpage .field--name-field-components .banner-text .field--name-field-link .show > a.dropdown-toggle:focus {
+    .btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-light.dropdown-toggle:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
               box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5); }
 
@@ -2670,13 +2666,13 @@ fieldset:disabled .path-frontpage .field--name-field-components .banner-text .fi
     color: #6c757d;
     pointer-events: none; }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-lg > a {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .uikit-btn {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-sm > a {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .uikit-btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -2926,29 +2922,24 @@ input[type="button"].btn-block {
   display: -ms-inline-flexbox;
   display: inline-flex;
   vertical-align: middle; }
-  .btn-group > .btn, .btn-group > .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a,
+  .btn-group > .btn, .btn-group > .uikit-btn,
   .btn-group-vertical > .btn,
-  .btn-group-vertical > .uikit-btn,
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a {
+  .btn-group-vertical > .uikit-btn {
     position: relative;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto; }
-    .btn-group > .btn:hover, .btn-group > .uikit-btn:hover, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a:hover,
+    .btn-group > .btn:hover, .btn-group > .uikit-btn:hover,
     .btn-group-vertical > .btn:hover,
-    .btn-group-vertical > .uikit-btn:hover,
-    .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a:hover {
+    .btn-group-vertical > .uikit-btn:hover {
       z-index: 1; }
-    .btn-group > .btn:focus, .btn-group > .uikit-btn:focus, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a:focus, .btn-group > .btn:active, .btn-group > .uikit-btn:active, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a:active, .btn-group > .btn.active, .btn-group > .active.uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a.active,
+    .btn-group > .btn:focus, .btn-group > .uikit-btn:focus, .btn-group > .btn:active, .btn-group > .uikit-btn:active, .btn-group > .btn.active, .btn-group > .active.uikit-btn,
     .btn-group-vertical > .btn:focus,
     .btn-group-vertical > .uikit-btn:focus,
-    .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a:focus,
     .btn-group-vertical > .btn:active,
     .btn-group-vertical > .uikit-btn:active,
-    .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a:active,
     .btn-group-vertical > .btn.active,
-    .btn-group-vertical > .active.uikit-btn,
-    .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a.active {
+    .btn-group-vertical > .active.uikit-btn {
       z-index: 1; }
 
 .btn-toolbar {
@@ -2963,21 +2954,19 @@ input[type="button"].btn-block {
   .btn-toolbar .input-group {
     width: auto; }
 
-.btn-group > .btn:not(:first-child), .btn-group > .uikit-btn:not(:first-child), .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a:not(:first-child),
+.btn-group > .btn:not(:first-child), .btn-group > .uikit-btn:not(:first-child),
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px; }
 
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .uikit-btn:not(:last-child):not(.dropdown-toggle), .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .uikit-btn:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn-group:not(:last-child) > .btn,
-.btn-group > .btn-group:not(:last-child) > .uikit-btn,
-.path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > .btn-group:not(:last-child) > a {
+.btn-group > .btn-group:not(:last-child) > .uikit-btn {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.btn-group > .btn:not(:first-child), .btn-group > .uikit-btn:not(:first-child), .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > a:not(:first-child),
+.btn-group > .btn:not(:first-child), .btn-group > .uikit-btn:not(:first-child),
 .btn-group > .btn-group:not(:first-child) > .btn,
-.btn-group > .btn-group:not(:first-child) > .uikit-btn,
-.path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group > .btn-group:not(:first-child) > a {
+.btn-group > .btn-group:not(:first-child) > .uikit-btn {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
@@ -2991,11 +2980,11 @@ input[type="button"].btn-block {
   .dropleft .dropdown-toggle-split::before {
     margin-right: 0; }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .uikit-btn + .dropdown-toggle-split, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-sm > a + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .uikit-btn + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem; }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .uikit-btn + .dropdown-toggle-split, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-lg > a + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .uikit-btn + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
 
@@ -3013,40 +3002,33 @@ input[type="button"].btn-block {
   
   .btn-group-vertical > .btn,
   .btn-group-vertical > .uikit-btn,
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a,
   .btn-group-vertical > .btn-group {
     width: 100%; }
-  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .uikit-btn:not(:first-child), .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a:not(:first-child),
+  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .uikit-btn:not(:first-child),
   .btn-group-vertical > .btn-group:not(:first-child) {
     margin-top: -1px; }
-  .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .uikit-btn:not(:last-child):not(.dropdown-toggle), .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle),
+  .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .uikit-btn:not(:last-child):not(.dropdown-toggle),
   .btn-group-vertical > .btn-group:not(:last-child) > .btn,
-  .btn-group-vertical > .btn-group:not(:last-child) > .uikit-btn,
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > .btn-group:not(:last-child) > a {
+  .btn-group-vertical > .btn-group:not(:last-child) > .uikit-btn {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
-  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .uikit-btn:not(:first-child), .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > a:not(:first-child),
+  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .uikit-btn:not(:first-child),
   .btn-group-vertical > .btn-group:not(:first-child) > .btn,
-  .btn-group-vertical > .btn-group:not(:first-child) > .uikit-btn,
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-vertical > .btn-group:not(:first-child) > a {
+  .btn-group-vertical > .btn-group:not(:first-child) > .uikit-btn {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
 
-.btn-group-toggle > .btn, .btn-group-toggle > .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-toggle > a,
+.btn-group-toggle > .btn, .btn-group-toggle > .uikit-btn,
 .btn-group-toggle > .btn-group > .btn,
-.btn-group-toggle > .btn-group > .uikit-btn,
-.path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-toggle > .btn-group > a {
+.btn-group-toggle > .btn-group > .uikit-btn {
   margin-bottom: 0; }
-  .btn-group-toggle > .btn input[type="radio"], .btn-group-toggle > .uikit-btn input[type="radio"], .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-toggle > a input[type="radio"],
+  .btn-group-toggle > .btn input[type="radio"], .btn-group-toggle > .uikit-btn input[type="radio"],
   .btn-group-toggle > .btn input[type="checkbox"],
   .btn-group-toggle > .uikit-btn input[type="checkbox"],
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-toggle > a input[type="checkbox"],
   .btn-group-toggle > .btn-group > .btn input[type="radio"],
   .btn-group-toggle > .btn-group > .uikit-btn input[type="radio"],
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-toggle > .btn-group > a input[type="radio"],
   .btn-group-toggle > .btn-group > .btn input[type="checkbox"],
-  .btn-group-toggle > .btn-group > .uikit-btn input[type="checkbox"],
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn-group-toggle > .btn-group > a input[type="checkbox"] {
+  .btn-group-toggle > .btn-group > .uikit-btn input[type="checkbox"] {
     position: absolute;
     clip: rect(0, 0, 0, 0);
     pointer-events: none; }
@@ -3120,52 +3102,30 @@ input[type="button"].btn-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .input-group-prepend .btn, .input-group-prepend .uikit-btn, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link a, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend a,
+  .input-group-prepend .btn, .input-group-prepend .uikit-btn,
   .input-group-append .btn,
-  .input-group-append .uikit-btn,
-  .input-group-append .path-frontpage .field--name-field-components .banner-text .field--name-field-link a,
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-append a {
+  .input-group-append .uikit-btn {
     position: relative;
     z-index: 2; }
-    .input-group-prepend .btn:focus, .input-group-prepend .uikit-btn:focus, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:focus, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend a:focus,
+    .input-group-prepend .btn:focus, .input-group-prepend .uikit-btn:focus,
     .input-group-append .btn:focus,
-    .input-group-append .uikit-btn:focus,
-    .input-group-append .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:focus,
-    .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-append a:focus {
+    .input-group-append .uikit-btn:focus {
       z-index: 3; }
-  .input-group-prepend .btn + .btn, .input-group-prepend .uikit-btn + .btn, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link a + .btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend a + .btn, .input-group-prepend .btn + .uikit-btn, .input-group-prepend .uikit-btn + .uikit-btn, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link a + .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend a + .uikit-btn, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn + a, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend .btn + a, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link .uikit-btn + a, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend .uikit-btn + a, .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link a + a, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend a + a,
+  .input-group-prepend .btn + .btn, .input-group-prepend .uikit-btn + .btn, .input-group-prepend .btn + .uikit-btn, .input-group-prepend .uikit-btn + .uikit-btn,
   .input-group-prepend .btn + .input-group-text,
   .input-group-prepend .uikit-btn + .input-group-text,
-  .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link a + .input-group-text,
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend a + .input-group-text,
   .input-group-prepend .input-group-text + .input-group-text,
   .input-group-prepend .input-group-text + .btn,
   .input-group-prepend .input-group-text + .uikit-btn,
-  .input-group-prepend .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-text + a,
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-prepend .input-group-text + a,
   .input-group-append .btn + .btn,
   .input-group-append .uikit-btn + .btn,
-  .input-group-append .path-frontpage .field--name-field-components .banner-text .field--name-field-link a + .btn,
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-append a + .btn,
   .input-group-append .btn + .uikit-btn,
   .input-group-append .uikit-btn + .uikit-btn,
-  .input-group-append .path-frontpage .field--name-field-components .banner-text .field--name-field-link a + .uikit-btn,
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-append a + .uikit-btn,
-  .input-group-append .path-frontpage .field--name-field-components .banner-text .field--name-field-link .btn + a,
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-append .btn + a,
-  .input-group-append .path-frontpage .field--name-field-components .banner-text .field--name-field-link .uikit-btn + a,
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-append .uikit-btn + a,
-  .input-group-append .path-frontpage .field--name-field-components .banner-text .field--name-field-link a + a,
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-append a + a,
   .input-group-append .btn + .input-group-text,
   .input-group-append .uikit-btn + .input-group-text,
-  .input-group-append .path-frontpage .field--name-field-components .banner-text .field--name-field-link a + .input-group-text,
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-append a + .input-group-text,
   .input-group-append .input-group-text + .input-group-text,
   .input-group-append .input-group-text + .btn,
-  .input-group-append .input-group-text + .uikit-btn,
-  .input-group-append .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-text + a,
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-append .input-group-text + a {
+  .input-group-append .input-group-text + .uikit-btn {
     margin-left: -1px; }
 
 .input-group-prepend {
@@ -3206,10 +3166,8 @@ input[type="button"].btn-block {
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-prepend > .uikit-btn,
-.path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-lg > .input-group-prepend > a,
 .input-group-lg > .input-group-append > .btn,
-.input-group-lg > .input-group-append > .uikit-btn,
-.path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-lg > .input-group-append > a {
+.input-group-lg > .input-group-append > .uikit-btn {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -3225,10 +3183,8 @@ input[type="button"].btn-block {
 .input-group-sm > .input-group-append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
 .input-group-sm > .input-group-prepend > .uikit-btn,
-.path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-sm > .input-group-prepend > a,
 .input-group-sm > .input-group-append > .btn,
-.input-group-sm > .input-group-append > .uikit-btn,
-.path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group-sm > .input-group-append > a {
+.input-group-sm > .input-group-append > .uikit-btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -3238,28 +3194,24 @@ input[type="button"].btn-block {
 .input-group-sm > .custom-select {
   padding-right: 1.75rem; }
 
-.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group > .input-group-prepend > a,
+.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .uikit-btn,
 .input-group > .input-group-prepend > .input-group-text,
 .input-group > .input-group-append:not(:last-child) > .btn,
 .input-group > .input-group-append:not(:last-child) > .uikit-btn,
-.path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group > .input-group-append:not(:last-child) > a,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
 .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .uikit-btn:not(:last-child):not(.dropdown-toggle),
-.path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group > .input-group-append:last-child > a:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.input-group > .input-group-append > .btn, .input-group > .input-group-append > .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group > .input-group-append > a,
+.input-group > .input-group-append > .btn, .input-group > .input-group-append > .uikit-btn,
 .input-group > .input-group-append > .input-group-text,
 .input-group > .input-group-prepend:not(:first-child) > .btn,
 .input-group > .input-group-prepend:not(:first-child) > .uikit-btn,
-.path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group > .input-group-prepend:not(:first-child) > a,
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
 .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
 .input-group > .input-group-prepend:first-child > .uikit-btn:not(:first-child),
-.path-frontpage .field--name-field-components .banner-text .field--name-field-link .input-group > .input-group-prepend:first-child > a:not(:first-child),
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
@@ -4369,7 +4321,7 @@ input[type="button"].btn-block {
   .badge:empty {
     display: none; }
 
-.btn .badge, .uikit-btn .badge, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a .badge {
+.btn .badge, .uikit-btn .badge {
   position: relative;
   top: -1px; }
 
@@ -9485,7 +9437,7 @@ form#views-exposed-form-content-search-page-1 .form-row {
     padding: 0; }
   form#views-exposed-form-content-search-page-1 .form-row .form-control {
     height: 55px; }
-    form#views-exposed-form-content-search-page-1 .form-row .form-control.btn, form#views-exposed-form-content-search-page-1 .form-row .form-control.uikit-btn, form#views-exposed-form-content-search-page-1 .form-row .path-frontpage .field--name-field-components .banner-text .field--name-field-link a.form-control, .path-frontpage .field--name-field-components .banner-text .field--name-field-link form#views-exposed-form-content-search-page-1 .form-row a.form-control {
+    form#views-exposed-form-content-search-page-1 .form-row .form-control.btn, form#views-exposed-form-content-search-page-1 .form-row .form-control.uikit-btn {
       border-radius: 0 4px 4px 0;
       font-family: "montserratregular", sans-serif;
       text-transform: uppercase; }
@@ -9880,7 +9832,7 @@ p + h2,
 p + .h2 {
   margin-top: 2rem; }
 
-.font-label, .font-label-small, .btn, .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a {
+.font-label, .font-label-small, .btn, .uikit-btn {
   font-family: "montserratregular", sans-serif;
   font-weight: 700; }
 
@@ -9906,7 +9858,7 @@ blockquote {
   font-size: 28px;
   line-height: 1.43; }
 
-.btn, .uikit-btn, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a {
+.btn, .uikit-btn {
   font-size: 1rem;
   border-radius: 10px;
   font-weight: 700; }
@@ -9929,11 +9881,11 @@ blockquote {
     border-color: #4B4A4C;
     color: #ffffff; }
 
-.btn-light, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a {
+.btn-light {
   background-color: #CED8DD;
   color: #2E78BD;
   border-color: #2E78BD; }
-  .btn-light:hover, .path-frontpage .field--name-field-components .banner-text .field--name-field-link a:hover {
+  .btn-light:hover {
     background-color: #ffffff;
     border-color: #46B3E6;
     color: #231f20 !important; }
@@ -10152,418 +10104,38 @@ a.external {
           align-items: center;
   padding: 2rem 1rem;
   background-color: #EAEFF2;
-  height: 100%; }
+  height: 100%;
+  color: #0d252c; }
   .chapter-tile svg {
     font-size: 56px; }
+  .chapter-tile:hover {
+    color: #ffffff !important;
+    background-color: #71767b; }
 
-.text-formatted {
-  font-size: 1rem;
-  line-height: 1.67; }
-  .text-formatted h2, .text-formatted h3, .text-formatted h4 {
-    color: #2E78BD; }
-  .text-formatted a {
-    color: #2E78BD;
-    text-decoration: underline; }
-  .text-formatted a:hover {
-    text-decoration: none; }
-  .text-formatted .field--type-image {
-    float: unset; }
-  .text-formatted ul {
-    list-style: none;
-    padding-left: 1.5rem; }
-    .text-formatted ul li {
-      position: relative;
-      margin-bottom: .5rem; }
-      .text-formatted ul li::before {
-        position: absolute;
-        font-family: 'Font Awesome 5 Pro';
-        content: "\F111";
-        color: #2E78BD;
-        font-weight: bold;
-        font-size: 10px;
-        margin-left: -1.5rem;
-        top: 5px; }
-      .text-formatted ul li ul li:before {
-        content: '\F0C8'; }
-  .text-formatted table {
-    font-size: 1rem; }
-    .text-formatted table thead {
-      border-bottom: 1px solid #71767b; }
-      .text-formatted table thead tr {
-        border-bottom: none; }
-    .text-formatted table tr {
-      background: transparent;
-      border-bottom: 1px solid #EAEFF2;
-      color: #71767b; }
-      .text-formatted table tr th {
-        background: transparent;
-        color: #231f20;
-        padding: 1rem .5rem; }
-      .text-formatted table tr td {
-        border: none;
-        padding: 1rem .5rem; }
-  .text-formatted .toc {
-    padding-left: 2rem;
-    position: relative; }
-    .text-formatted .toc:before {
-      content: '';
-      position: absolute;
-      border-left: 3px solid #fdb525;
-      left: 0;
-      top: 0;
-      height: 100%; }
-    .text-formatted .toc #on-this-page {
-      color: #231f20;
-      font-size: 18px; }
-    .text-formatted .toc ul {
-      padding-left: 0; }
-      .text-formatted .toc ul li:before {
-        content: ''; }
-
-.path-frontpage #main-wrapper main.order-last {
-  padding: 0; }
-
-.path-frontpage .node--type-govcms-standard-page.node--view-mode-full {
-  margin-left: -15px;
-  margin-right: -15px; }
-
-.path-frontpage .field--name-field-components {
-  position: relative;
-  height: 45vw;
-  max-height: 560px; }
-  .path-frontpage .field--name-field-components .slick-list {
-    height: 100%; }
-    .path-frontpage .field--name-field-components .slick-list .slick-track {
-      height: 100%; }
-      .path-frontpage .field--name-field-components .slick-list .slick-track .slick-slide {
-        height: 100%; }
-        .path-frontpage .field--name-field-components .slick-list .slick-track .slick-slide > div {
-          height: 100%; }
-          .path-frontpage .field--name-field-components .slick-list .slick-track .slick-slide > div > .field__item {
-            height: 100%;
-            position: relative; }
-  .path-frontpage .field--name-field-components .banner-hero .field--name-field-slide-image {
-    position: relative;
-    margin: 0;
-    overflow: hidden; }
-    .path-frontpage .field--name-field-components .banner-hero .field--name-field-slide-image img {
-      height: 100%;
-      width: 54%;
-      margin: 0;
-      -o-object-fit: cover;
-         object-fit: cover;
-      -o-object-position: top;
-         object-position: top;
-      float: right; }
-    .path-frontpage .field--name-field-components .banner-hero .field--name-field-slide-image:after {
-      content: '';
-      position: absolute;
-      display: block;
-      background-color: #424244;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      left: -50%;
-      -webkit-transform: skewX(-200deg);
-      transform: skewX(-200deg); }
-  .path-frontpage .field--name-field-components .banner-text {
-    position: absolute;
-    color: #ffffff;
-    height: 100%;
-    top: 0;
-    width: 100%;
-    z-index: 100; }
-    .path-frontpage .field--name-field-components .banner-text .field--name-field-long-text {
-      font-size: 3rem;
-      font-family: "montserratregular", sans-serif;
-      font-weight: 700;
-      margin-bottom: 2rem;
-      line-height: 1.37; }
-    .path-frontpage .field--name-field-components .banner-text .field--name-field-link a {
-      padding: 0.5rem 2rem;
-      font-size: 22px; }
-  .path-frontpage .field--name-field-components .slick-dots {
-    bottom: 3rem;
-    height: 1rem;
-    text-align: center; }
-    .path-frontpage .field--name-field-components .slick-dots li {
-      width: 48px;
-      margin-right: 1rem; }
-      .path-frontpage .field--name-field-components .slick-dots li button {
-        width: 48px; }
-        .path-frontpage .field--name-field-components .slick-dots li button:before {
-          content: '';
-          width: 48px;
-          height: 6px;
-          background-color: #ffffff;
-          border: 1px solid #424244;
-          border-radius: 3px;
-          opacity: .25; }
-      .path-frontpage .field--name-field-components .slick-dots li.slick-active button:before {
-        color: #46B3E6;
-        opacity: 1; }
-  .path-frontpage .field--name-field-components .slick-prev, .path-frontpage .field--name-field-components .slick-next {
-    top: 50% !important; }
-
-#block-views-block-keeping-the-community-safe-block-1 {
-  margin-top: 5rem;
-  margin-bottom: 5rem; }
-  #block-views-block-keeping-the-community-safe-block-1 h2 {
-    text-align: center;
-    margin-bottom: 4rem;
-    color: #1E4486;
-    font-family: "Roboto", sans-serif; }
-
-#block-views-block-electrical-safety-resources-block-1,
-#block-views-block-video-slider-block-1 {
-  position: relative; }
-  #block-views-block-electrical-safety-resources-block-1 h2,
-  #block-views-block-video-slider-block-1 h2 {
-    font-size: 32px;
-    color: #1E4486;
-    margin-bottom: 3rem; }
-  #block-views-block-electrical-safety-resources-block-1:after,
-  #block-views-block-video-slider-block-1:after {
-    position: absolute;
-    z-index: -100;
-    width: 100vw;
-    height: 100%;
-    background-color: #EAEFF2;
-    content: '';
-    margin-left: -50vw;
-    top: 0;
-    left: 50%; }
-  #block-views-block-electrical-safety-resources-block-1 .view-content,
-  #block-views-block-video-slider-block-1 .view-content {
-    padding-right: 15px;
-    padding-left: 15px; }
-  #block-views-block-electrical-safety-resources-block-1 .slick-slider .slick-list,
-  #block-views-block-video-slider-block-1 .slick-slider .slick-list {
-    padding-bottom: 50px !important; }
-  #block-views-block-electrical-safety-resources-block-1 .slick-prev,
-  #block-views-block-video-slider-block-1 .slick-prev {
-    left: -5rem; }
-  #block-views-block-electrical-safety-resources-block-1 .slick-next,
-  #block-views-block-video-slider-block-1 .slick-next {
-    right: -5rem; }
-  #block-views-block-electrical-safety-resources-block-1 .slick-dots,
-  #block-views-block-video-slider-block-1 .slick-dots {
-    bottom: 0;
-    text-align: center; }
-    #block-views-block-electrical-safety-resources-block-1 .slick-dots li,
-    #block-views-block-video-slider-block-1 .slick-dots li {
-      width: 30px; }
-      #block-views-block-electrical-safety-resources-block-1 .slick-dots li:first-child:before,
-      #block-views-block-video-slider-block-1 .slick-dots li:first-child:before {
-        content: '';
-        position: absolute;
-        width: 10px;
-        height: 5px;
-        left: -10px;
-        background-color: #CED8DD;
-        border-radius: 5px 0 0 5px; }
-      #block-views-block-electrical-safety-resources-block-1 .slick-dots li:last-child:before,
-      #block-views-block-video-slider-block-1 .slick-dots li:last-child:before {
-        content: '';
-        position: absolute;
-        width: 10px;
-        height: 5px;
-        right: -10px;
-        background-color: #CED8DD;
-        border-radius: 0 5px 5px 0; }
-      #block-views-block-electrical-safety-resources-block-1 .slick-dots li button,
-      #block-views-block-video-slider-block-1 .slick-dots li button {
-        width: 30px; }
-        #block-views-block-electrical-safety-resources-block-1 .slick-dots li button:before,
-        #block-views-block-video-slider-block-1 .slick-dots li button:before {
-          content: '';
-          width: 30px;
-          height: 5px;
-          background-color: #CED8DD; }
-      #block-views-block-electrical-safety-resources-block-1 .slick-dots li.slick-active button:before,
-      #block-views-block-video-slider-block-1 .slick-dots li.slick-active button:before {
-        background-color: #46B3E6; }
-
-#block-views-block-electrical-safety-resources-block-1 {
-  padding-top: 5rem; }
-  #block-views-block-electrical-safety-resources-block-1 .slick-slide {
-    padding-right: 15px; }
-  #block-views-block-electrical-safety-resources-block-1 .media-link {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    height: 100%; }
-    #block-views-block-electrical-safety-resources-block-1 .media-link .media-name {
-      position: absolute;
-      z-index: 5;
-      top: calc(100% + 5px);
-      right: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      -webkit-transition: all .25s ease-in-out;
-      transition: all .25s ease-in-out;
-      background: rgba(255, 255, 255, 0.85);
-      padding: 2rem !important;
-      font-weight: 700;
-      font-size: 20px; }
-    #block-views-block-electrical-safety-resources-block-1 .media-link:hover .media-name {
-      top: 0; }
-
-#block-views-block-video-slider-block-1 {
-  padding-top: 5rem;
-  padding-bottom: 5rem; }
-
-.field--name-field-media-oembed-video {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%; }
-  .field--name-field-media-oembed-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-
-#block-bottomcalltoactionlinks {
-  margin-top: 5rem;
-  margin-bottom: 5rem; }
-
-.field--name-field-featured-image {
-  margin-bottom: 4rem; }
-  .field--name-field-featured-image img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover; }
-
-#block-eso-bootstrap-page-title {
-  margin: 3rem -15px;
-  color: #1E4486; }
-
-.node--type-govcms-standard-page.node--view-mode-full {
-  margin-bottom: 5rem;
-  margin-left: -30px;
-  margin-right: -30px; }
-
-.page-view-content-search .block-views-exposed-filter-blockcontent-search-page-1 {
-  margin-left: -15px;
-  margin-right: -15px; }
-  .page-view-content-search .block-views-exposed-filter-blockcontent-search-page-1 .container-inline {
-    width: 100%; }
-
-.pagination {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  margin-top: 3rem;
-  margin-bottom: 5rem; }
-  .pagination:after {
-    content: '';
-    display: block;
-    border-bottom: 4px solid #EAEFF2;
-    position: absolute;
-    bottom: -1rem;
-    width: 70%; }
-  .pagination .page-link {
-    border: none;
-    font-family: "montserratregular", sans-serif;
-    font-weight: 700;
-    font-size: 0.875rem;
-    position: relative; }
-    .pagination .page-link:hover {
-      background-color: transparent; }
-      .pagination .page-link:hover:after {
-        content: '';
-        display: block;
-        border-bottom: 4px solid #46B3E6;
-        position: absolute;
-        bottom: -1rem;
-        width: 70%;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-                transform: translateX(-50%); }
-  .pagination .page-item.active .page-link {
-    background-color: transparent;
-    color: #1E4486; }
-    .pagination .page-item.active .page-link:after {
-      content: '';
-      display: block;
-      border-bottom: 4px solid #46B3E6;
-      position: absolute;
-      bottom: -1rem;
-      width: 70%;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%); }
-
-.view-resources .view-content {
-  margin-left: -30px;
-  margin-right: -30px; }
-
-.view-resources .resources-wrapper a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .view-resources .resources-wrapper a img {
-    margin-right: 1rem; }
-  .view-resources .resources-wrapper a svg {
-    font-size: 22px;
-    margin-right: 0.5rem;
-    color: #46B3E6; }
-  .view-resources .resources-wrapper a:hover img {
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px); }
-  .view-resources .resources-wrapper a img:nth-child(2) {
-    display: none; }
-
-.text-formatted img {
-  max-width: 100%;
-  height: 100%; }
-
-.ui-accordion .ui-accordion-header {
-  border: 1px solid #EAEFF2; }
-  .ui-accordion .ui-accordion-header a {
-    font-weight: 700;
-    font-family: "Roboto", sans-serif; }
-  .ui-accordion .ui-accordion-header:hover, .ui-accordion .ui-accordion-header.ui-state-active {
-    background-color: #2E78BD; }
-    .ui-accordion .ui-accordion-header:hover a, .ui-accordion .ui-accordion-header.ui-state-active a {
-      color: #ffffff; }
-
-.field--name-field-transcript {
-  font-family: "Roboto", sans-serif; }
-  .field--name-field-transcript .field__label {
-    font-weight: 700;
-    margin-bottom: 1rem; }
-  .field--name-field-transcript .field__item p {
-    font-size: 0.875rem; }
-
-.nested-nav ul {
-  list-style: none;
+.nested-nav {
   padding-left: 0; }
-  .nested-nav ul li {
+  .nested-nav ul {
+    list-style: none;
     padding-left: 1rem; }
-    .nested-nav ul li:hover {
-      background-color: #CED8DD; }
-    .nested-nav ul li a {
-      display: inline-block;
-      padding: 0.5rem 1rem; }
-      .nested-nav ul li a.folder {
-        position: relative; }
-        .nested-nav ul li a.folder:before {
-          font-family: 'Font Awesome 5 Pro';
-          content: '\F105';
-          position: absolute;
-          left: 0;
-          -webkit-transition: all .35s;
-          transition: all .35s; }
-        .nested-nav ul li a.folder.active:before {
-          -webkit-transform: rotate(90deg);
-                  transform: rotate(90deg); }
+    .nested-nav ul li {
+      padding-left: 1rem; }
+      .nested-nav ul li:hover {
+        background-color: #CED8DD; }
+      .nested-nav ul li a {
+        display: inline-block;
+        padding: 0.5rem 1rem; }
+        .nested-nav ul li a.folder {
+          position: relative; }
+          .nested-nav ul li a.folder:before {
+            font-family: 'Font Awesome 5 Pro';
+            content: '\F105';
+            position: absolute;
+            left: 0;
+            -webkit-transition: all .35s;
+            transition: all .35s; }
+          .nested-nav ul li a.folder.active:before {
+            -webkit-transform: rotate(90deg);
+                    transform: rotate(90deg); }
 
 @media (max-width: 1460px) {
   .path-frontpage .field--name-field-components .banner-hero .field--name-field-slide-image img {
