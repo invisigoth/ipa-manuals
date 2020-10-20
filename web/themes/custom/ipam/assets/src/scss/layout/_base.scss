@@ -150,13 +150,13 @@ blockquote {
 }
 
 .btn-primary {
-  background-color: $colour-classic-blue;
+  background-color: $colour-classic-green;
   color: $white;
-  border-color: $colour-classic-blue;
+  border-color: $colour-classic-green;
 
   &:hover {
-    background-color: $colour-bright-blue;
-    border-color: $colour-bright-blue;
+    background-color: $white;
+    border-color: $colour-classic-green;
     color: $colour-black !important;
   }
 }
@@ -174,14 +174,14 @@ blockquote {
 }
 
 .btn-light {
-  background-color: $colour-light-blue;
-  color: $colour-classic-blue;
-  border-color: $colour-classic-blue;
+  background-color: $white;
+  color: $colour-theme;
+  border-color: $colour-classic-green;
 
   &:hover {
-    background-color: $white;
-    border-color: $colour-bright-blue;
-    color: $colour-black !important;
+    background-color: $colour-classic-green;
+    border-color: $colour-classic-green;
+    color: $white !important;
   }
 }
 

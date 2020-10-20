@@ -2413,31 +2413,33 @@ fieldset:disabled a.uikit-btn {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
               box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5); }
 
-.btn-light {
+.btn-light, form #edit-actions #edit-reset {
   color: #212529;
   background-color: #f8f9fa;
   border-color: #f8f9fa; }
-  .btn-light:hover {
+  .btn-light:hover, form #edit-actions #edit-reset:hover {
     color: #212529;
     background-color: #e2e6ea;
     border-color: #dae0e5; }
-  .btn-light:focus, .btn-light.focus {
+  .btn-light:focus, form #edit-actions #edit-reset:focus, .btn-light.focus, form #edit-actions .focus#edit-reset {
     color: #212529;
     background-color: #e2e6ea;
     border-color: #dae0e5;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
             box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5); }
-  .btn-light.disabled, .btn-light:disabled {
+  .btn-light.disabled, form #edit-actions .disabled#edit-reset, .btn-light:disabled, form #edit-actions #edit-reset:disabled {
     color: #212529;
     background-color: #f8f9fa;
     border-color: #f8f9fa; }
-  .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active,
-  .show > .btn-light.dropdown-toggle {
+  .btn-light:not(:disabled):not(.disabled):active, form #edit-actions #edit-reset:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, form #edit-actions #edit-reset:not(:disabled):not(.disabled).active,
+  .show > .btn-light.dropdown-toggle,
+  form #edit-actions .show > .dropdown-toggle#edit-reset {
     color: #212529;
     background-color: #dae0e5;
     border-color: #d3d9df; }
-    .btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-light.dropdown-toggle:focus {
+    .btn-light:not(:disabled):not(.disabled):active:focus, form #edit-actions #edit-reset:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, form #edit-actions #edit-reset:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-light.dropdown-toggle:focus,
+    form #edit-actions .show > .dropdown-toggle#edit-reset:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
               box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5); }
 
@@ -9376,13 +9378,18 @@ form .form-type-email label {
   font-size: 1rem;
   font-weight: 600; }
 
+form .form-control,
+form .custom-select {
+  border-color: #5cab8c !important;
+  outline-color: #5cab8c; }
+
 form .form-control:focus,
 form .custom-select:focus {
-  border-color: #145091 !important;
-  outline-color: #145091; }
+  border-color: #0d252c !important;
+  outline-color: #0d252c; }
 
 form h2 {
-  color: #2E78BD; }
+  color: #5cab8c; }
 
 form .form-control,
 form .custom-select {
@@ -9418,29 +9425,23 @@ form .field-required {
   color: #801A19;
   margin-left: .25rem; }
 
-form#views-exposed-form-content-search-page-1 .form-row {
+form #edit-actions {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin: 0; }
-  form#views-exposed-form-content-search-page-1 .form-row fieldset {
-    width: 75%;
-    padding: 0; }
-    form#views-exposed-form-content-search-page-1 .form-row fieldset label {
-      display: none; }
-    form#views-exposed-form-content-search-page-1 .form-row fieldset input {
-      border-radius: 4px 0 0 4px;
-      border: 2px solid #2E78BD; }
-  form#views-exposed-form-content-search-page-1 .form-row .form-actions {
-    width: 25%;
-    padding: 0; }
-  form#views-exposed-form-content-search-page-1 .form-row .form-control {
-    height: 55px; }
-    form#views-exposed-form-content-search-page-1 .form-row .form-control.btn, form#views-exposed-form-content-search-page-1 .form-row .form-control.uikit-btn {
-      border-radius: 0 4px 4px 0;
-      font-family: "montserratregular", sans-serif;
-      text-transform: uppercase; }
+  display: flex; }
+  form #edit-actions input {
+    padding: 0.375rem 3rem;
+    margin-right: 1rem; }
+
+form .form-row > fieldset {
+  position: relative;
+  width: 50%; }
+
+form .ui-datepicker-trigger {
+  width: 20px;
+  position: absolute;
+  right: 10px;
+  top: 40px; }
 
 div.loading {
   position: fixed;
@@ -9864,12 +9865,12 @@ blockquote {
   font-weight: 700; }
 
 .btn-primary, .uikit-btn {
-  background-color: #2E78BD;
+  background-color: #5cab8c;
   color: #ffffff;
-  border-color: #2E78BD; }
+  border-color: #5cab8c; }
   .btn-primary:hover, .uikit-btn:hover {
-    background-color: #46B3E6;
-    border-color: #46B3E6;
+    background-color: #ffffff;
+    border-color: #5cab8c;
     color: #231f20 !important; }
 
 .btn-secondary {
@@ -9881,14 +9882,14 @@ blockquote {
     border-color: #4B4A4C;
     color: #ffffff; }
 
-.btn-light {
-  background-color: #CED8DD;
-  color: #2E78BD;
-  border-color: #2E78BD; }
-  .btn-light:hover {
-    background-color: #ffffff;
-    border-color: #46B3E6;
-    color: #231f20 !important; }
+.btn-light, form #edit-actions #edit-reset {
+  background-color: #ffffff;
+  color: #0d252c;
+  border-color: #5cab8c; }
+  .btn-light:hover, form #edit-actions #edit-reset:hover {
+    background-color: #5cab8c;
+    border-color: #5cab8c;
+    color: #ffffff !important; }
 
 a.field-group-link {
   padding-bottom: 1rem;
@@ -10111,6 +10112,85 @@ a.external {
   .chapter-tile:hover {
     color: #ffffff !important;
     background-color: #71767b; }
+
+.view-patent-manual-of-practice-and-procedure {
+  margin-bottom: 5rem; }
+  .view-patent-manual-of-practice-and-procedure .view-filters,
+  .view-patent-manual-of-practice-and-procedure .view-footer {
+    margin-top: 3rem; }
+  .view-patent-manual-of-practice-and-procedure .view-header {
+    position: relative; }
+  .view-patent-manual-of-practice-and-procedure .help-link {
+    position: absolute;
+    right: 0;
+    top: -3rem; }
+  .view-patent-manual-of-practice-and-procedure .view-footer p {
+    font-size: 0.875rem; }
+
+table {
+  font-size: 1rem; }
+  table thead {
+    border-bottom: none; }
+    table thead tr {
+      border-bottom: none;
+      background-color: #5cab8c; }
+    table thead th {
+      border: none; }
+  table tr {
+    background: transparent; }
+    table tr th {
+      background: transparent;
+      color: #231f20;
+      padding: 1rem .5rem; }
+    table tr td {
+      border: none;
+      padding: 1rem .5rem; }
+
+.pagination {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 5rem; }
+  .pagination:after {
+    content: '';
+    display: block;
+    border-bottom: 4px solid #EAEFF2;
+    position: absolute;
+    bottom: -1rem;
+    width: 70%; }
+  .pagination .page-link {
+    border: none;
+    font-family: "montserratregular", sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    position: relative; }
+    .pagination .page-link:hover {
+      background-color: transparent; }
+      .pagination .page-link:hover:after {
+        content: '';
+        display: block;
+        border-bottom: 4px solid #46B3E6;
+        position: absolute;
+        bottom: -1rem;
+        width: 70%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); }
+  .pagination .page-item.active .page-link {
+    background-color: transparent;
+    color: #1E4486; }
+    .pagination .page-item.active .page-link:after {
+      content: '';
+      display: block;
+      border-bottom: 4px solid #46B3E6;
+      position: absolute;
+      bottom: -1rem;
+      width: 70%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
 
 .nested-nav {
   padding-left: 0; }
