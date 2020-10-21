@@ -1,0 +1,21 @@
+uuid: 775134d3-e358-447c-bab8-762987a9f302
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zoneid
+    - node.type.manual
+  module:
+    - text
+id: node.manual.field_zoneid
+field_name: field_zoneid
+entity_type: node
+bundle: manual
+label: zoneid
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

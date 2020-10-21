@@ -5,8 +5,10 @@ dependencies:
   config:
     - field.field.node.manual.body
     - field.field.node.manual.field_amended_reason
+    - field.field.node.manual.field_controlid
     - field.field.node.manual.field_date_amended
     - field.field.node.manual.field_status
+    - field.field.node.manual.field_zoneid
     - node.type.manual
   module:
     - datetime
@@ -32,6 +34,13 @@ content:
     third_party_settings: {  }
     type: basic_string
     region: content
+  field_controlid:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_date_amended:
     weight: 104
     label: above
@@ -47,6 +56,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_default
+    region: content
+  field_zoneid:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
   links:
     weight: 100
