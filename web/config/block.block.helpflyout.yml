@@ -1,0 +1,30 @@
+uuid: e85e5a91-7628-4063-a2db-951965ec1534
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:47b68953-e9c3-45cb-a289-58590a4d2fbb'
+  module:
+    - block_content
+    - system
+  theme:
+    - ipam
+id: helpflyout
+theme: ipam
+region: flyout
+weight: 0
+provider: null
+plugin: 'block_content:47b68953-e9c3-45cb-a289-58590a4d2fbb'
+settings:
+  id: 'block_content:47b68953-e9c3-45cb-a289-58590a4d2fbb'
+  label: 'Help Flyout'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /patent-manual-practice-procedure
+    negate: false

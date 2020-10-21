@@ -8,8 +8,8 @@ _core:
   default_config_hash: gfXKmThltk6eewwrjAEaxVPxzPEVHV1UfNjjOUQ5A7g
 id: ipam_page_title
 theme: ipam
-region: header
-weight: -30
+region: content
+weight: -1
 provider: null
 plugin: page_title_block
 settings:
