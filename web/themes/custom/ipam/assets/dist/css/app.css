@@ -10268,130 +10268,25 @@ table {
             -webkit-transform: rotate(90deg);
                     transform: rotate(90deg); }
 
-@media (max-width: 1460px) {
-  .path-frontpage .field--name-field-components .banner-hero .field--name-field-slide-image img {
-    width: 60%; } }
-
-@media (max-width: 1199.98px) {
-  nav ul.nav {
-    padding-left: 15px;
-    padding-right: 15px; }
-    nav ul.nav > .nav-item a {
-      font-size: 18px;
-      padding: 1rem 0.5rem; }
-  .path-frontpage .field--name-field-components .banner-hero .field--name-field-slide-image img {
-    width: 70%; }
-  .path-frontpage .field--name-field-components .slick-prev, .path-frontpage .field--name-field-components .slick-next {
-    display: none !important; }
-  #block-views-block-electrical-safety-resources-block-1 .slick-prev,
-  #block-views-block-video-slider-block-1 .slick-prev {
-    left: -50px; }
-  #block-views-block-electrical-safety-resources-block-1 .slick-next,
-  #block-views-block-video-slider-block-1 .slick-next {
-    right: -50px; } }
-
 @media (max-width: 991.98px) {
-  #header .header-menu {
-    display: none; } }
-
-@media (max-width: 768px) {
-  .path-frontpage .field--name-field-components .slick-prev, .path-frontpage .field--name-field-components .slick-next {
-    display: none !important; }
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-title {
-    font-size: 2.25rem; }
-  .path-frontpage .field--name-field-components .banner-text .field--name-field-link a {
-    padding: 0.5rem 1rem;
-    font-size: 18px; }
-  #block-views-block-electrical-safety-resources-block-1 .slick-prev,
-  #block-views-block-video-slider-block-1 .slick-prev {
-    left: -28px; }
-  #block-views-block-electrical-safety-resources-block-1 .slick-next,
-  #block-views-block-video-slider-block-1 .slick-next {
-    right: -28px; } }
+  .view-patent-manual-of-practice-and-procedure .col-md-6 {
+    margin-bottom: 1rem; } }
 
 @media (max-width: 767.98px) {
-  .path-frontpage .field--name-field-components {
-    height: 400px; }
-    .path-frontpage .field--name-field-components .banner-hero .field--name-field-slide-image img {
-      width: 100%;
-      height: 400px; }
-    .path-frontpage .field--name-field-components .banner-hero .field--name-field-slide-image:after {
-      background-color: transparent; }
-    .path-frontpage .field--name-field-components .banner-text {
-      background: rgba(30, 68, 134, 0.5); }
-  .view-keeping-the-community-safe .view-content {
+  #header .site-logo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
-  .view-keeping-the-community-safe .views-row {
-    width: 100%; }
-  .view-keeping-the-community-safe .taxonomy-term--type-categories {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: auto;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-right: 15px;
-    margin-left: 15px;
-    padding: 1rem 0;
-    border-bottom: 1px solid #EAEFF2; }
-    .view-keeping-the-community-safe .taxonomy-term--type-categories .field--name-taxonomy-term-title {
-      margin-left: 2rem;
-      text-align: left; }
-  .field--name-field-call-links {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .field--name-field-call-links > .field__item {
-      width: 100%; }
-    .field--name-field-call-links .site-link-item {
-      display: -webkit-box !important;
-      display: -ms-flexbox !important;
-      display: flex !important;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      width: auto;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      margin-right: 15px;
-      margin-left: 15px;
-      padding: 1rem 0;
-      border-bottom: 1px solid #EAEFF2;
-      text-align: left; }
-      .field--name-field-call-links .site-link-item img {
-        width: 100px;
-        height: auto; }
-      .field--name-field-call-links .site-link-item .field--name-field-url {
-        margin-left: 2rem; } }
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline; }
+    #header .site-logo span {
+      margin-left: 0;
+      margin-top: 1rem; } }
 
 @media (max-width: 575.98px) {
   #header .site-logo img {
-    height: 60px; }
-  .path-frontpage .field--name-field-components .banner-text {
-    margin-left: 15px; }
-  #block-views-block-electrical-safety-resources-block-1 .slick-slide {
-    padding-right: 0; }
-  #block-views-block-electrical-safety-resources-block-1 .slick-prev,
-  #block-views-block-video-slider-block-1 .slick-prev {
-    left: 10px; }
-  #block-views-block-electrical-safety-resources-block-1 .slick-next,
-  #block-views-block-video-slider-block-1 .slick-next {
-    right: 10px; }
-  #footer .footer-top .footer-logo,
-  #footer .footer-top .social-share {
-    width: 50%; }
-  #footer .footer-logo img {
     height: 60px; } }
 
 

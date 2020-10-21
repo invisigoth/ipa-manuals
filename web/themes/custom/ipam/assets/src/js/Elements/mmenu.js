@@ -12,7 +12,7 @@ export default class Mmenu {
     constructor() {
 
       this.icon = $('#mobile-menu-button')
-      this.nav = $('#mobile-menu')
+      this.nav = $('.nested-nav')
       this.nav[0].removeAttribute('style')
       this.nav[0].removeAttribute('hidden')
 

@@ -19,8 +19,19 @@
   --mm-color-button: #{$white};
   font-family: $headings-font-family;
 }
+
+.mm-listview {
+  padding-left: 0 !important;
+}
+
 .mm-listitem {
   color: $white;
+  background-color: transparent !important;
+
+  li {
+    background-color: transparent !important;
+    width: 100%;
+  }
 
   a {
     font-weight: $weight-bold;

@@ -115,10 +115,10 @@
                             <section class="section">
                                 <a id="main-content" tabindex="-1"></a>
                                 <div class="row mt-5">
-                                    <div class="col-md-4 nested-nav">
+                                    <div class="col-lg-4 nested-nav">
                                         {% include  directory ~ '/templates/_includes/nested-nav-test.html' %}
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-lg-8">
                                         {{ page.content }}
                                     </div>
                                 </div>
@@ -143,4 +143,11 @@
 
         {% include  directory ~ '/templates/_includes/footer.html.twig' %}
 
+    {% if mobile_menu %}
+        {% spaceless %}
+            {{ mobile_menu }}
+        {% endspaceless %}
+    {% endif %}
+
 {% endblock %}
+

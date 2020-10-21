@@ -1,182 +1,39 @@
 @media (max-width: 1460px) {
-  .path-frontpage {
-    .field--name-field-components {
-      .banner-hero {
-        .field--name-field-slide-image {
-          img {
-            width: 60%;
-          }
-        }
-      }
-    }
-  }
+
 
 }
 
 @include media-breakpoint-down(lg) { //1200px
-  nav ul.nav {
-    padding-left: 15px;
-    padding-right: 15px;
 
-    > .nav-item a {
-      font-size: 18px;
-      padding: 1rem 0.5rem;
-    }
-  }
-
-  .path-frontpage {
-    .field--name-field-components {
-      .banner-hero {
-        .field--name-field-slide-image {
-          img {
-            width: 70%;
-          }
-        }
-      }
-
-      .slick-prev, .slick-next {
-        display: none !important;
-      }
-    }
-  }
-
-  #block-views-block-electrical-safety-resources-block-1,
-  #block-views-block-video-slider-block-1 {
-    .slick-prev {
-      left: -50px;
-    }
-
-    .slick-next {
-      right: -50px;
-    }
-  }
 
 }
 
 @include media-breakpoint-down(md) { //992px
-
-  #header .header-menu {
-    display: none;
+  .view-patent-manual-of-practice-and-procedure {
+    .col-md-6 {
+      margin-bottom: 1rem;
+    }
   }
+
 }
 
 @media (max-width: 768px) {
-  .path-frontpage {
-    .field--name-field-components {
-      .slick-prev, .slick-next {
-        display: none !important;
-      }
 
-      .banner-text {
-        .field--name-field-title {
-          font-size: $h2-font-size;
-        }
-
-        .field--name-field-link {
-          a {
-            padding: 0.5rem 1rem;
-            font-size: $med-font-size;
-          }
-        }
-      }
-
-    }
-  }
-  
-  
-  #block-views-block-electrical-safety-resources-block-1,
-  #block-views-block-video-slider-block-1 {
-    .slick-prev {
-      left: -28px;
-    }
-
-    .slick-next {
-      right: -28px;
-    }
-  }
 
 }
 
 @include media-breakpoint-down(sm) { //768px
-  .path-frontpage {
-    .field--name-field-components {
-      height: 400px;
-
-      .banner-hero {
-        .field--name-field-slide-image {
-          img {
-            width: 100%;
-            height: 400px;
-          }
-
-          &:after {
-            background-color: transparent;
-          }
-        }
-      }
-      
-      .banner-text {
-        background: rgba(30, 68, 134, 0.5);
-      }
-    }
-  }
-
-
-  .view-keeping-the-community-safe {
-    .view-content {
+  #header {
+    .site-logo {
       flex-direction: column;
-    }
+      align-items: baseline;
 
-    .views-row {
-      width: 100%;
-    }
-
-    .taxonomy-term--type-categories {
-      display: flex;
-      align-items: center;
-      width: auto;
-      flex-direction: row;
-      margin-right: 15px;
-      margin-left: 15px;
-      padding: 1rem 0;
-      border-bottom: 1px solid $colour-light-grey;
-
-      .field--name-taxonomy-term-title {
-        margin-left: 2rem;
-        text-align: left;
+      span {
+        margin-left: 0;
+        margin-top: 1rem;
       }
     }
   }
-
-  .field--name-field-call-links {
-    flex-direction: column;
-
-    >.field__item {
-      width: 100%;
-    }
-
-    .site-link-item {
-      display: flex !important;
-      align-items: center;
-      width: auto;
-      flex-direction: row;
-      margin-right: 15px;
-      margin-left: 15px;
-      padding: 1rem 0;
-      border-bottom: 1px solid $colour-light-grey;
-      text-align: left;
-
-      img {
-        width: 100px;
-        height: auto;
-      }
-
-      .field--name-field-url {
-        margin-left: 2rem;
-      }
-    }
-  }
-
 
 }
 
@@ -188,48 +45,6 @@
       }
     }
   }
-
-  .path-frontpage {
-    .field--name-field-components {
-      .banner-text {
-        margin-left: 15px;
-      }
-    }
-  }
-
-
-  #block-views-block-electrical-safety-resources-block-1 {
-    .slick-slide {
-      padding-right: 0;
-    }
-  }
-
-  #block-views-block-electrical-safety-resources-block-1,
-  #block-views-block-video-slider-block-1 {
-    .slick-prev {
-      left: 10px;
-    }
-
-    .slick-next {
-      right: 10px;
-    }
-  }
-
-  #footer {
-    .footer-top {
-      .footer-logo,
-      .social-share {
-        width: 50%;
-      }
-    }
-
-    .footer-logo {
-      img {
-        height: 60px;
-      }
-    }
-  }
-
 
 }
 

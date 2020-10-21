@@ -59,19 +59,22 @@ import Datepicker from '../../vendor/js/jquery.ui'
  * Mobile menu
  */
 
-// $(window).on('resize', () => {
-//   let width = document.documentElement.clientWidth;
-//   let done = document.body.classList.contains('mm-once');
-//   document.body.classList.add('mm-once')
-//
-//   import(
-//     './Elements/mmenu'
-//     ).then(module => {
-//     new module.default()
-//   })
-// });
-//
-// $(window).resize();
+$(window).on('resize', () => {
+  let width = document.documentElement.clientWidth;
+  let done = document.body.classList.contains('mm-once');
+  document.body.classList.add('mm-once')
+
+  if(width < 992) {
+    import(
+      './Elements/mmenu'
+      ).then(module => {
+      new module.default()
+    })
+  }
+});
+
+$(window).resize();
+
 $(document).ready(function() {
   $("a.folder").each(function () {
     $(this).parent().next().hide();
