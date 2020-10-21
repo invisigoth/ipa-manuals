@@ -1,0 +1,22 @@
+uuid: aa8dca6b-2f3e-49da-919c-8e78156fb645
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: manual
+label: manual
+type: 'canonical_entities:node'
+pattern: 'manuals/[node:title]'
+selection_criteria:
+  154e7cf2-f7f8-4305-9207-ff59a4d2a405:
+    id: node_type
+    bundles:
+      manual: manual
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 154e7cf2-f7f8-4305-9207-ff59a4d2a405
+selection_logic: and
+weight: -5
+relationships: {  }

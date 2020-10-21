@@ -1,0 +1,22 @@
+uuid: cfe60db1-2799-41dd-81a0-221b0614ffb4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: default
+label: default
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  a38b9918-fb27-46c1-8673-05ab1dba9a82:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a38b9918-fb27-46c1-8673-05ab1dba9a82
+selection_logic: and
+weight: -5
+relationships: {  }
