@@ -96,6 +96,10 @@ form {
   .form-row>fieldset {
     position: relative;
     width: 50%;
+
+    .form-select {
+      @extend .form-control;
+    }
   }
 
   .ui-datepicker-trigger {
