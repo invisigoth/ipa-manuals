@@ -1,4 +1,4 @@
-uuid: 025a17fd-7f23-43e1-9bfe-cd081db92c7a
+uuid: dc46cf90-0aca-4e1a-ab6b-cb3474e7876b
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   theme:
     - ipam
 _core:
-  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+  default_config_hash: iIy-YIc9d9s1isAtTIKWDBKd6kd2r6LxoYz_-hkLJco
 id: ipam_messages
 theme: ipam
 region: highlighted

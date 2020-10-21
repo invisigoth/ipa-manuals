@@ -1,15 +1,15 @@
-uuid: 6c18a5e9-7c4b-472c-8cba-37f5f99a23ac
+uuid: 3bfa2b88-c529-47b3-90e3-a63528f97fc0
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bootstrap_barrio
+    - claro
 _core:
-  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
-id: bootstrap_barrio_messages
-theme: bootstrap_barrio
+  default_config_hash: iIy-YIc9d9s1isAtTIKWDBKd6kd2r6LxoYz_-hkLJco
+id: claro_messages
+theme: claro
 region: highlighted
 weight: 0
 provider: null

@@ -1,4 +1,4 @@
-uuid: b1a97add-dc9f-4555-b713-813050a27245
+uuid: a2f197a7-f282-4a1d-b88f-b7bc189c7bbd
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   theme:
     - ipam
 _core:
-  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+  default_config_hash: b6mUaCq5YPapRUABXRHfNTT6fxWIj5lgf0Mg4HaRJ_I
 id: ipam_breadcrumbs
 theme: ipam
 region: breadcrumb

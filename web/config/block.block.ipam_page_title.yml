@@ -1,15 +1,15 @@
-uuid: ea83075d-4e34-4b9a-a7e2-ef8e7c8b138a
+uuid: e194c234-7951-40fe-8398-14fb912b8fc3
 langcode: en
 status: true
 dependencies:
   theme:
     - ipam
 _core:
-  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+  default_config_hash: gfXKmThltk6eewwrjAEaxVPxzPEVHV1UfNjjOUQ5A7g
 id: ipam_page_title
 theme: ipam
-region: content
-weight: -5
+region: header
+weight: -30
 provider: null
 plugin: page_title_block
 settings:
