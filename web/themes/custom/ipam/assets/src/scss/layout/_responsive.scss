@@ -9,8 +9,12 @@
 }
 
 @include media-breakpoint-down(md) { //992px
+  .views-element-container {
+    margin-left: -15px;
+  }
+
   .view-patent-manual-of-practice-and-procedure {
-    .col-md-6 {
+    .col-md-3 {
       margin-bottom: 1rem;
     }
   }
@@ -35,6 +39,10 @@
     }
   }
 
+  #mobile-menu-button .label {
+    display: none;
+  }
+
 }
 
 @include media-breakpoint-down(xs) { //576px
@@ -43,7 +51,15 @@
       img {
         height: 60px;
       }
+
+      span {
+        font-size: $med-font-size;
+      }
     }
+  }
+
+  form .form-row > fieldset {
+    width: 100%;
   }
 
 }
