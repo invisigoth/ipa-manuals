@@ -10287,12 +10287,16 @@ table {
       margin-left: 0;
       margin-top: 1rem; }
   #mobile-menu-button .label {
-    display: none; } }
+    display: none; }
+  .flyout-container {
+    top: 163px; } }
 
 @media (max-width: 575.98px) {
   #header .site-logo span {
     font-size: 18px; }
   form .form-row > fieldset {
+    width: 100%; }
+  .flyout-container {
     width: 100%; } }
 
 

@@ -43,6 +43,10 @@
     display: none;
   }
 
+  .flyout-container {
+    top: 163px;
+  }
+
 }
 
 @include media-breakpoint-down(xs) { //576px
@@ -55,6 +59,10 @@
   }
 
   form .form-row > fieldset {
+    width: 100%;
+  }
+
+  .flyout-container {
     width: 100%;
   }
 
