@@ -48,10 +48,6 @@
 @include media-breakpoint-down(xs) { //576px
   #header {
     .site-logo {
-      img {
-        height: 60px;
-      }
-
       span {
         font-size: $med-font-size;
       }

@@ -10290,8 +10290,6 @@ table {
     display: none; } }
 
 @media (max-width: 575.98px) {
-  #header .site-logo img {
-    height: 60px; }
   #header .site-logo span {
     font-size: 18px; }
   form .form-row > fieldset {
