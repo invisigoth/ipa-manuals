@@ -5,4 +5,4 @@ dependencies: {  }
 id: cus
 label: Custom
 locked: false
-pattern: 'M d Y'
+pattern: 'd M Y'
