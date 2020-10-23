@@ -2204,7 +2204,7 @@ textarea.form-control, form .form-row > fieldset textarea.form-select {
     .form-inline .custom-control-label {
       margin-bottom: 0; } }
 
-.btn, .uikit-btn {
+.btn, .uikit-btn, .node-readmore {
   display: inline-block;
   font-family: "montserratregular", sans-serif;
   font-weight: 400;
@@ -2226,53 +2226,56 @@ textarea.form-control, form .form-row > fieldset textarea.form-select {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
-    .btn, .uikit-btn {
+    .btn, .uikit-btn, .node-readmore {
       -webkit-transition: none;
       transition: none; } }
-  .btn:hover, .uikit-btn:hover {
+  .btn:hover, .uikit-btn:hover, .node-readmore:hover {
     color: #212529;
     text-decoration: none; }
-  .btn:focus, .uikit-btn:focus, .btn.focus, .focus.uikit-btn {
+  .btn:focus, .uikit-btn:focus, .node-readmore:focus, .btn.focus, .focus.uikit-btn, .focus.node-readmore {
     outline: 0;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
             box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
-  .btn.disabled, .disabled.uikit-btn, .btn:disabled, .uikit-btn:disabled {
+  .btn.disabled, .disabled.uikit-btn, .disabled.node-readmore, .btn:disabled, .uikit-btn:disabled, .node-readmore:disabled {
     opacity: 0.65; }
-  .btn:not(:disabled):not(.disabled), .uikit-btn:not(:disabled):not(.disabled) {
+  .btn:not(:disabled):not(.disabled), .uikit-btn:not(:disabled):not(.disabled), .node-readmore:not(:disabled):not(.disabled) {
     cursor: pointer; }
 
-a.btn.disabled, a.disabled.uikit-btn,
+a.btn.disabled, a.disabled.uikit-btn, a.disabled.node-readmore,
 fieldset:disabled a.btn,
-fieldset:disabled a.uikit-btn {
+fieldset:disabled a.uikit-btn,
+fieldset:disabled a.node-readmore {
   pointer-events: none; }
 
-.btn-primary, .uikit-btn {
+.btn-primary, .uikit-btn, .node-readmore {
   color: #ffffff;
   background-color: #007bff;
   border-color: #007bff; }
-  .btn-primary:hover, .uikit-btn:hover {
+  .btn-primary:hover, .uikit-btn:hover, .node-readmore:hover {
     color: #ffffff;
     background-color: #0069d9;
     border-color: #0062cc; }
-  .btn-primary:focus, .uikit-btn:focus, .btn-primary.focus, .focus.uikit-btn {
+  .btn-primary:focus, .uikit-btn:focus, .node-readmore:focus, .btn-primary.focus, .focus.uikit-btn, .focus.node-readmore {
     color: #ffffff;
     background-color: #0069d9;
     border-color: #0062cc;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
             box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
-  .btn-primary.disabled, .disabled.uikit-btn, .btn-primary:disabled, .uikit-btn:disabled {
+  .btn-primary.disabled, .disabled.uikit-btn, .disabled.node-readmore, .btn-primary:disabled, .uikit-btn:disabled, .node-readmore:disabled {
     color: #ffffff;
     background-color: #007bff;
     border-color: #007bff; }
-  .btn-primary:not(:disabled):not(.disabled):active, .uikit-btn:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .uikit-btn:not(:disabled):not(.disabled).active,
+  .btn-primary:not(:disabled):not(.disabled):active, .uikit-btn:not(:disabled):not(.disabled):active, .node-readmore:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .uikit-btn:not(:disabled):not(.disabled).active, .node-readmore:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle,
-  .show > .dropdown-toggle.uikit-btn {
+  .show > .dropdown-toggle.uikit-btn,
+  .show > .dropdown-toggle.node-readmore {
     color: #ffffff;
     background-color: #0062cc;
     border-color: #005cbf; }
-    .btn-primary:not(:disabled):not(.disabled):active:focus, .uikit-btn:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .uikit-btn:not(:disabled):not(.disabled).active:focus,
+    .btn-primary:not(:disabled):not(.disabled):active:focus, .uikit-btn:not(:disabled):not(.disabled):active:focus, .node-readmore:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .uikit-btn:not(:disabled):not(.disabled).active:focus, .node-readmore:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary.dropdown-toggle:focus,
-    .show > .dropdown-toggle.uikit-btn:focus {
+    .show > .dropdown-toggle.uikit-btn:focus,
+    .show > .dropdown-toggle.node-readmore:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
               box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
 
@@ -2671,13 +2674,13 @@ fieldset:disabled a.uikit-btn {
     color: #6c757d;
     pointer-events: none; }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .uikit-btn {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .uikit-btn, .btn-group-lg > .node-readmore {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .uikit-btn {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .uikit-btn, .btn-group-sm > .node-readmore {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -2927,24 +2930,29 @@ input[type="button"].btn-block {
   display: -ms-inline-flexbox;
   display: inline-flex;
   vertical-align: middle; }
-  .btn-group > .btn, .btn-group > .uikit-btn,
+  .btn-group > .btn, .btn-group > .uikit-btn, .btn-group > .node-readmore,
   .btn-group-vertical > .btn,
-  .btn-group-vertical > .uikit-btn {
+  .btn-group-vertical > .uikit-btn,
+  .btn-group-vertical > .node-readmore {
     position: relative;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto; }
-    .btn-group > .btn:hover, .btn-group > .uikit-btn:hover,
+    .btn-group > .btn:hover, .btn-group > .uikit-btn:hover, .btn-group > .node-readmore:hover,
     .btn-group-vertical > .btn:hover,
-    .btn-group-vertical > .uikit-btn:hover {
+    .btn-group-vertical > .uikit-btn:hover,
+    .btn-group-vertical > .node-readmore:hover {
       z-index: 1; }
-    .btn-group > .btn:focus, .btn-group > .uikit-btn:focus, .btn-group > .btn:active, .btn-group > .uikit-btn:active, .btn-group > .btn.active, .btn-group > .active.uikit-btn,
+    .btn-group > .btn:focus, .btn-group > .uikit-btn:focus, .btn-group > .node-readmore:focus, .btn-group > .btn:active, .btn-group > .uikit-btn:active, .btn-group > .node-readmore:active, .btn-group > .btn.active, .btn-group > .active.uikit-btn, .btn-group > .active.node-readmore,
     .btn-group-vertical > .btn:focus,
     .btn-group-vertical > .uikit-btn:focus,
+    .btn-group-vertical > .node-readmore:focus,
     .btn-group-vertical > .btn:active,
     .btn-group-vertical > .uikit-btn:active,
+    .btn-group-vertical > .node-readmore:active,
     .btn-group-vertical > .btn.active,
-    .btn-group-vertical > .active.uikit-btn {
+    .btn-group-vertical > .active.uikit-btn,
+    .btn-group-vertical > .active.node-readmore {
       z-index: 1; }
 
 .btn-toolbar {
@@ -2959,19 +2967,21 @@ input[type="button"].btn-block {
   .btn-toolbar .input-group {
     width: auto; }
 
-.btn-group > .btn:not(:first-child), .btn-group > .uikit-btn:not(:first-child),
+.btn-group > .btn:not(:first-child), .btn-group > .uikit-btn:not(:first-child), .btn-group > .node-readmore:not(:first-child),
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px; }
 
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .uikit-btn:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .uikit-btn:not(:last-child):not(.dropdown-toggle), .btn-group > .node-readmore:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn-group:not(:last-child) > .btn,
-.btn-group > .btn-group:not(:last-child) > .uikit-btn {
+.btn-group > .btn-group:not(:last-child) > .uikit-btn,
+.btn-group > .btn-group:not(:last-child) > .node-readmore {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.btn-group > .btn:not(:first-child), .btn-group > .uikit-btn:not(:first-child),
+.btn-group > .btn:not(:first-child), .btn-group > .uikit-btn:not(:first-child), .btn-group > .node-readmore:not(:first-child),
 .btn-group > .btn-group:not(:first-child) > .btn,
-.btn-group > .btn-group:not(:first-child) > .uikit-btn {
+.btn-group > .btn-group:not(:first-child) > .uikit-btn,
+.btn-group > .btn-group:not(:first-child) > .node-readmore {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
@@ -2985,11 +2995,11 @@ input[type="button"].btn-block {
   .dropleft .dropdown-toggle-split::before {
     margin-right: 0; }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .uikit-btn + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .uikit-btn + .dropdown-toggle-split, .btn-group-sm > .node-readmore + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem; }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .uikit-btn + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .uikit-btn + .dropdown-toggle-split, .btn-group-lg > .node-readmore + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
 
@@ -3007,33 +3017,40 @@ input[type="button"].btn-block {
   
   .btn-group-vertical > .btn,
   .btn-group-vertical > .uikit-btn,
+  .btn-group-vertical > .node-readmore,
   .btn-group-vertical > .btn-group {
     width: 100%; }
-  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .uikit-btn:not(:first-child),
+  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .uikit-btn:not(:first-child), .btn-group-vertical > .node-readmore:not(:first-child),
   .btn-group-vertical > .btn-group:not(:first-child) {
     margin-top: -1px; }
-  .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .uikit-btn:not(:last-child):not(.dropdown-toggle),
+  .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .uikit-btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .node-readmore:not(:last-child):not(.dropdown-toggle),
   .btn-group-vertical > .btn-group:not(:last-child) > .btn,
-  .btn-group-vertical > .btn-group:not(:last-child) > .uikit-btn {
+  .btn-group-vertical > .btn-group:not(:last-child) > .uikit-btn,
+  .btn-group-vertical > .btn-group:not(:last-child) > .node-readmore {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
-  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .uikit-btn:not(:first-child),
+  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .uikit-btn:not(:first-child), .btn-group-vertical > .node-readmore:not(:first-child),
   .btn-group-vertical > .btn-group:not(:first-child) > .btn,
-  .btn-group-vertical > .btn-group:not(:first-child) > .uikit-btn {
+  .btn-group-vertical > .btn-group:not(:first-child) > .uikit-btn,
+  .btn-group-vertical > .btn-group:not(:first-child) > .node-readmore {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
 
-.btn-group-toggle > .btn, .btn-group-toggle > .uikit-btn,
+.btn-group-toggle > .btn, .btn-group-toggle > .uikit-btn, .btn-group-toggle > .node-readmore,
 .btn-group-toggle > .btn-group > .btn,
-.btn-group-toggle > .btn-group > .uikit-btn {
+.btn-group-toggle > .btn-group > .uikit-btn,
+.btn-group-toggle > .btn-group > .node-readmore {
   margin-bottom: 0; }
-  .btn-group-toggle > .btn input[type="radio"], .btn-group-toggle > .uikit-btn input[type="radio"],
+  .btn-group-toggle > .btn input[type="radio"], .btn-group-toggle > .uikit-btn input[type="radio"], .btn-group-toggle > .node-readmore input[type="radio"],
   .btn-group-toggle > .btn input[type="checkbox"],
   .btn-group-toggle > .uikit-btn input[type="checkbox"],
+  .btn-group-toggle > .node-readmore input[type="checkbox"],
   .btn-group-toggle > .btn-group > .btn input[type="radio"],
   .btn-group-toggle > .btn-group > .uikit-btn input[type="radio"],
+  .btn-group-toggle > .btn-group > .node-readmore input[type="radio"],
   .btn-group-toggle > .btn-group > .btn input[type="checkbox"],
-  .btn-group-toggle > .btn-group > .uikit-btn input[type="checkbox"] {
+  .btn-group-toggle > .btn-group > .uikit-btn input[type="checkbox"],
+  .btn-group-toggle > .btn-group > .node-readmore input[type="checkbox"] {
     position: absolute;
     clip: rect(0, 0, 0, 0);
     pointer-events: none; }
@@ -3112,30 +3129,41 @@ input[type="button"].btn-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .input-group-prepend .btn, .input-group-prepend .uikit-btn,
+  .input-group-prepend .btn, .input-group-prepend .uikit-btn, .input-group-prepend .node-readmore,
   .input-group-append .btn,
-  .input-group-append .uikit-btn {
+  .input-group-append .uikit-btn,
+  .input-group-append .node-readmore {
     position: relative;
     z-index: 2; }
-    .input-group-prepend .btn:focus, .input-group-prepend .uikit-btn:focus,
+    .input-group-prepend .btn:focus, .input-group-prepend .uikit-btn:focus, .input-group-prepend .node-readmore:focus,
     .input-group-append .btn:focus,
-    .input-group-append .uikit-btn:focus {
+    .input-group-append .uikit-btn:focus,
+    .input-group-append .node-readmore:focus {
       z-index: 3; }
-  .input-group-prepend .btn + .btn, .input-group-prepend .uikit-btn + .btn, .input-group-prepend .btn + .uikit-btn, .input-group-prepend .uikit-btn + .uikit-btn,
+  .input-group-prepend .btn + .btn, .input-group-prepend .uikit-btn + .btn, .input-group-prepend .node-readmore + .btn, .input-group-prepend .btn + .uikit-btn, .input-group-prepend .uikit-btn + .uikit-btn, .input-group-prepend .node-readmore + .uikit-btn, .input-group-prepend .btn + .node-readmore, .input-group-prepend .uikit-btn + .node-readmore, .input-group-prepend .node-readmore + .node-readmore,
   .input-group-prepend .btn + .input-group-text,
   .input-group-prepend .uikit-btn + .input-group-text,
+  .input-group-prepend .node-readmore + .input-group-text,
   .input-group-prepend .input-group-text + .input-group-text,
   .input-group-prepend .input-group-text + .btn,
   .input-group-prepend .input-group-text + .uikit-btn,
+  .input-group-prepend .input-group-text + .node-readmore,
   .input-group-append .btn + .btn,
   .input-group-append .uikit-btn + .btn,
+  .input-group-append .node-readmore + .btn,
   .input-group-append .btn + .uikit-btn,
   .input-group-append .uikit-btn + .uikit-btn,
+  .input-group-append .node-readmore + .uikit-btn,
+  .input-group-append .btn + .node-readmore,
+  .input-group-append .uikit-btn + .node-readmore,
+  .input-group-append .node-readmore + .node-readmore,
   .input-group-append .btn + .input-group-text,
   .input-group-append .uikit-btn + .input-group-text,
+  .input-group-append .node-readmore + .input-group-text,
   .input-group-append .input-group-text + .input-group-text,
   .input-group-append .input-group-text + .btn,
-  .input-group-append .input-group-text + .uikit-btn {
+  .input-group-append .input-group-text + .uikit-btn,
+  .input-group-append .input-group-text + .node-readmore {
     margin-left: -1px; }
 
 .input-group-prepend {
@@ -3176,8 +3204,10 @@ input[type="button"].btn-block {
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-prepend > .uikit-btn,
+.input-group-lg > .input-group-prepend > .node-readmore,
 .input-group-lg > .input-group-append > .btn,
-.input-group-lg > .input-group-append > .uikit-btn {
+.input-group-lg > .input-group-append > .uikit-btn,
+.input-group-lg > .input-group-append > .node-readmore {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -3193,8 +3223,10 @@ input[type="button"].btn-block {
 .input-group-sm > .input-group-append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
 .input-group-sm > .input-group-prepend > .uikit-btn,
+.input-group-sm > .input-group-prepend > .node-readmore,
 .input-group-sm > .input-group-append > .btn,
-.input-group-sm > .input-group-append > .uikit-btn {
+.input-group-sm > .input-group-append > .uikit-btn,
+.input-group-sm > .input-group-append > .node-readmore {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -3204,24 +3236,28 @@ input[type="button"].btn-block {
 .input-group-sm > .custom-select {
   padding-right: 1.75rem; }
 
-.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .uikit-btn,
+.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .uikit-btn, .input-group > .input-group-prepend > .node-readmore,
 .input-group > .input-group-prepend > .input-group-text,
 .input-group > .input-group-append:not(:last-child) > .btn,
 .input-group > .input-group-append:not(:last-child) > .uikit-btn,
+.input-group > .input-group-append:not(:last-child) > .node-readmore,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
 .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .uikit-btn:not(:last-child):not(.dropdown-toggle),
+.input-group > .input-group-append:last-child > .node-readmore:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.input-group > .input-group-append > .btn, .input-group > .input-group-append > .uikit-btn,
+.input-group > .input-group-append > .btn, .input-group > .input-group-append > .uikit-btn, .input-group > .input-group-append > .node-readmore,
 .input-group > .input-group-append > .input-group-text,
 .input-group > .input-group-prepend:not(:first-child) > .btn,
 .input-group > .input-group-prepend:not(:first-child) > .uikit-btn,
+.input-group > .input-group-prepend:not(:first-child) > .node-readmore,
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
 .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
 .input-group > .input-group-prepend:first-child > .uikit-btn:not(:first-child),
+.input-group > .input-group-prepend:first-child > .node-readmore:not(:first-child),
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
@@ -4331,7 +4367,7 @@ input[type="button"].btn-block {
   .badge:empty {
     display: none; }
 
-.btn .badge, .uikit-btn .badge {
+.btn .badge, .uikit-btn .badge, .node-readmore .badge {
   position: relative;
   top: -1px; }
 
@@ -8539,7 +8575,7 @@ a.text-dark:hover, a.text-dark:focus {
     text-shadow: none !important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important; }
-  a:not(.btn):not(.uikit-btn) {
+  a:not(.btn):not(.uikit-btn):not(.node-readmore) {
     text-decoration: underline; }
   abbr[title]::after {
     content: " (" attr(title) ")"; }
@@ -9844,7 +9880,7 @@ p + h2,
 p + .h2 {
   margin-top: 2rem; }
 
-.font-label, .font-label-small, .btn, .uikit-btn {
+.font-label, .font-label-small, .btn, .uikit-btn, .node-readmore {
   font-family: "montserratregular", sans-serif;
   font-weight: 700; }
 
@@ -9870,16 +9906,16 @@ blockquote {
   font-size: 28px;
   line-height: 1.43; }
 
-.btn, .uikit-btn {
+.btn, .uikit-btn, .node-readmore {
   font-size: 1rem;
   border-radius: 10px;
   font-weight: 700; }
 
-.btn-primary, .uikit-btn {
+.btn-primary, .uikit-btn, .node-readmore {
   background-color: #5cab8c;
   color: #ffffff;
   border-color: #5cab8c; }
-  .btn-primary:hover, .uikit-btn:hover {
+  .btn-primary:hover, .uikit-btn:hover, .node-readmore:hover {
     background-color: #ffffff;
     border-color: #5cab8c;
     color: #231f20 !important; }
@@ -10240,6 +10276,17 @@ table {
       left: -1rem;
       font-weight: 300; }
 
+.view-frontpage .view-content {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.node-readmore a {
+  color: #ffffff !important; }
+  .node-readmore a:hover {
+    text-decoration: none;
+    color: #0d252c !important; }
+
 .nested-nav {
   padding-left: 0; }
   .nested-nav > ul {
@@ -10268,6 +10315,9 @@ table {
             -webkit-transform: rotate(90deg);
                     transform: rotate(90deg); }
 
+.path-frontpage .nested-nav {
+  padding-left: 15px; }
+
 @media (max-width: 991.98px) {
   .views-element-container {
     margin-left: -15px; }
@@ -10289,7 +10339,10 @@ table {
   #mobile-menu-button .label {
     display: none; }
   .flyout-container {
-    top: 163px; } }
+    top: 163px; }
+  .view-frontpage .view-content {
+    padding-left: 30px;
+    padding-right: 30px; } }
 
 @media (max-width: 575.98px) {
   #header .site-logo span {

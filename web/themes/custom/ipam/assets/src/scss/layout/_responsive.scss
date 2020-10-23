@@ -47,6 +47,13 @@
     top: 163px;
   }
 
+  .view-frontpage {
+    .view-content {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
 }
 
 @include media-breakpoint-down(xs) { //576px

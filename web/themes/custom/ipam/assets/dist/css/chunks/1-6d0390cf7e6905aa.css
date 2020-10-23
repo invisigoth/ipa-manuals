@@ -1,0 +1,48 @@
+/**
+ * Just some basic overrides to normal theme.
+ */
+.mm-menu {
+  --mm-color-background: #2E78BD;
+  --mm-color-background-emphasis: #2E78BD;
+  --mm-color-background-highlight: #231f20;
+  --mm-color-border: #2E78BD;
+  --mm-color-text: $colour-black;
+  --mm-color-text-dimmed: #231f20;
+  --mm-color-button: #ffffff;
+  font-family: "montserratregular", sans-serif; }
+
+.mm-listview {
+  padding-left: 0 !important; }
+
+.mm-listitem {
+  color: #ffffff;
+  background-color: transparent !important; }
+  .mm-listitem li {
+    background-color: transparent !important;
+    width: 100%; }
+  .mm-listitem a {
+    font-weight: 700; }
+
+.mm-listitem:after {
+  left: 0;
+  border-color: #ffffff !important; }
+
+.mm-navbar {
+  border-bottom: 2px solid #ffffff; }
+
+.mm-navbars_top {
+  height: 55px; }
+  .mm-navbars_top .mm-searchfield__input input {
+    background-color: #ffffff;
+    height: 37px; }
+
+.mm-searchfield__btn {
+  top: 5px; }
+
+.mm-navbar__title {
+  color: #ffffff !important;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+
+/*# sourceMappingURL=1-6d0390cf7e6905aa.css.map*/

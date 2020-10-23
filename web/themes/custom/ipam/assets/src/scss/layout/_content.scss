@@ -157,3 +157,26 @@ table {
     }
   }
 }
+
+.view-frontpage {
+  .view-content {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.node-readmore {
+  @extend .btn;
+  @extend .btn-primary;
+
+  a {
+    color: $white !important;
+
+    &:hover {
+      text-decoration: none;
+      color: $colour-theme !important;
+    }
+  }
+
+}

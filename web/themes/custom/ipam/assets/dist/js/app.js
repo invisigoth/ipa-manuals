@@ -48,7 +48,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "js/chunk/" + ({"vendors~mmenu":"vendors~mmenu"}[chunkId]||chunkId) + "-" + {"0":"2d13d1efcd3dd58887fd","1":"646d667b2d83e17a91d6","2":"5aae907d751eacf07dbc","3":"e5126df73304358ff30c","vendors~mmenu":"7dbc7373e6877ad53991"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "js/chunk/" + ({"vendors~mmenu":"vendors~mmenu"}[chunkId]||chunkId) + "-" + {"0":"2d13d1efcd3dd58887fd","1":"7036ca72ca79c907a68b","2":"5ff59aadfe64ab622a09","3":"e5126df73304358ff30c","vendors~mmenu":"7dbc7373e6877ad53991"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -82,11 +82,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"2":1,"3":1};
+/******/ 		var cssChunks = {"1":1,"3":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "css/chunks/" + ({"vendors~mmenu":"vendors~mmenu"}[chunkId]||chunkId) + "-" + "92bdc6a3615e552a" + ".css";
+/******/ 				var href = "css/chunks/" + ({"vendors~mmenu":"vendors~mmenu"}[chunkId]||chunkId) + "-" + "5fb9bcd937bfd8c8" + ".css";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
@@ -407,7 +407,7 @@ __webpack_require__.r(__webpack_exports__);
 window.$ = window.JQuery = jquery__WEBPACK_IMPORTED_MODULE_1___default.a;
 
 
-Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(1)]).then(__webpack_require__.bind(null, /*! ./Elements/fontawesome */ "./assets/src/js/Elements/fontawesome.js")).then(function (module) {
+Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2)]).then(__webpack_require__.bind(null, /*! ./Elements/fontawesome */ "./assets/src/js/Elements/fontawesome.js")).then(function (module) {
   new module.default();
 });
 new _Elements_slick__WEBPACK_IMPORTED_MODULE_2__["default"]();
@@ -461,7 +461,7 @@ jquery__WEBPACK_IMPORTED_MODULE_1___default()(window).on('resize', function () {
   document.body.classList.add('mm-once');
 
   if (width < 992) {
-    Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(2)]).then(__webpack_require__.bind(null, /*! ./Elements/mmenu */ "./assets/src/js/Elements/mmenu.js")).then(function (module) {
+    Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(1)]).then(__webpack_require__.bind(null, /*! ./Elements/mmenu */ "./assets/src/js/Elements/mmenu.js")).then(function (module) {
       new module.default();
     });
   }
