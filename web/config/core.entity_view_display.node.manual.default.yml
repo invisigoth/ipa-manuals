@@ -7,12 +7,12 @@ dependencies:
     - field.field.node.manual.field_amended_reason
     - field.field.node.manual.field_controlid
     - field.field.node.manual.field_date_amended
+    - field.field.node.manual.field_date_published
     - field.field.node.manual.field_status
     - field.field.node.manual.field_zoneid
     - node.type.manual
   module:
     - datetime
-    - options
     - text
     - user
 id: node.manual.default
@@ -23,26 +23,26 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
   field_amended_reason:
-    weight: 103
+    weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_controlid:
-    weight: 105
+    weight: 5
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_date_amended:
-    weight: 104
+    weight: 3
     label: above
     settings:
       format_type: medium
@@ -50,23 +50,26 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_status:
-    weight: 102
+  field_date_published:
+    weight: 2
     label: above
-    settings: {  }
+    settings:
+      format_type: medium
+      timezone_override: ''
     third_party_settings: {  }
-    type: list_default
+    type: datetime_default
     region: content
   field_zoneid:
-    weight: 106
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  field_status: true
