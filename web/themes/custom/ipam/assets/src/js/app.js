@@ -85,6 +85,25 @@ $(document).ready(function() {
     })
   });
 
+  var url = window.location.pathname;
+  $(".nested-nav a").each(function () {
+    if($(this).attr("href") == url) {
+      $(this).parent().addClass("focus");
+      $(this).parent().parent().show();
+      $(this).parent().parent().prev().children().addClass("active");
+      if($(this).parent().parent().parent().length != 0) {
+        $(this).parent().parent().parent().show();
+        $(this).parent().parent().parent().prev().children().addClass("active");
+      }
+      if($(this).parent().parent().parent().parent.length != 0) {
+        $(this).parent().parent().parent().parent().show();
+        $(this).parent().parent().parent().parent().prev().children().addClass("active");
+      }
+
+    }
+  });
+
+
   $(".help-link").click(function () {
     $(".flyout-container").show("slide", { direction: "left" }, 500);
   });

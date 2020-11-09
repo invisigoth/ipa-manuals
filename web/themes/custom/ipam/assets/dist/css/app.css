@@ -10296,8 +10296,10 @@ table {
     padding-left: 1rem; }
     .nested-nav ul li {
       padding-left: 1rem; }
-      .nested-nav ul li:hover {
+      .nested-nav ul li:hover, .nested-nav ul li:focus, .nested-nav ul li:active, .nested-nav ul li.focus {
         background-color: #deeef0; }
+      .nested-nav ul li.focus a {
+        font-weight: 700; }
       .nested-nav ul li a {
         display: inline-block;
         padding: 0.5rem 1rem;

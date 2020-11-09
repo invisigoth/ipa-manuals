@@ -12,8 +12,15 @@
     li {
       padding-left: 1rem;
 
-      &:hover {
+      &:hover, &:focus, &:active,
+      &.focus {
         background-color: $colour-bright-green;
+      }
+
+      &.focus {
+        a {
+          font-weight: $weight-bold;
+        }
       }
 
       a {
