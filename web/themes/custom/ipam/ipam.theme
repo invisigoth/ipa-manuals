@@ -51,10 +51,16 @@ function ipam_preprocess(&$variables, $hook) {
     $variables['#cache']['contexts'][] = 'url.path.is_front';
 }
 
-function ipam_preprocess_page(&$variables)
-{
-    // ESO mobile menu.
+function ipam_preprocess_html(&$variables) {
+  $path = \Drupal::requestStack()->getCurrentRequest()->getPathInfo();
+  if ($path != '/') {
+    $path = trim($path, '/');
+    $args = explode('/', $path);
+    $variables["ipam_class"] = 'manual-'.$args[0];
+  }
+}
 
+function ipam_preprocess_page(&$variables) {
     $block_manager = \Drupal::service('plugin.manager.block');
     $config = [];
     $header_block = $block_manager->createInstance('system_menu_block:main', $config);
