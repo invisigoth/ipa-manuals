@@ -8,6 +8,18 @@
 use Drupal\Core\Form\FormStateInterface;
 
 /**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function ipam_theme_suggestions_page_alter(&$suggestions, $variables) {
+  $path = \Drupal::requestStack()->getCurrentRequest()->getPathInfo();
+  if ($path != '/') {
+    $path = trim($path, '/');
+    $args = explode('/', $path);
+    $suggestions[] = 'page__' . $args[0];
+  }
+}
+
+/**
  * Implements hook_form_system_theme_settings_alter() for settings form.
  *
  * Replace Barrio setting options with subtheme ones.
