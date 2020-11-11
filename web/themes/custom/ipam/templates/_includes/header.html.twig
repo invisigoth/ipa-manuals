@@ -3,9 +3,9 @@
     {% block head %}
         <div class="container site-header site-header--hero">
             <div class="row align-items-center py-4">
-                <a href="/" class="col-lg-8 col-md-10 col-sm-12 site-logo">
+                <a href="{{ manual_root }}" class="col-lg-8 col-md-10 col-sm-12 site-logo">
                     <img src="{{ base_path ~ directory }}/logo.png" alt="IPA manuals logo">
-                    <span>Patent Manual of Practice and Procedure</span>
+                    <span>{{ manual_name }}</span>
                 </a>
                 <div class="col-md-4">
                     <form action="/search/node" class="input-group">
@@ -15,7 +15,7 @@
                 </div>
 
                 {# Button to clone in menu #}
-                {# Button to clone in menu #}
+
                 <button id="mobile-menu-button" class="hamburger hamburger--spin" type="button" aria-hidden="true" hidden aria-controls="mobile-menu">
                 <span class="mobile-wrapper">
                   <span class="label font-label">

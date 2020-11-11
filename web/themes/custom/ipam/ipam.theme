@@ -106,4 +106,33 @@ function ipam_preprocess_page(&$variables) {
 
     // Enable wrapper by default
     $variables['add_content_outer_wrap'] = TRUE;
+
+    // Set the name of the manual
+
+    $path = \Drupal::requestStack()->getCurrentRequest()->getPathInfo();
+    $variables['manual_name'] = 'Manual of Practice and Procedure';
+    $variables['manual_root'] = '/';
+    if ($path != '/') {
+      $path = trim($path, '/');
+      $args = explode('/', $path);
+      switch ($args[0]) {
+        case 'design':
+          $variables['manual_name'] = 'Designs Examiners\' Manual of Practice and Procedure';
+          $variables['manual_root'] = '/design';
+          break;
+        case 'trademark':
+          $variables['manual_name'] = 'Trade Marks Manual of Practice and Procedure';
+          $variables['manual_root'] = '/trademark';
+          break;
+        case 'pbr':
+          $variables['manual_name'] = 'Plant breeder\'s rights (PBR) Manual of Practice and Procedure';
+          $variables['manual_root'] = '/pbr';
+          break;
+        case 'patent':
+          $variables['manual_name'] = 'Patent Manual of Practice and Procedure';
+          $variables['manual_root'] = '/patent';
+          break;
+      }
+    }
+
 }
