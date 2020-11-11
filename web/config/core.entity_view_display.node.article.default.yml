@@ -4,12 +4,19 @@ status: true
 dependencies:
   config:
     - field.field.node.article.body
+    - field.field.node.article.field_amended_reason
+    - field.field.node.article.field_date_amended
+    - field.field.node.article.field_date_published
     - field.field.node.article.field_image
+    - field.field.node.article.field_manual
+    - field.field.node.article.field_status
     - field.field.node.article.field_tags
     - image.style.large
     - node.type.article
   module:
+    - datetime
     - image
+    - options
     - text
     - user
 _core:
@@ -26,6 +33,31 @@ content:
     settings: {  }
     third_party_settings: {  }
     label: hidden
+  field_amended_reason:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_date_amended:
+    weight: 11
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_date_published:
+    weight: 12
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
   field_image:
     type: image
     weight: 0
@@ -35,6 +67,21 @@ content:
       image_link: ''
     third_party_settings: {  }
     label: hidden
+  field_manual:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_status:
+    weight: 10
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
   field_tags:
     type: entity_reference_label
     weight: 4

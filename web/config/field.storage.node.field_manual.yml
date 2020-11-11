@@ -1,16 +1,18 @@
-uuid: 2461b746-ced3-4a0f-a62a-0bfbe34cdfd7
+uuid: ca5e4d59-8f58-4ac9-a85a-6db940dc8351
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - text
-id: node.field_zoneid
-field_name: field_zoneid
+id: node.field_manual
+field_name: field_manual
 entity_type: node
-type: text_long
-settings: {  }
-module: text
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

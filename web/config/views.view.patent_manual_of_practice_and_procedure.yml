@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_amended_reason
     - field.storage.node.field_date_amended
-    - node.type.manual
+    - node.type.article
   module:
     - datetime
     - node
@@ -506,7 +506,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            manual: manual
+            article: article
           group: 1
           exposed: false
           expose:
@@ -580,7 +580,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<div class=\"row\">\r\n\t<div class=\"col-md-3\">\r\n\t<a class=\"chapter-tile\" href=\"/\">\r\n\t\t<i class=\"fal fa-book-open\"></i>\r\n\t\t<span>Chapter 1</span>\r\n\t\t<span><strong>International</strong></span>\r\n\t</a>\r\n</div>\r\n<div class=\"col-md-3\">\r\n\t<a class=\"chapter-tile\" href=\"/\">\r\n\t\t<i class=\"fal fa-book-open\"></i>\r\n\t\t<span>Chapter 2</span>\r\n\t\t<span><strong>National</strong></span>\r\n\t</a>\r\n</div>\r\n<div class=\"col-md-3\">\r\n\t<a class=\"chapter-tile\" href=\"/\">\r\n\t\t<i class=\"fal fa-book-open\"></i>\r\n\t\t<span>Chapter 3</span>\r\n\t\t<span><strong>Oppositions, Disputes and Extensions</strong></span>\r\n\t</a>\r\n</div>\r\n<div class=\"col-md-3\">\r\n\t<a class=\"chapter-tile\" href=\"/\">\r\n\t\t<i class=\"fal fa-book-open\"></i>\r\n\t\t<span>Chapter 4</span>\r\n\t\t<span><strong>Search</strong></span>\r\n\t</a>\r\n</div>\r\n</div>\r\n<h1>Recent updates</h1>\r\n"
+            value: "<div class=\"row\">\r\n\t<div class=\"col-md-3\">\r\n\t<a class=\"chapter-tile text-center\" href=\"/\">\r\n\t\t<i class=\"fal fa-book-open\"></i>\r\n\t\t<span>Chapter 1</span>\r\n\t\t<span><strong>International</strong></span>\r\n\t</a>\r\n</div>\r\n<div class=\"col-md-3\">\r\n\t<a class=\"chapter-tile text-center\" href=\"/\">\r\n\t\t<i class=\"fal fa-book-open\"></i>\r\n\t\t<span>Chapter 2</span>\r\n\t\t<span><strong>National</strong></span>\r\n\t</a>\r\n</div>\r\n<div class=\"col-md-3\">\r\n\t<a class=\"chapter-tile text-center\" href=\"/\">\r\n\t\t<i class=\"fal fa-book-open\"></i>\r\n\t\t<span>Chapter 3</span>\r\n\t\t<span><strong>Oppositions, Disputes and Extensions</strong></span>\r\n\t</a>\r\n</div>\r\n<div class=\"col-md-3\">\r\n\t<a class=\"chapter-tile text-center\" href=\"/\">\r\n\t\t<i class=\"fal fa-book-open\"></i>\r\n\t\t<span>Chapter 4</span>\r\n\t\t<span><strong>Search</strong></span>\r\n\t</a>\r\n</div>\r\n</div>\r\n<h1>Recent updates</h1>\r\n"
             format: full_html
           plugin_id: text
       footer:
@@ -624,11 +624,1187 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Page
+    display_title: 'Design (Page)'
     position: 1
     display_options:
       display_extenders: {  }
-      path: patent-manual-practice-procedure
+      path: design
+      display_description: ''
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        keys:
+          id: keys
+          table: node_search_index
+          field: keys
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: optional
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: keys_op
+            label: Keywords
+            description: ''
+            use_operator: false
+            operator: keys_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: keys
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_keywords
+        field_status_value:
+          id: field_status_value
+          table: node__field_status
+          field: field_status_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_status_value_op
+            label: Status
+            description: ''
+            use_operator: false
+            operator: field_status_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_status_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        field_date_amended_value:
+          id: field_date_amended_value
+          table: node__field_date_amended
+          field: field_date_amended_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '>='
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: date
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_date_amended_value_op
+            label: 'Date From'
+            description: ''
+            use_operator: false
+            operator: field_date_amended_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_date_amended_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: datetime
+        field_date_amended_value_1:
+          id: field_date_amended_value_1
+          table: node__field_date_amended
+          field: field_date_amended_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '<='
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: date
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_date_amended_value_1_op
+            label: 'Date to'
+            description: ''
+            use_operator: false
+            operator: field_date_amended_value_1_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_date_amended_value_1
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: datetime
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            article: article
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_manual_value:
+          id: field_manual_value
+          table: node__field_manual
+          field: field_manual_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: design
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: string
+      defaults:
+        filters: false
+        filter_groups: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_amended_reason'
+        - 'config:field.storage.node.field_date_amended'
+  page_2:
+    display_plugin: page
+    id: page_2
+    display_title: 'Patent (Page)'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: patent
+      display_description: ''
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        keys:
+          id: keys
+          table: node_search_index
+          field: keys
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: optional
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: keys_op
+            label: Keywords
+            description: ''
+            use_operator: false
+            operator: keys_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: keys
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_keywords
+        field_status_value:
+          id: field_status_value
+          table: node__field_status
+          field: field_status_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_status_value_op
+            label: Status
+            description: ''
+            use_operator: false
+            operator: field_status_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_status_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        field_date_amended_value:
+          id: field_date_amended_value
+          table: node__field_date_amended
+          field: field_date_amended_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '>='
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: date
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_date_amended_value_op
+            label: 'Date From'
+            description: ''
+            use_operator: false
+            operator: field_date_amended_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_date_amended_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: datetime
+        field_date_amended_value_1:
+          id: field_date_amended_value_1
+          table: node__field_date_amended
+          field: field_date_amended_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '<='
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: date
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_date_amended_value_1_op
+            label: 'Date to'
+            description: ''
+            use_operator: false
+            operator: field_date_amended_value_1_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_date_amended_value_1
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: datetime
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            article: article
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_manual_value:
+          id: field_manual_value
+          table: node__field_manual
+          field: field_manual_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: patent
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: string
+      defaults:
+        filters: false
+        filter_groups: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_amended_reason'
+        - 'config:field.storage.node.field_date_amended'
+  page_3:
+    display_plugin: page
+    id: page_3
+    display_title: 'Trademark (Page)'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: trademark
+      display_description: ''
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        keys:
+          id: keys
+          table: node_search_index
+          field: keys
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: optional
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: keys_op
+            label: Keywords
+            description: ''
+            use_operator: false
+            operator: keys_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: keys
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_keywords
+        field_status_value:
+          id: field_status_value
+          table: node__field_status
+          field: field_status_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_status_value_op
+            label: Status
+            description: ''
+            use_operator: false
+            operator: field_status_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_status_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        field_date_amended_value:
+          id: field_date_amended_value
+          table: node__field_date_amended
+          field: field_date_amended_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '>='
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: date
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_date_amended_value_op
+            label: 'Date From'
+            description: ''
+            use_operator: false
+            operator: field_date_amended_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_date_amended_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: datetime
+        field_date_amended_value_1:
+          id: field_date_amended_value_1
+          table: node__field_date_amended
+          field: field_date_amended_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '<='
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: date
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_date_amended_value_1_op
+            label: 'Date to'
+            description: ''
+            use_operator: false
+            operator: field_date_amended_value_1_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_date_amended_value_1
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: datetime
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            article: article
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_manual_value:
+          id: field_manual_value
+          table: node__field_manual
+          field: field_manual_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: trademark
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: string
+      defaults:
+        filters: false
+        filter_groups: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_amended_reason'
+        - 'config:field.storage.node.field_date_amended'
+  page_4:
+    display_plugin: page
+    id: page_4
+    display_title: 'PBR (Page)'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: pbr
+      display_description: ''
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        keys:
+          id: keys
+          table: node_search_index
+          field: keys
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: optional
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: keys_op
+            label: Keywords
+            description: ''
+            use_operator: false
+            operator: keys_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: keys
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_keywords
+        field_status_value:
+          id: field_status_value
+          table: node__field_status
+          field: field_status_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_status_value_op
+            label: Status
+            description: ''
+            use_operator: false
+            operator: field_status_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_status_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        field_date_amended_value:
+          id: field_date_amended_value
+          table: node__field_date_amended
+          field: field_date_amended_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '>='
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: date
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_date_amended_value_op
+            label: 'Date From'
+            description: ''
+            use_operator: false
+            operator: field_date_amended_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_date_amended_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: datetime
+        field_date_amended_value_1:
+          id: field_date_amended_value_1
+          table: node__field_date_amended
+          field: field_date_amended_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '<='
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: date
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_date_amended_value_1_op
+            label: 'Date to'
+            description: ''
+            use_operator: false
+            operator: field_date_amended_value_1_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_date_amended_value_1
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: datetime
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            article: article
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_manual_value:
+          id: field_manual_value
+          table: node__field_manual
+          field: field_manual_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: pbr
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: string
+      defaults:
+        filters: false
+        filter_groups: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:

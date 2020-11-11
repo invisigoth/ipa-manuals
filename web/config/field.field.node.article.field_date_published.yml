@@ -1,24 +1,21 @@
-uuid: da44b38b-33d2-41cd-bee6-de7c4394ae9b
+uuid: dd2b9c21-0c55-41f8-985b-b91e385c69bd
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_date_published
-    - node.type.manual
+    - node.type.article
   module:
     - datetime
-id: node.manual.field_date_published
+id: node.article.field_date_published
 field_name: field_date_published
 entity_type: node
-bundle: manual
+bundle: article
 label: 'Date Published'
 description: ''
 required: false
-translatable: false
-default_value:
-  -
-    default_date_type: relative
-    default_date: now
+translatable: true
+default_value: {  }
 default_value_callback: ''
 settings: {  }
 field_type: datetime

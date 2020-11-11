@@ -1,18 +1,18 @@
-uuid: adc7cebd-45c7-439c-b5cf-0741114fc31c
+uuid: 1a81a714-8679-4684-9919-50ef757ff747
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_amended_reason
-    - node.type.manual
-id: node.manual.field_amended_reason
+    - node.type.article
+id: node.article.field_amended_reason
 field_name: field_amended_reason
 entity_type: node
-bundle: manual
+bundle: article
 label: 'Amended Reason'
-description: 'The reason this was amended.'
+description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
