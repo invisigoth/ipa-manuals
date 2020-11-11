@@ -10601,11 +10601,11 @@ body.manual-pbr .nested-nav ul li:hover {
 body.manual-pbr .view-patent-manual-of-practice-and-procedure .help-link {
   color: #946e0f; }
 
-body.manual-home #footer {
+body.manual-home #footer, body.path-frontpage #footer {
   margin-top: 3rem;
   padding-top: 2rem;
   border-top: 1px solid #c4c4c4; }
-  body.manual-home #footer .disclaimer {
+  body.manual-home #footer .disclaimer, body.path-frontpage #footer .disclaimer {
     display: none; }
 
 #page > #header {

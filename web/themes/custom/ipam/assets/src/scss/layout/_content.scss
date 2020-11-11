@@ -15,7 +15,8 @@ body {
     @include theme-colour($colour-pbr);
   }
 
-  &.manual-home {
+  &.manual-home,
+  &.path-frontpage {
     #footer {
       margin-top: 3rem;
       padding-top: 2rem;
