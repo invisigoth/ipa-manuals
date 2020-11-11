@@ -1,3 +1,27 @@
+body {
+  &.manual-design {
+    @include theme-colour($colour-design);
+  }
+
+  &.manual-patent {
+    @include theme-colour($colour-patent);
+  }
+
+  &.manual-trademark {
+    @include theme-colour($colour-trademark);
+  }
+
+  &.manual-pbr {
+    @include theme-colour($colour-pbr);
+  }
+}
+
+#page {
+  > #header {
+    display: none;
+  }
+}
+
 .views-element-container {
   margin-right: -15px;
 }
@@ -164,19 +188,4 @@ table {
     padding-left: 15px;
     padding-right: 15px;
   }
-}
-
-.node-readmore {
-  @extend .btn;
-  @extend .btn-primary;
-
-  a {
-    color: $white !important;
-
-    &:hover {
-      text-decoration: none;
-      color: $colour-theme !important;
-    }
-  }
-
 }

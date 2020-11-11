@@ -11,3 +11,117 @@
     }
   }
 }
+
+@mixin btn-primary($bg-color) {
+  background-color: $bg-color;
+  color: $black;
+  border-color: $bg-color;
+
+  &:hover {
+    background-color: $white;
+    border-color: $bg-color;
+    color: $black !important;
+  }
+
+  a {
+    color: $black !important;
+
+    &:hover {
+      text-decoration: none;
+      color: $black !important;
+    }
+  }
+}
+
+@mixin theme-colour($color) {
+  #header {
+    border-bottom: 6px solid $color;
+
+    form button svg {
+      color: $color;
+
+      &:hover {
+        color: darken($color, 20%);
+      }
+    }
+  }
+
+  .node-readmore {
+    @extend .btn;
+    @include btn-primary($color);
+  }
+
+  .text-formatted a, table a {
+    color: darken($color, 20%);
+  }
+
+  #footer {
+    .disclaimer {
+      background-color: $color;
+
+      &:after {
+        background-color: $color;
+      }
+    }
+
+    ul {
+      li {
+        a {
+          color: darken($color, 20%);
+        }
+      }
+    }
+  }
+
+  .view-patent-manual-of-practice-and-procedure {
+    .view-header h1 {
+      color: $color;
+    }
+  }
+
+  form {
+    .form-control {
+      border-color: darken($color, 20%) !important;
+      outline-color: darken($color, 20%);
+    }
+
+    .form-submit {
+      @include btn-primary($color);
+    }
+  }
+
+  table thead tr {
+    background-color: $color;
+
+    th {
+      color: $black;
+    }
+  }
+
+  .pagination {
+    .page-item.active {
+      .page-link {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .page-link {
+      color: darken($color, 20%);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+
+  .nested-nav ul li:hover {
+    background-color: lighten($color, 10%);
+  }
+
+  .view-patent-manual-of-practice-and-procedure .help-link {
+    color: darken($color, 20%);
+  }
+}

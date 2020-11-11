@@ -2204,7 +2204,7 @@ textarea.form-control, form .form-row > fieldset textarea.form-select {
     .form-inline .custom-control-label {
       margin-bottom: 0; } }
 
-.btn, .uikit-btn, .node-readmore {
+.btn, .uikit-btn, body.manual-design .node-readmore, body.manual-patent .node-readmore, body.manual-trademark .node-readmore, body.manual-pbr .node-readmore {
   display: inline-block;
   font-family: "montserratregular", sans-serif;
   font-weight: 400;
@@ -2226,56 +2226,61 @@ textarea.form-control, form .form-row > fieldset textarea.form-select {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
-    .btn, .uikit-btn, .node-readmore {
+    .btn, .uikit-btn, body.manual-design .node-readmore, body.manual-patent .node-readmore, body.manual-trademark .node-readmore, body.manual-pbr .node-readmore {
       -webkit-transition: none;
       transition: none; } }
-  .btn:hover, .uikit-btn:hover, .node-readmore:hover {
+  .btn:hover, .uikit-btn:hover, body.manual-design .node-readmore:hover, body.manual-patent .node-readmore:hover, body.manual-trademark .node-readmore:hover, body.manual-pbr .node-readmore:hover {
     color: #212529;
     text-decoration: none; }
-  .btn:focus, .uikit-btn:focus, .node-readmore:focus, .btn.focus, .focus.uikit-btn, .focus.node-readmore {
+  .btn:focus, .uikit-btn:focus, body.manual-design .node-readmore:focus, body.manual-patent .node-readmore:focus, body.manual-trademark .node-readmore:focus, body.manual-pbr .node-readmore:focus, .btn.focus, .focus.uikit-btn, body.manual-design .focus.node-readmore, body.manual-patent .focus.node-readmore, body.manual-trademark .focus.node-readmore, body.manual-pbr .focus.node-readmore {
     outline: 0;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
             box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
-  .btn.disabled, .disabled.uikit-btn, .disabled.node-readmore, .btn:disabled, .uikit-btn:disabled, .node-readmore:disabled {
+  .btn.disabled, .disabled.uikit-btn, body.manual-design .disabled.node-readmore, body.manual-patent .disabled.node-readmore, body.manual-trademark .disabled.node-readmore, body.manual-pbr .disabled.node-readmore, .btn:disabled, .uikit-btn:disabled, body.manual-design .node-readmore:disabled, body.manual-patent .node-readmore:disabled, body.manual-trademark .node-readmore:disabled, body.manual-pbr .node-readmore:disabled {
     opacity: 0.65; }
-  .btn:not(:disabled):not(.disabled), .uikit-btn:not(:disabled):not(.disabled), .node-readmore:not(:disabled):not(.disabled) {
+  .btn:not(:disabled):not(.disabled), .uikit-btn:not(:disabled):not(.disabled), body.manual-design .node-readmore:not(:disabled):not(.disabled), body.manual-patent .node-readmore:not(:disabled):not(.disabled), body.manual-trademark .node-readmore:not(:disabled):not(.disabled), body.manual-pbr .node-readmore:not(:disabled):not(.disabled) {
     cursor: pointer; }
 
-a.btn.disabled, a.disabled.uikit-btn, a.disabled.node-readmore,
+a.btn.disabled, a.disabled.uikit-btn, body.manual-design a.disabled.node-readmore, body.manual-patent a.disabled.node-readmore, body.manual-trademark a.disabled.node-readmore, body.manual-pbr a.disabled.node-readmore,
 fieldset:disabled a.btn,
 fieldset:disabled a.uikit-btn,
-fieldset:disabled a.node-readmore {
+fieldset:disabled body.manual-design a.node-readmore,
+body.manual-design fieldset:disabled a.node-readmore,
+fieldset:disabled body.manual-patent a.node-readmore,
+body.manual-patent fieldset:disabled a.node-readmore,
+fieldset:disabled body.manual-trademark a.node-readmore,
+body.manual-trademark fieldset:disabled a.node-readmore,
+fieldset:disabled body.manual-pbr a.node-readmore,
+body.manual-pbr fieldset:disabled a.node-readmore {
   pointer-events: none; }
 
-.btn-primary, .uikit-btn, .node-readmore {
+.btn-primary, .uikit-btn {
   color: #ffffff;
   background-color: #007bff;
   border-color: #007bff; }
-  .btn-primary:hover, .uikit-btn:hover, .node-readmore:hover {
+  .btn-primary:hover, .uikit-btn:hover {
     color: #ffffff;
     background-color: #0069d9;
     border-color: #0062cc; }
-  .btn-primary:focus, .uikit-btn:focus, .node-readmore:focus, .btn-primary.focus, .focus.uikit-btn, .focus.node-readmore {
+  .btn-primary:focus, .uikit-btn:focus, .btn-primary.focus, .focus.uikit-btn {
     color: #ffffff;
     background-color: #0069d9;
     border-color: #0062cc;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
             box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
-  .btn-primary.disabled, .disabled.uikit-btn, .disabled.node-readmore, .btn-primary:disabled, .uikit-btn:disabled, .node-readmore:disabled {
+  .btn-primary.disabled, .disabled.uikit-btn, .btn-primary:disabled, .uikit-btn:disabled {
     color: #ffffff;
     background-color: #007bff;
     border-color: #007bff; }
-  .btn-primary:not(:disabled):not(.disabled):active, .uikit-btn:not(:disabled):not(.disabled):active, .node-readmore:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .uikit-btn:not(:disabled):not(.disabled).active, .node-readmore:not(:disabled):not(.disabled).active,
+  .btn-primary:not(:disabled):not(.disabled):active, .uikit-btn:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .uikit-btn:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle,
-  .show > .dropdown-toggle.uikit-btn,
-  .show > .dropdown-toggle.node-readmore {
+  .show > .dropdown-toggle.uikit-btn {
     color: #ffffff;
     background-color: #0062cc;
     border-color: #005cbf; }
-    .btn-primary:not(:disabled):not(.disabled):active:focus, .uikit-btn:not(:disabled):not(.disabled):active:focus, .node-readmore:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .uikit-btn:not(:disabled):not(.disabled).active:focus, .node-readmore:not(:disabled):not(.disabled).active:focus,
+    .btn-primary:not(:disabled):not(.disabled):active:focus, .uikit-btn:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .uikit-btn:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary.dropdown-toggle:focus,
-    .show > .dropdown-toggle.uikit-btn:focus,
-    .show > .dropdown-toggle.node-readmore:focus {
+    .show > .dropdown-toggle.uikit-btn:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
               box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
 
@@ -2674,13 +2679,13 @@ fieldset:disabled a.node-readmore {
     color: #6c757d;
     pointer-events: none; }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .uikit-btn, .btn-group-lg > .node-readmore {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .uikit-btn, body.manual-design .btn-group-lg > .node-readmore, body.manual-patent .btn-group-lg > .node-readmore, body.manual-trademark .btn-group-lg > .node-readmore, body.manual-pbr .btn-group-lg > .node-readmore {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .uikit-btn, .btn-group-sm > .node-readmore {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .uikit-btn, body.manual-design .btn-group-sm > .node-readmore, body.manual-patent .btn-group-sm > .node-readmore, body.manual-trademark .btn-group-sm > .node-readmore, body.manual-pbr .btn-group-sm > .node-readmore {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -2930,29 +2935,44 @@ input[type="button"].btn-block {
   display: -ms-inline-flexbox;
   display: inline-flex;
   vertical-align: middle; }
-  .btn-group > .btn, .btn-group > .uikit-btn, .btn-group > .node-readmore,
+  .btn-group > .btn, .btn-group > .uikit-btn, body.manual-design .btn-group > .node-readmore, body.manual-patent .btn-group > .node-readmore, body.manual-trademark .btn-group > .node-readmore, body.manual-pbr .btn-group > .node-readmore,
   .btn-group-vertical > .btn,
   .btn-group-vertical > .uikit-btn,
-  .btn-group-vertical > .node-readmore {
+  body.manual-design .btn-group-vertical > .node-readmore,
+  body.manual-patent .btn-group-vertical > .node-readmore,
+  body.manual-trademark .btn-group-vertical > .node-readmore,
+  body.manual-pbr .btn-group-vertical > .node-readmore {
     position: relative;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto; }
-    .btn-group > .btn:hover, .btn-group > .uikit-btn:hover, .btn-group > .node-readmore:hover,
+    .btn-group > .btn:hover, .btn-group > .uikit-btn:hover, body.manual-design .btn-group > .node-readmore:hover, body.manual-patent .btn-group > .node-readmore:hover, body.manual-trademark .btn-group > .node-readmore:hover, body.manual-pbr .btn-group > .node-readmore:hover,
     .btn-group-vertical > .btn:hover,
     .btn-group-vertical > .uikit-btn:hover,
-    .btn-group-vertical > .node-readmore:hover {
+    body.manual-design .btn-group-vertical > .node-readmore:hover,
+    body.manual-patent .btn-group-vertical > .node-readmore:hover,
+    body.manual-trademark .btn-group-vertical > .node-readmore:hover,
+    body.manual-pbr .btn-group-vertical > .node-readmore:hover {
       z-index: 1; }
-    .btn-group > .btn:focus, .btn-group > .uikit-btn:focus, .btn-group > .node-readmore:focus, .btn-group > .btn:active, .btn-group > .uikit-btn:active, .btn-group > .node-readmore:active, .btn-group > .btn.active, .btn-group > .active.uikit-btn, .btn-group > .active.node-readmore,
+    .btn-group > .btn:focus, .btn-group > .uikit-btn:focus, body.manual-design .btn-group > .node-readmore:focus, body.manual-patent .btn-group > .node-readmore:focus, body.manual-trademark .btn-group > .node-readmore:focus, body.manual-pbr .btn-group > .node-readmore:focus, .btn-group > .btn:active, .btn-group > .uikit-btn:active, body.manual-design .btn-group > .node-readmore:active, body.manual-patent .btn-group > .node-readmore:active, body.manual-trademark .btn-group > .node-readmore:active, body.manual-pbr .btn-group > .node-readmore:active, .btn-group > .btn.active, .btn-group > .active.uikit-btn, body.manual-design .btn-group > .active.node-readmore, body.manual-patent .btn-group > .active.node-readmore, body.manual-trademark .btn-group > .active.node-readmore, body.manual-pbr .btn-group > .active.node-readmore,
     .btn-group-vertical > .btn:focus,
     .btn-group-vertical > .uikit-btn:focus,
-    .btn-group-vertical > .node-readmore:focus,
+    body.manual-design .btn-group-vertical > .node-readmore:focus,
+    body.manual-patent .btn-group-vertical > .node-readmore:focus,
+    body.manual-trademark .btn-group-vertical > .node-readmore:focus,
+    body.manual-pbr .btn-group-vertical > .node-readmore:focus,
     .btn-group-vertical > .btn:active,
     .btn-group-vertical > .uikit-btn:active,
-    .btn-group-vertical > .node-readmore:active,
+    body.manual-design .btn-group-vertical > .node-readmore:active,
+    body.manual-patent .btn-group-vertical > .node-readmore:active,
+    body.manual-trademark .btn-group-vertical > .node-readmore:active,
+    body.manual-pbr .btn-group-vertical > .node-readmore:active,
     .btn-group-vertical > .btn.active,
     .btn-group-vertical > .active.uikit-btn,
-    .btn-group-vertical > .active.node-readmore {
+    body.manual-design .btn-group-vertical > .active.node-readmore,
+    body.manual-patent .btn-group-vertical > .active.node-readmore,
+    body.manual-trademark .btn-group-vertical > .active.node-readmore,
+    body.manual-pbr .btn-group-vertical > .active.node-readmore {
       z-index: 1; }
 
 .btn-toolbar {
@@ -2967,21 +2987,27 @@ input[type="button"].btn-block {
   .btn-toolbar .input-group {
     width: auto; }
 
-.btn-group > .btn:not(:first-child), .btn-group > .uikit-btn:not(:first-child), .btn-group > .node-readmore:not(:first-child),
+.btn-group > .btn:not(:first-child), .btn-group > .uikit-btn:not(:first-child), body.manual-design .btn-group > .node-readmore:not(:first-child), body.manual-patent .btn-group > .node-readmore:not(:first-child), body.manual-trademark .btn-group > .node-readmore:not(:first-child), body.manual-pbr .btn-group > .node-readmore:not(:first-child),
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px; }
 
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .uikit-btn:not(:last-child):not(.dropdown-toggle), .btn-group > .node-readmore:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .uikit-btn:not(:last-child):not(.dropdown-toggle), body.manual-design .btn-group > .node-readmore:not(:last-child):not(.dropdown-toggle), body.manual-patent .btn-group > .node-readmore:not(:last-child):not(.dropdown-toggle), body.manual-trademark .btn-group > .node-readmore:not(:last-child):not(.dropdown-toggle), body.manual-pbr .btn-group > .node-readmore:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn-group:not(:last-child) > .btn,
 .btn-group > .btn-group:not(:last-child) > .uikit-btn,
-.btn-group > .btn-group:not(:last-child) > .node-readmore {
+body.manual-design .btn-group > .btn-group:not(:last-child) > .node-readmore,
+body.manual-patent .btn-group > .btn-group:not(:last-child) > .node-readmore,
+body.manual-trademark .btn-group > .btn-group:not(:last-child) > .node-readmore,
+body.manual-pbr .btn-group > .btn-group:not(:last-child) > .node-readmore {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.btn-group > .btn:not(:first-child), .btn-group > .uikit-btn:not(:first-child), .btn-group > .node-readmore:not(:first-child),
+.btn-group > .btn:not(:first-child), .btn-group > .uikit-btn:not(:first-child), body.manual-design .btn-group > .node-readmore:not(:first-child), body.manual-patent .btn-group > .node-readmore:not(:first-child), body.manual-trademark .btn-group > .node-readmore:not(:first-child), body.manual-pbr .btn-group > .node-readmore:not(:first-child),
 .btn-group > .btn-group:not(:first-child) > .btn,
 .btn-group > .btn-group:not(:first-child) > .uikit-btn,
-.btn-group > .btn-group:not(:first-child) > .node-readmore {
+body.manual-design .btn-group > .btn-group:not(:first-child) > .node-readmore,
+body.manual-patent .btn-group > .btn-group:not(:first-child) > .node-readmore,
+body.manual-trademark .btn-group > .btn-group:not(:first-child) > .node-readmore,
+body.manual-pbr .btn-group > .btn-group:not(:first-child) > .node-readmore {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
@@ -2995,11 +3021,11 @@ input[type="button"].btn-block {
   .dropleft .dropdown-toggle-split::before {
     margin-right: 0; }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .uikit-btn + .dropdown-toggle-split, .btn-group-sm > .node-readmore + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .uikit-btn + .dropdown-toggle-split, body.manual-design .btn-group-sm > .node-readmore + .dropdown-toggle-split, body.manual-patent .btn-group-sm > .node-readmore + .dropdown-toggle-split, body.manual-trademark .btn-group-sm > .node-readmore + .dropdown-toggle-split, body.manual-pbr .btn-group-sm > .node-readmore + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem; }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .uikit-btn + .dropdown-toggle-split, .btn-group-lg > .node-readmore + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .uikit-btn + .dropdown-toggle-split, body.manual-design .btn-group-lg > .node-readmore + .dropdown-toggle-split, body.manual-patent .btn-group-lg > .node-readmore + .dropdown-toggle-split, body.manual-trademark .btn-group-lg > .node-readmore + .dropdown-toggle-split, body.manual-pbr .btn-group-lg > .node-readmore + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
 
@@ -3017,40 +3043,61 @@ input[type="button"].btn-block {
   
   .btn-group-vertical > .btn,
   .btn-group-vertical > .uikit-btn,
-  .btn-group-vertical > .node-readmore,
+  body.manual-design .btn-group-vertical > .node-readmore,
+  body.manual-patent .btn-group-vertical > .node-readmore,
+  body.manual-trademark .btn-group-vertical > .node-readmore,
+  body.manual-pbr .btn-group-vertical > .node-readmore,
   .btn-group-vertical > .btn-group {
     width: 100%; }
-  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .uikit-btn:not(:first-child), .btn-group-vertical > .node-readmore:not(:first-child),
+  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .uikit-btn:not(:first-child), body.manual-design .btn-group-vertical > .node-readmore:not(:first-child), body.manual-patent .btn-group-vertical > .node-readmore:not(:first-child), body.manual-trademark .btn-group-vertical > .node-readmore:not(:first-child), body.manual-pbr .btn-group-vertical > .node-readmore:not(:first-child),
   .btn-group-vertical > .btn-group:not(:first-child) {
     margin-top: -1px; }
-  .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .uikit-btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .node-readmore:not(:last-child):not(.dropdown-toggle),
+  .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .uikit-btn:not(:last-child):not(.dropdown-toggle), body.manual-design .btn-group-vertical > .node-readmore:not(:last-child):not(.dropdown-toggle), body.manual-patent .btn-group-vertical > .node-readmore:not(:last-child):not(.dropdown-toggle), body.manual-trademark .btn-group-vertical > .node-readmore:not(:last-child):not(.dropdown-toggle), body.manual-pbr .btn-group-vertical > .node-readmore:not(:last-child):not(.dropdown-toggle),
   .btn-group-vertical > .btn-group:not(:last-child) > .btn,
   .btn-group-vertical > .btn-group:not(:last-child) > .uikit-btn,
-  .btn-group-vertical > .btn-group:not(:last-child) > .node-readmore {
+  body.manual-design .btn-group-vertical > .btn-group:not(:last-child) > .node-readmore,
+  body.manual-patent .btn-group-vertical > .btn-group:not(:last-child) > .node-readmore,
+  body.manual-trademark .btn-group-vertical > .btn-group:not(:last-child) > .node-readmore,
+  body.manual-pbr .btn-group-vertical > .btn-group:not(:last-child) > .node-readmore {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
-  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .uikit-btn:not(:first-child), .btn-group-vertical > .node-readmore:not(:first-child),
+  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .uikit-btn:not(:first-child), body.manual-design .btn-group-vertical > .node-readmore:not(:first-child), body.manual-patent .btn-group-vertical > .node-readmore:not(:first-child), body.manual-trademark .btn-group-vertical > .node-readmore:not(:first-child), body.manual-pbr .btn-group-vertical > .node-readmore:not(:first-child),
   .btn-group-vertical > .btn-group:not(:first-child) > .btn,
   .btn-group-vertical > .btn-group:not(:first-child) > .uikit-btn,
-  .btn-group-vertical > .btn-group:not(:first-child) > .node-readmore {
+  body.manual-design .btn-group-vertical > .btn-group:not(:first-child) > .node-readmore,
+  body.manual-patent .btn-group-vertical > .btn-group:not(:first-child) > .node-readmore,
+  body.manual-trademark .btn-group-vertical > .btn-group:not(:first-child) > .node-readmore,
+  body.manual-pbr .btn-group-vertical > .btn-group:not(:first-child) > .node-readmore {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
 
-.btn-group-toggle > .btn, .btn-group-toggle > .uikit-btn, .btn-group-toggle > .node-readmore,
+.btn-group-toggle > .btn, .btn-group-toggle > .uikit-btn, body.manual-design .btn-group-toggle > .node-readmore, body.manual-patent .btn-group-toggle > .node-readmore, body.manual-trademark .btn-group-toggle > .node-readmore, body.manual-pbr .btn-group-toggle > .node-readmore,
 .btn-group-toggle > .btn-group > .btn,
 .btn-group-toggle > .btn-group > .uikit-btn,
-.btn-group-toggle > .btn-group > .node-readmore {
+body.manual-design .btn-group-toggle > .btn-group > .node-readmore,
+body.manual-patent .btn-group-toggle > .btn-group > .node-readmore,
+body.manual-trademark .btn-group-toggle > .btn-group > .node-readmore,
+body.manual-pbr .btn-group-toggle > .btn-group > .node-readmore {
   margin-bottom: 0; }
-  .btn-group-toggle > .btn input[type="radio"], .btn-group-toggle > .uikit-btn input[type="radio"], .btn-group-toggle > .node-readmore input[type="radio"],
+  .btn-group-toggle > .btn input[type="radio"], .btn-group-toggle > .uikit-btn input[type="radio"], body.manual-design .btn-group-toggle > .node-readmore input[type="radio"], body.manual-patent .btn-group-toggle > .node-readmore input[type="radio"], body.manual-trademark .btn-group-toggle > .node-readmore input[type="radio"], body.manual-pbr .btn-group-toggle > .node-readmore input[type="radio"],
   .btn-group-toggle > .btn input[type="checkbox"],
   .btn-group-toggle > .uikit-btn input[type="checkbox"],
-  .btn-group-toggle > .node-readmore input[type="checkbox"],
+  body.manual-design .btn-group-toggle > .node-readmore input[type="checkbox"],
+  body.manual-patent .btn-group-toggle > .node-readmore input[type="checkbox"],
+  body.manual-trademark .btn-group-toggle > .node-readmore input[type="checkbox"],
+  body.manual-pbr .btn-group-toggle > .node-readmore input[type="checkbox"],
   .btn-group-toggle > .btn-group > .btn input[type="radio"],
   .btn-group-toggle > .btn-group > .uikit-btn input[type="radio"],
-  .btn-group-toggle > .btn-group > .node-readmore input[type="radio"],
+  body.manual-design .btn-group-toggle > .btn-group > .node-readmore input[type="radio"],
+  body.manual-patent .btn-group-toggle > .btn-group > .node-readmore input[type="radio"],
+  body.manual-trademark .btn-group-toggle > .btn-group > .node-readmore input[type="radio"],
+  body.manual-pbr .btn-group-toggle > .btn-group > .node-readmore input[type="radio"],
   .btn-group-toggle > .btn-group > .btn input[type="checkbox"],
   .btn-group-toggle > .btn-group > .uikit-btn input[type="checkbox"],
-  .btn-group-toggle > .btn-group > .node-readmore input[type="checkbox"] {
+  body.manual-design .btn-group-toggle > .btn-group > .node-readmore input[type="checkbox"],
+  body.manual-patent .btn-group-toggle > .btn-group > .node-readmore input[type="checkbox"],
+  body.manual-trademark .btn-group-toggle > .btn-group > .node-readmore input[type="checkbox"],
+  body.manual-pbr .btn-group-toggle > .btn-group > .node-readmore input[type="checkbox"] {
     position: absolute;
     clip: rect(0, 0, 0, 0);
     pointer-events: none; }
@@ -3129,41 +3176,118 @@ input[type="button"].btn-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .input-group-prepend .btn, .input-group-prepend .uikit-btn, .input-group-prepend .node-readmore,
+  .input-group-prepend .btn, .input-group-prepend .uikit-btn, .input-group-prepend body.manual-design .node-readmore, body.manual-design .input-group-prepend .node-readmore, .input-group-prepend body.manual-patent .node-readmore, body.manual-patent .input-group-prepend .node-readmore, .input-group-prepend body.manual-trademark .node-readmore, body.manual-trademark .input-group-prepend .node-readmore, .input-group-prepend body.manual-pbr .node-readmore, body.manual-pbr .input-group-prepend .node-readmore,
   .input-group-append .btn,
   .input-group-append .uikit-btn,
-  .input-group-append .node-readmore {
+  .input-group-append body.manual-design .node-readmore,
+  body.manual-design .input-group-append .node-readmore,
+  .input-group-append body.manual-patent .node-readmore,
+  body.manual-patent .input-group-append .node-readmore,
+  .input-group-append body.manual-trademark .node-readmore,
+  body.manual-trademark .input-group-append .node-readmore,
+  .input-group-append body.manual-pbr .node-readmore,
+  body.manual-pbr .input-group-append .node-readmore {
     position: relative;
     z-index: 2; }
-    .input-group-prepend .btn:focus, .input-group-prepend .uikit-btn:focus, .input-group-prepend .node-readmore:focus,
+    .input-group-prepend .btn:focus, .input-group-prepend .uikit-btn:focus, .input-group-prepend body.manual-design .node-readmore:focus, body.manual-design .input-group-prepend .node-readmore:focus, .input-group-prepend body.manual-patent .node-readmore:focus, body.manual-patent .input-group-prepend .node-readmore:focus, .input-group-prepend body.manual-trademark .node-readmore:focus, body.manual-trademark .input-group-prepend .node-readmore:focus, .input-group-prepend body.manual-pbr .node-readmore:focus, body.manual-pbr .input-group-prepend .node-readmore:focus,
     .input-group-append .btn:focus,
     .input-group-append .uikit-btn:focus,
-    .input-group-append .node-readmore:focus {
+    .input-group-append body.manual-design .node-readmore:focus,
+    body.manual-design .input-group-append .node-readmore:focus,
+    .input-group-append body.manual-patent .node-readmore:focus,
+    body.manual-patent .input-group-append .node-readmore:focus,
+    .input-group-append body.manual-trademark .node-readmore:focus,
+    body.manual-trademark .input-group-append .node-readmore:focus,
+    .input-group-append body.manual-pbr .node-readmore:focus,
+    body.manual-pbr .input-group-append .node-readmore:focus {
       z-index: 3; }
-  .input-group-prepend .btn + .btn, .input-group-prepend .uikit-btn + .btn, .input-group-prepend .node-readmore + .btn, .input-group-prepend .btn + .uikit-btn, .input-group-prepend .uikit-btn + .uikit-btn, .input-group-prepend .node-readmore + .uikit-btn, .input-group-prepend .btn + .node-readmore, .input-group-prepend .uikit-btn + .node-readmore, .input-group-prepend .node-readmore + .node-readmore,
+  .input-group-prepend .btn + .btn, .input-group-prepend .uikit-btn + .btn, .input-group-prepend body.manual-design .node-readmore + .btn, body.manual-design .input-group-prepend .node-readmore + .btn, .input-group-prepend body.manual-patent .node-readmore + .btn, body.manual-patent .input-group-prepend .node-readmore + .btn, .input-group-prepend body.manual-trademark .node-readmore + .btn, body.manual-trademark .input-group-prepend .node-readmore + .btn, .input-group-prepend body.manual-pbr .node-readmore + .btn, body.manual-pbr .input-group-prepend .node-readmore + .btn, .input-group-prepend .btn + .uikit-btn, .input-group-prepend .uikit-btn + .uikit-btn, .input-group-prepend body.manual-design .node-readmore + .uikit-btn, body.manual-design .input-group-prepend .node-readmore + .uikit-btn, .input-group-prepend body.manual-patent .node-readmore + .uikit-btn, body.manual-patent .input-group-prepend .node-readmore + .uikit-btn, .input-group-prepend body.manual-trademark .node-readmore + .uikit-btn, body.manual-trademark .input-group-prepend .node-readmore + .uikit-btn, .input-group-prepend body.manual-pbr .node-readmore + .uikit-btn, body.manual-pbr .input-group-prepend .node-readmore + .uikit-btn, .input-group-prepend body.manual-design .btn + .node-readmore, body.manual-design .input-group-prepend .btn + .node-readmore, .input-group-prepend body.manual-design .uikit-btn + .node-readmore, body.manual-design .input-group-prepend .uikit-btn + .node-readmore, .input-group-prepend body.manual-design .node-readmore + .node-readmore, body.manual-design .input-group-prepend .node-readmore + .node-readmore, .input-group-prepend body.manual-patent .btn + .node-readmore, body.manual-patent .input-group-prepend .btn + .node-readmore, .input-group-prepend body.manual-patent .uikit-btn + .node-readmore, body.manual-patent .input-group-prepend .uikit-btn + .node-readmore, .input-group-prepend body.manual-patent .node-readmore + .node-readmore, body.manual-patent .input-group-prepend .node-readmore + .node-readmore, .input-group-prepend body.manual-trademark .btn + .node-readmore, body.manual-trademark .input-group-prepend .btn + .node-readmore, .input-group-prepend body.manual-trademark .uikit-btn + .node-readmore, body.manual-trademark .input-group-prepend .uikit-btn + .node-readmore, .input-group-prepend body.manual-trademark .node-readmore + .node-readmore, body.manual-trademark .input-group-prepend .node-readmore + .node-readmore, .input-group-prepend body.manual-pbr .btn + .node-readmore, body.manual-pbr .input-group-prepend .btn + .node-readmore, .input-group-prepend body.manual-pbr .uikit-btn + .node-readmore, body.manual-pbr .input-group-prepend .uikit-btn + .node-readmore, .input-group-prepend body.manual-pbr .node-readmore + .node-readmore, body.manual-pbr .input-group-prepend .node-readmore + .node-readmore,
   .input-group-prepend .btn + .input-group-text,
   .input-group-prepend .uikit-btn + .input-group-text,
-  .input-group-prepend .node-readmore + .input-group-text,
+  .input-group-prepend body.manual-design .node-readmore + .input-group-text,
+  body.manual-design .input-group-prepend .node-readmore + .input-group-text,
+  .input-group-prepend body.manual-patent .node-readmore + .input-group-text,
+  body.manual-patent .input-group-prepend .node-readmore + .input-group-text,
+  .input-group-prepend body.manual-trademark .node-readmore + .input-group-text,
+  body.manual-trademark .input-group-prepend .node-readmore + .input-group-text,
+  .input-group-prepend body.manual-pbr .node-readmore + .input-group-text,
+  body.manual-pbr .input-group-prepend .node-readmore + .input-group-text,
   .input-group-prepend .input-group-text + .input-group-text,
   .input-group-prepend .input-group-text + .btn,
   .input-group-prepend .input-group-text + .uikit-btn,
-  .input-group-prepend .input-group-text + .node-readmore,
+  .input-group-prepend body.manual-design .input-group-text + .node-readmore,
+  body.manual-design .input-group-prepend .input-group-text + .node-readmore,
+  .input-group-prepend body.manual-patent .input-group-text + .node-readmore,
+  body.manual-patent .input-group-prepend .input-group-text + .node-readmore,
+  .input-group-prepend body.manual-trademark .input-group-text + .node-readmore,
+  body.manual-trademark .input-group-prepend .input-group-text + .node-readmore,
+  .input-group-prepend body.manual-pbr .input-group-text + .node-readmore,
+  body.manual-pbr .input-group-prepend .input-group-text + .node-readmore,
   .input-group-append .btn + .btn,
   .input-group-append .uikit-btn + .btn,
-  .input-group-append .node-readmore + .btn,
+  .input-group-append body.manual-design .node-readmore + .btn,
+  body.manual-design .input-group-append .node-readmore + .btn,
+  .input-group-append body.manual-patent .node-readmore + .btn,
+  body.manual-patent .input-group-append .node-readmore + .btn,
+  .input-group-append body.manual-trademark .node-readmore + .btn,
+  body.manual-trademark .input-group-append .node-readmore + .btn,
+  .input-group-append body.manual-pbr .node-readmore + .btn,
+  body.manual-pbr .input-group-append .node-readmore + .btn,
   .input-group-append .btn + .uikit-btn,
   .input-group-append .uikit-btn + .uikit-btn,
-  .input-group-append .node-readmore + .uikit-btn,
-  .input-group-append .btn + .node-readmore,
-  .input-group-append .uikit-btn + .node-readmore,
-  .input-group-append .node-readmore + .node-readmore,
+  .input-group-append body.manual-design .node-readmore + .uikit-btn,
+  body.manual-design .input-group-append .node-readmore + .uikit-btn,
+  .input-group-append body.manual-patent .node-readmore + .uikit-btn,
+  body.manual-patent .input-group-append .node-readmore + .uikit-btn,
+  .input-group-append body.manual-trademark .node-readmore + .uikit-btn,
+  body.manual-trademark .input-group-append .node-readmore + .uikit-btn,
+  .input-group-append body.manual-pbr .node-readmore + .uikit-btn,
+  body.manual-pbr .input-group-append .node-readmore + .uikit-btn,
+  .input-group-append body.manual-design .btn + .node-readmore,
+  body.manual-design .input-group-append .btn + .node-readmore,
+  .input-group-append body.manual-design .uikit-btn + .node-readmore,
+  body.manual-design .input-group-append .uikit-btn + .node-readmore,
+  .input-group-append body.manual-design .node-readmore + .node-readmore,
+  body.manual-design .input-group-append .node-readmore + .node-readmore,
+  .input-group-append body.manual-patent .btn + .node-readmore,
+  body.manual-patent .input-group-append .btn + .node-readmore,
+  .input-group-append body.manual-patent .uikit-btn + .node-readmore,
+  body.manual-patent .input-group-append .uikit-btn + .node-readmore,
+  .input-group-append body.manual-patent .node-readmore + .node-readmore,
+  body.manual-patent .input-group-append .node-readmore + .node-readmore,
+  .input-group-append body.manual-trademark .btn + .node-readmore,
+  body.manual-trademark .input-group-append .btn + .node-readmore,
+  .input-group-append body.manual-trademark .uikit-btn + .node-readmore,
+  body.manual-trademark .input-group-append .uikit-btn + .node-readmore,
+  .input-group-append body.manual-trademark .node-readmore + .node-readmore,
+  body.manual-trademark .input-group-append .node-readmore + .node-readmore,
+  .input-group-append body.manual-pbr .btn + .node-readmore,
+  body.manual-pbr .input-group-append .btn + .node-readmore,
+  .input-group-append body.manual-pbr .uikit-btn + .node-readmore,
+  body.manual-pbr .input-group-append .uikit-btn + .node-readmore,
+  .input-group-append body.manual-pbr .node-readmore + .node-readmore,
+  body.manual-pbr .input-group-append .node-readmore + .node-readmore,
   .input-group-append .btn + .input-group-text,
   .input-group-append .uikit-btn + .input-group-text,
-  .input-group-append .node-readmore + .input-group-text,
+  .input-group-append body.manual-design .node-readmore + .input-group-text,
+  body.manual-design .input-group-append .node-readmore + .input-group-text,
+  .input-group-append body.manual-patent .node-readmore + .input-group-text,
+  body.manual-patent .input-group-append .node-readmore + .input-group-text,
+  .input-group-append body.manual-trademark .node-readmore + .input-group-text,
+  body.manual-trademark .input-group-append .node-readmore + .input-group-text,
+  .input-group-append body.manual-pbr .node-readmore + .input-group-text,
+  body.manual-pbr .input-group-append .node-readmore + .input-group-text,
   .input-group-append .input-group-text + .input-group-text,
   .input-group-append .input-group-text + .btn,
   .input-group-append .input-group-text + .uikit-btn,
-  .input-group-append .input-group-text + .node-readmore {
+  .input-group-append body.manual-design .input-group-text + .node-readmore,
+  body.manual-design .input-group-append .input-group-text + .node-readmore,
+  .input-group-append body.manual-patent .input-group-text + .node-readmore,
+  body.manual-patent .input-group-append .input-group-text + .node-readmore,
+  .input-group-append body.manual-trademark .input-group-text + .node-readmore,
+  body.manual-trademark .input-group-append .input-group-text + .node-readmore,
+  .input-group-append body.manual-pbr .input-group-text + .node-readmore,
+  body.manual-pbr .input-group-append .input-group-text + .node-readmore {
     margin-left: -1px; }
 
 .input-group-prepend {
@@ -3204,10 +3328,16 @@ input[type="button"].btn-block {
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-prepend > .uikit-btn,
-.input-group-lg > .input-group-prepend > .node-readmore,
+body.manual-design .input-group-lg > .input-group-prepend > .node-readmore,
+body.manual-patent .input-group-lg > .input-group-prepend > .node-readmore,
+body.manual-trademark .input-group-lg > .input-group-prepend > .node-readmore,
+body.manual-pbr .input-group-lg > .input-group-prepend > .node-readmore,
 .input-group-lg > .input-group-append > .btn,
 .input-group-lg > .input-group-append > .uikit-btn,
-.input-group-lg > .input-group-append > .node-readmore {
+body.manual-design .input-group-lg > .input-group-append > .node-readmore,
+body.manual-patent .input-group-lg > .input-group-append > .node-readmore,
+body.manual-trademark .input-group-lg > .input-group-append > .node-readmore,
+body.manual-pbr .input-group-lg > .input-group-append > .node-readmore {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -3223,10 +3353,16 @@ input[type="button"].btn-block {
 .input-group-sm > .input-group-append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
 .input-group-sm > .input-group-prepend > .uikit-btn,
-.input-group-sm > .input-group-prepend > .node-readmore,
+body.manual-design .input-group-sm > .input-group-prepend > .node-readmore,
+body.manual-patent .input-group-sm > .input-group-prepend > .node-readmore,
+body.manual-trademark .input-group-sm > .input-group-prepend > .node-readmore,
+body.manual-pbr .input-group-sm > .input-group-prepend > .node-readmore,
 .input-group-sm > .input-group-append > .btn,
 .input-group-sm > .input-group-append > .uikit-btn,
-.input-group-sm > .input-group-append > .node-readmore {
+body.manual-design .input-group-sm > .input-group-append > .node-readmore,
+body.manual-patent .input-group-sm > .input-group-append > .node-readmore,
+body.manual-trademark .input-group-sm > .input-group-append > .node-readmore,
+body.manual-pbr .input-group-sm > .input-group-append > .node-readmore {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -3236,28 +3372,40 @@ input[type="button"].btn-block {
 .input-group-sm > .custom-select {
   padding-right: 1.75rem; }
 
-.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .uikit-btn, .input-group > .input-group-prepend > .node-readmore,
+.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .uikit-btn, body.manual-design .input-group > .input-group-prepend > .node-readmore, body.manual-patent .input-group > .input-group-prepend > .node-readmore, body.manual-trademark .input-group > .input-group-prepend > .node-readmore, body.manual-pbr .input-group > .input-group-prepend > .node-readmore,
 .input-group > .input-group-prepend > .input-group-text,
 .input-group > .input-group-append:not(:last-child) > .btn,
 .input-group > .input-group-append:not(:last-child) > .uikit-btn,
-.input-group > .input-group-append:not(:last-child) > .node-readmore,
+body.manual-design .input-group > .input-group-append:not(:last-child) > .node-readmore,
+body.manual-patent .input-group > .input-group-append:not(:last-child) > .node-readmore,
+body.manual-trademark .input-group > .input-group-append:not(:last-child) > .node-readmore,
+body.manual-pbr .input-group > .input-group-append:not(:last-child) > .node-readmore,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
 .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .uikit-btn:not(:last-child):not(.dropdown-toggle),
-.input-group > .input-group-append:last-child > .node-readmore:not(:last-child):not(.dropdown-toggle),
+body.manual-design .input-group > .input-group-append:last-child > .node-readmore:not(:last-child):not(.dropdown-toggle),
+body.manual-patent .input-group > .input-group-append:last-child > .node-readmore:not(:last-child):not(.dropdown-toggle),
+body.manual-trademark .input-group > .input-group-append:last-child > .node-readmore:not(:last-child):not(.dropdown-toggle),
+body.manual-pbr .input-group > .input-group-append:last-child > .node-readmore:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.input-group > .input-group-append > .btn, .input-group > .input-group-append > .uikit-btn, .input-group > .input-group-append > .node-readmore,
+.input-group > .input-group-append > .btn, .input-group > .input-group-append > .uikit-btn, body.manual-design .input-group > .input-group-append > .node-readmore, body.manual-patent .input-group > .input-group-append > .node-readmore, body.manual-trademark .input-group > .input-group-append > .node-readmore, body.manual-pbr .input-group > .input-group-append > .node-readmore,
 .input-group > .input-group-append > .input-group-text,
 .input-group > .input-group-prepend:not(:first-child) > .btn,
 .input-group > .input-group-prepend:not(:first-child) > .uikit-btn,
-.input-group > .input-group-prepend:not(:first-child) > .node-readmore,
+body.manual-design .input-group > .input-group-prepend:not(:first-child) > .node-readmore,
+body.manual-patent .input-group > .input-group-prepend:not(:first-child) > .node-readmore,
+body.manual-trademark .input-group > .input-group-prepend:not(:first-child) > .node-readmore,
+body.manual-pbr .input-group > .input-group-prepend:not(:first-child) > .node-readmore,
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
 .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
 .input-group > .input-group-prepend:first-child > .uikit-btn:not(:first-child),
-.input-group > .input-group-prepend:first-child > .node-readmore:not(:first-child),
+body.manual-design .input-group > .input-group-prepend:first-child > .node-readmore:not(:first-child),
+body.manual-patent .input-group > .input-group-prepend:first-child > .node-readmore:not(:first-child),
+body.manual-trademark .input-group > .input-group-prepend:first-child > .node-readmore:not(:first-child),
+body.manual-pbr .input-group > .input-group-prepend:first-child > .node-readmore:not(:first-child),
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
@@ -4367,7 +4515,7 @@ input[type="button"].btn-block {
   .badge:empty {
     display: none; }
 
-.btn .badge, .uikit-btn .badge, .node-readmore .badge {
+.btn .badge, .uikit-btn .badge, body.manual-design .node-readmore .badge, body.manual-patent .node-readmore .badge, body.manual-trademark .node-readmore .badge, body.manual-pbr .node-readmore .badge {
   position: relative;
   top: -1px; }
 
@@ -8575,7 +8723,7 @@ a.text-dark:hover, a.text-dark:focus {
     text-shadow: none !important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important; }
-  a:not(.btn):not(.uikit-btn):not(.node-readmore) {
+  a:not(.btn):not(.uikit-btn) {
     text-decoration: underline; }
   abbr[title]::after {
     content: " (" attr(title) ")"; }
@@ -9880,7 +10028,7 @@ p + h2,
 p + .h2 {
   margin-top: 2rem; }
 
-.font-label, .font-label-small, .btn, .uikit-btn, .node-readmore {
+.font-label, .font-label-small, .btn, .uikit-btn, body.manual-design .node-readmore, body.manual-patent .node-readmore, body.manual-trademark .node-readmore, body.manual-pbr .node-readmore {
   font-family: "montserratregular", sans-serif;
   font-weight: 700; }
 
@@ -9906,16 +10054,16 @@ blockquote {
   font-size: 28px;
   line-height: 1.43; }
 
-.btn, .uikit-btn, .node-readmore {
+.btn, .uikit-btn, body.manual-design .node-readmore, body.manual-patent .node-readmore, body.manual-trademark .node-readmore, body.manual-pbr .node-readmore {
   font-size: 1rem;
   border-radius: 10px;
   font-weight: 700; }
 
-.btn-primary, .uikit-btn, .node-readmore {
+.btn-primary, .uikit-btn {
   background-color: #5cab8c;
   color: #ffffff;
   border-color: #5cab8c; }
-  .btn-primary:hover, .uikit-btn:hover, .node-readmore:hover {
+  .btn-primary:hover, .uikit-btn:hover {
     background-color: #ffffff;
     border-color: #5cab8c;
     color: #231f20 !important; }
@@ -10104,17 +10252,15 @@ a.external {
   #footer .disclaimer {
     position: relative;
     padding: 2rem 15px;
-    background-color: #5cab8c;
     margin-bottom: 2rem; }
     #footer .disclaimer p {
-      color: #ffffff;
+      color: #231f20;
       margin-bottom: 0; }
     #footer .disclaimer:after {
       position: absolute;
       z-index: -1;
       width: 100vw;
       height: 100%;
-      background-color: #5cab8c;
       content: '';
       margin-left: -50vw;
       top: 0;
@@ -10165,6 +10311,297 @@ a.external {
   .chapter-tile:hover {
     color: #ffffff !important;
     background-color: #71767b; }
+
+body.manual-design #header {
+  border-bottom: 6px solid #55ABB6; }
+  body.manual-design #header form button svg {
+    color: #55ABB6; }
+    body.manual-design #header form button svg:hover {
+      color: #326c73; }
+
+body.manual-design .node-readmore {
+  background-color: #55ABB6;
+  color: #000;
+  border-color: #55ABB6; }
+  body.manual-design .node-readmore:hover {
+    background-color: #ffffff;
+    border-color: #55ABB6;
+    color: #000 !important; }
+  body.manual-design .node-readmore a {
+    color: #000 !important; }
+    body.manual-design .node-readmore a:hover {
+      text-decoration: none;
+      color: #000 !important; }
+
+body.manual-design .text-formatted a, body.manual-design table a {
+  color: #326c73; }
+
+body.manual-design #footer .disclaimer {
+  background-color: #55ABB6; }
+  body.manual-design #footer .disclaimer:after {
+    background-color: #55ABB6; }
+
+body.manual-design #footer ul li a {
+  color: #326c73; }
+
+body.manual-design .view-patent-manual-of-practice-and-procedure .view-header h1 {
+  color: #55ABB6; }
+
+body.manual-design form .form-control, body.manual-design form .form-row > fieldset .form-select {
+  border-color: #326c73 !important;
+  outline-color: #326c73; }
+
+body.manual-design form .form-submit {
+  background-color: #55ABB6;
+  color: #000;
+  border-color: #55ABB6; }
+  body.manual-design form .form-submit:hover {
+    background-color: #ffffff;
+    border-color: #55ABB6;
+    color: #000 !important; }
+  body.manual-design form .form-submit a {
+    color: #000 !important; }
+    body.manual-design form .form-submit a:hover {
+      text-decoration: none;
+      color: #000 !important; }
+
+body.manual-design table thead tr {
+  background-color: #55ABB6; }
+  body.manual-design table thead tr th {
+    color: #000; }
+
+body.manual-design .pagination .page-item.active .page-link:hover {
+  text-decoration: none; }
+
+body.manual-design .pagination .page-link {
+  color: #326c73; }
+  body.manual-design .pagination .page-link:hover {
+    text-decoration: underline; }
+
+body.manual-design .nested-nav ul li:hover {
+  background-color: #79bdc5; }
+
+body.manual-design .view-patent-manual-of-practice-and-procedure .help-link {
+  color: #326c73; }
+
+body.manual-patent #header {
+  border-bottom: 6px solid #D0522C; }
+  body.manual-patent #header form button svg {
+    color: #D0522C; }
+    body.manual-patent #header form button svg:hover {
+      color: #7c311a; }
+
+body.manual-patent .node-readmore {
+  background-color: #D0522C;
+  color: #000;
+  border-color: #D0522C; }
+  body.manual-patent .node-readmore:hover {
+    background-color: #ffffff;
+    border-color: #D0522C;
+    color: #000 !important; }
+  body.manual-patent .node-readmore a {
+    color: #000 !important; }
+    body.manual-patent .node-readmore a:hover {
+      text-decoration: none;
+      color: #000 !important; }
+
+body.manual-patent .text-formatted a, body.manual-patent table a {
+  color: #7c311a; }
+
+body.manual-patent #footer .disclaimer {
+  background-color: #D0522C; }
+  body.manual-patent #footer .disclaimer:after {
+    background-color: #D0522C; }
+
+body.manual-patent #footer ul li a {
+  color: #7c311a; }
+
+body.manual-patent .view-patent-manual-of-practice-and-procedure .view-header h1 {
+  color: #D0522C; }
+
+body.manual-patent form .form-control, body.manual-patent form .form-row > fieldset .form-select {
+  border-color: #7c311a !important;
+  outline-color: #7c311a; }
+
+body.manual-patent form .form-submit {
+  background-color: #D0522C;
+  color: #000;
+  border-color: #D0522C; }
+  body.manual-patent form .form-submit:hover {
+    background-color: #ffffff;
+    border-color: #D0522C;
+    color: #000 !important; }
+  body.manual-patent form .form-submit a {
+    color: #000 !important; }
+    body.manual-patent form .form-submit a:hover {
+      text-decoration: none;
+      color: #000 !important; }
+
+body.manual-patent table thead tr {
+  background-color: #D0522C; }
+  body.manual-patent table thead tr th {
+    color: #000; }
+
+body.manual-patent .pagination .page-item.active .page-link:hover {
+  text-decoration: none; }
+
+body.manual-patent .pagination .page-link {
+  color: #7c311a; }
+  body.manual-patent .pagination .page-link:hover {
+    text-decoration: underline; }
+
+body.manual-patent .nested-nav ul li:hover {
+  background-color: #db7354; }
+
+body.manual-patent .view-patent-manual-of-practice-and-procedure .help-link {
+  color: #7c311a; }
+
+body.manual-trademark #header {
+  border-bottom: 6px solid #90C78E; }
+  body.manual-trademark #header form button svg {
+    color: #90C78E; }
+    body.manual-trademark #header form button svg:hover {
+      color: #52a04f; }
+
+body.manual-trademark .node-readmore {
+  background-color: #90C78E;
+  color: #000;
+  border-color: #90C78E; }
+  body.manual-trademark .node-readmore:hover {
+    background-color: #ffffff;
+    border-color: #90C78E;
+    color: #000 !important; }
+  body.manual-trademark .node-readmore a {
+    color: #000 !important; }
+    body.manual-trademark .node-readmore a:hover {
+      text-decoration: none;
+      color: #000 !important; }
+
+body.manual-trademark .text-formatted a, body.manual-trademark table a {
+  color: #52a04f; }
+
+body.manual-trademark #footer .disclaimer {
+  background-color: #90C78E; }
+  body.manual-trademark #footer .disclaimer:after {
+    background-color: #90C78E; }
+
+body.manual-trademark #footer ul li a {
+  color: #52a04f; }
+
+body.manual-trademark .view-patent-manual-of-practice-and-procedure .view-header h1 {
+  color: #90C78E; }
+
+body.manual-trademark form .form-control, body.manual-trademark form .form-row > fieldset .form-select {
+  border-color: #52a04f !important;
+  outline-color: #52a04f; }
+
+body.manual-trademark form .form-submit {
+  background-color: #90C78E;
+  color: #000;
+  border-color: #90C78E; }
+  body.manual-trademark form .form-submit:hover {
+    background-color: #ffffff;
+    border-color: #90C78E;
+    color: #000 !important; }
+  body.manual-trademark form .form-submit a {
+    color: #000 !important; }
+    body.manual-trademark form .form-submit a:hover {
+      text-decoration: none;
+      color: #000 !important; }
+
+body.manual-trademark table thead tr {
+  background-color: #90C78E; }
+  body.manual-trademark table thead tr th {
+    color: #000; }
+
+body.manual-trademark .pagination .page-item.active .page-link:hover {
+  text-decoration: none; }
+
+body.manual-trademark .pagination .page-link {
+  color: #52a04f; }
+  body.manual-trademark .pagination .page-link:hover {
+    text-decoration: underline; }
+
+body.manual-trademark .nested-nav ul li:hover {
+  background-color: #b1d8b0; }
+
+body.manual-trademark .view-patent-manual-of-practice-and-procedure .help-link {
+  color: #52a04f; }
+
+body.manual-pbr #header {
+  border-bottom: 6px solid #E8B021; }
+  body.manual-pbr #header form button svg {
+    color: #E8B021; }
+    body.manual-pbr #header form button svg:hover {
+      color: #946e0f; }
+
+body.manual-pbr .node-readmore {
+  background-color: #E8B021;
+  color: #000;
+  border-color: #E8B021; }
+  body.manual-pbr .node-readmore:hover {
+    background-color: #ffffff;
+    border-color: #E8B021;
+    color: #000 !important; }
+  body.manual-pbr .node-readmore a {
+    color: #000 !important; }
+    body.manual-pbr .node-readmore a:hover {
+      text-decoration: none;
+      color: #000 !important; }
+
+body.manual-pbr .text-formatted a, body.manual-pbr table a {
+  color: #946e0f; }
+
+body.manual-pbr #footer .disclaimer {
+  background-color: #E8B021; }
+  body.manual-pbr #footer .disclaimer:after {
+    background-color: #E8B021; }
+
+body.manual-pbr #footer ul li a {
+  color: #946e0f; }
+
+body.manual-pbr .view-patent-manual-of-practice-and-procedure .view-header h1 {
+  color: #E8B021; }
+
+body.manual-pbr form .form-control, body.manual-pbr form .form-row > fieldset .form-select {
+  border-color: #946e0f !important;
+  outline-color: #946e0f; }
+
+body.manual-pbr form .form-submit {
+  background-color: #E8B021;
+  color: #000;
+  border-color: #E8B021; }
+  body.manual-pbr form .form-submit:hover {
+    background-color: #ffffff;
+    border-color: #E8B021;
+    color: #000 !important; }
+  body.manual-pbr form .form-submit a {
+    color: #000 !important; }
+    body.manual-pbr form .form-submit a:hover {
+      text-decoration: none;
+      color: #000 !important; }
+
+body.manual-pbr table thead tr {
+  background-color: #E8B021; }
+  body.manual-pbr table thead tr th {
+    color: #000; }
+
+body.manual-pbr .pagination .page-item.active .page-link:hover {
+  text-decoration: none; }
+
+body.manual-pbr .pagination .page-link {
+  color: #946e0f; }
+  body.manual-pbr .pagination .page-link:hover {
+    text-decoration: underline; }
+
+body.manual-pbr .nested-nav ul li:hover {
+  background-color: #edc04f; }
+
+body.manual-pbr .view-patent-manual-of-practice-and-procedure .help-link {
+  color: #946e0f; }
+
+#page > #header {
+  display: none; }
 
 .views-element-container {
   margin-right: -15px; }
@@ -10280,12 +10717,6 @@ table {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px; }
-
-.node-readmore a {
-  color: #ffffff !important; }
-  .node-readmore a:hover {
-    text-decoration: none;
-    color: #0d252c !important; }
 
 .nested-nav {
   padding-left: 0; }
