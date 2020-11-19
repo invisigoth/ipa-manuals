@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.field_amended_reason
     - field.field.node.article.field_date_amended
     - field.field.node.article.field_date_published
+    - field.field.node.article.field_guid
     - field.field.node.article.field_image
     - field.field.node.article.field_manual
     - field.field.node.article.field_status
@@ -60,6 +61,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_guid:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_image:
     type: image_image

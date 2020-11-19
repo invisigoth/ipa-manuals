@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.article.field_amended_reason
     - field.field.node.article.field_date_amended
     - field.field.node.article.field_date_published
+    - field.field.node.article.field_guid
     - field.field.node.article.field_image
     - field.field.node.article.field_manual
     - field.field.node.article.field_status
@@ -30,6 +31,7 @@ hidden:
   field_amended_reason: true
   field_date_amended: true
   field_date_published: true
+  field_guid: true
   field_image: true
   field_manual: true
   field_status: true
