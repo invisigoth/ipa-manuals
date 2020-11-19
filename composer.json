@@ -24,6 +24,7 @@
         "drupal/core-recommended": "^9",
         "drupal/pathauto": "^1.8",
         "drupal/restui": "^1.18",
+        "drupal/search_api": "^1.18",
         "drush/drush": "^10.3"
     },
     "require-dev": {
