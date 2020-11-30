@@ -108,7 +108,6 @@ function ipam_preprocess_page(&$variables) {
     $variables['add_content_outer_wrap'] = TRUE;
 
     // Set the name of the manual
-
     $path = \Drupal::requestStack()->getCurrentRequest()->getPathInfo();
     $variables['manual_name'] = 'Manual of Practice and Procedure';
     $variables['manual_root'] = '/';
@@ -132,6 +131,13 @@ function ipam_preprocess_page(&$variables) {
           $variables['manual_name'] = 'Patent Manual of Practice and Procedure';
           $variables['manual_root'] = '/patent';
           break;
+      }
+    }
+
+    if (($node = \Drupal::routeMatch()->getParameter('node')) && $node instanceof \Drupal\node\NodeInterface) {
+      $variables['guid'] = '';
+      if ($node->field_guid->value) {
+        $variables['guid'] = $node->field_guid->value;
       }
     }
 

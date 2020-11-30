@@ -1,0 +1,19 @@
+uuid: 0cb68a33-3425-4365-a39d-cd32b3de68c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_guid
+    - node.type.amended_reasons
+id: node.amended_reasons.field_guid
+field_name: field_guid
+entity_type: node
+bundle: amended_reasons
+label: GUID
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

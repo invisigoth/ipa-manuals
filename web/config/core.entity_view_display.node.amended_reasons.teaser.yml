@@ -1,0 +1,27 @@
+uuid: 8f139ff3-a679-47cd-b842-12f89392a358
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.amended_reasons.field_amended_reason
+    - field.field.node.amended_reasons.field_date_amended
+    - field.field.node.amended_reasons.field_guid
+    - node.type.amended_reasons
+  module:
+    - user
+id: node.amended_reasons.teaser
+targetEntityType: node
+bundle: amended_reasons
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_amended_reason: true
+  field_date_amended: true
+  field_guid: true
+  search_api_excerpt: true

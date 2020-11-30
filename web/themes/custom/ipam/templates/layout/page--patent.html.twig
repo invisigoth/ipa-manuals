@@ -118,7 +118,8 @@
                                         {% include  directory ~ '/templates/_includes/nav/menu_patent.html' %}
                                     </div>
                                     <div class="col-lg-8">
-                                        {{ page.content }}
+                                        {{ page.content }}          
+                                        {{ drupal_view('amended_reasons', 'block_1', guid) }}
                                     </div>
                                 </div>
 
@@ -149,4 +150,3 @@
     {% endif %}
 
 {% endblock %}
-

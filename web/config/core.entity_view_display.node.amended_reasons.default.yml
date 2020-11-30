@@ -1,0 +1,49 @@
+uuid: 1d6928c3-5a5a-480c-a468-cb435cf1ce42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.amended_reasons.field_amended_reason
+    - field.field.node.amended_reasons.field_date_amended
+    - field.field.node.amended_reasons.field_guid
+    - node.type.amended_reasons
+  module:
+    - datetime
+    - text
+    - user
+id: node.amended_reasons.default
+targetEntityType: node
+bundle: amended_reasons
+mode: default
+content:
+  field_amended_reason:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_date_amended:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_guid:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

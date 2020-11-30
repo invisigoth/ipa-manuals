@@ -1,0 +1,23 @@
+uuid: f02f7c5b-b41d-4628-9e16-6eebeda0ac81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_deleted
+    - node.type.article
+id: node.article.field_deleted
+field_name: field_deleted
+entity_type: node
+bundle: article
+label: Deleted
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

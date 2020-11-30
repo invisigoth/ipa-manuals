@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_date_amended
     - field.storage.node.field_date_published
+    - field.storage.node.field_deleted
     - field.storage.node.field_manual
     - search_api.server.database
     - core.entity_view_mode.node.full
@@ -50,6 +51,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_date_published
+  field_deleted:
+    label: Deleted
+    datasource_id: 'entity:node'
+    property_path: field_deleted
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_deleted
   field_manual:
     label: Manual
     datasource_id: 'entity:node'

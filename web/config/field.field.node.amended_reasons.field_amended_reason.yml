@@ -1,0 +1,21 @@
+uuid: 111c913e-3b1a-4f6d-a827-459b2e26e373
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_amended_reason
+    - node.type.amended_reasons
+  module:
+    - text
+id: node.amended_reasons.field_amended_reason
+field_name: field_amended_reason
+entity_type: node
+bundle: amended_reasons
+label: 'Amended Reason'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
