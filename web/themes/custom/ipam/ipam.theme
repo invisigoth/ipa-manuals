@@ -136,7 +136,7 @@ function ipam_preprocess_page(&$variables) {
 
     if (($node = \Drupal::routeMatch()->getParameter('node')) && $node instanceof \Drupal\node\NodeInterface) {
       $variables['guid'] = '';
-      if ($node->field_guid->value) {
+      if ($node->field_guid) {
         $variables['guid'] = $node->field_guid->value;
       }
     }
