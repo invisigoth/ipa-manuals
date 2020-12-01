@@ -111,5 +111,9 @@ $(document).ready(function() {
   $(".close-link").click(function () {
     $(".flyout-container").hide("slide", { direction: "right" }, 500);
   });
+
+  $("a:not([href^='#']):not([href^='/']):not([href^='node/'])").each(function () {
+    $(this).attr('target', '_blank');
+  })
 });
 

@@ -100,6 +100,10 @@ table {
   tr {
     background: transparent;
 
+    &:nth-child(even) {
+      background: $colour-light-grey;
+    }
+
     th {
       background: transparent;
       color: $colour-black;
@@ -109,6 +113,13 @@ table {
     td {
       border: none;
       padding: 1rem .5rem;
+    }
+
+    td, th {
+      padding: 5px 1%;
+      vertical-align: top;
+      text-align: left;
+      word-wrap: break-word;
     }
   }
 }

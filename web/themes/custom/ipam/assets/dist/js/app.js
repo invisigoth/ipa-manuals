@@ -48,7 +48,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "js/chunk/" + ({"vendors~mmenu":"vendors~mmenu"}[chunkId]||chunkId) + "-" + {"0":"2d13d1efcd3dd58887fd","1":"bf03d1e9a09ae0eb3b76","2":"5ff59aadfe64ab622a09","3":"41ecff32cf02df7a44c2","vendors~mmenu":"7dbc7373e6877ad53991"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "js/chunk/" + ({"vendors~mmenu":"vendors~mmenu"}[chunkId]||chunkId) + "-" + {"0":"2d13d1efcd3dd58887fd","1":"c457108f50355b5d8f43","2":"5ff59aadfe64ab622a09","3":"41ecff32cf02df7a44c2","vendors~mmenu":"7dbc7373e6877ad53991"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -86,7 +86,7 @@
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "css/chunks/" + ({"vendors~mmenu":"vendors~mmenu"}[chunkId]||chunkId) + "-" + "e7b266ee1aab7c5a" + ".css";
+/******/ 				var href = "css/chunks/" + ({"vendors~mmenu":"vendors~mmenu"}[chunkId]||chunkId) + "-" + "36c4e3fc013660c7" + ".css";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
@@ -503,6 +503,9 @@ jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).ready(function () {
     jquery__WEBPACK_IMPORTED_MODULE_1___default()(".flyout-container").hide("slide", {
       direction: "right"
     }, 500);
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()("a:not([href^='#']):not([href^='/']):not([href^='node/'])").each(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('target', '_blank');
   });
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "jquery"), __webpack_require__(/*! drupal */ "drupal")))

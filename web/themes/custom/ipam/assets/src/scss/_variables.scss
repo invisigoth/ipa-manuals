@@ -19,15 +19,15 @@ $colour-classic-green:                        #5cab8c;
 $colour-bright-green:                         #deeef0;
 
 $colour-light-grey:                           #EAEFF2;
-$colour-grey:                                 #c4c4c4;
+$colour-grey:                                 #E5E8EC;
 $colour-banner-shape:                         #424244;
 $colour-semi-grey:                            #71767b;
 $colour-dark-grey:                            #4B4A4C;
 
-$colour-design:                               #55ABB6;
-$colour-patent:                               #D0522C;
-$colour-trademark:                            #90C78E;
-$colour-pbr:                                  #E8B021;
+$colour-design:                               #84C98F;
+$colour-patent:                               #30AEB6;
+$colour-trademark:                            #DE4326;
+$colour-pbr:                                  #F1AC1E;
 
 // Fonts
 //
@@ -38,7 +38,7 @@ $font-family1:                                $font-family-base;
 $font-family2:                                $headings-font-family;
 $font-size-base:                              1rem; // Assumes the browser default, typically `16px`
 
-$h1-font-size:                                $font-size-base * 3; // 48px
+$h1-font-size:                                $font-size-base * 2.5; // 40px
 $h2-font-size:                                $font-size-base * 2.25; // 36px
 $h3-font-size:                                $font-size-base * 1.75; // 28px
 $h4-font-size:                                $font-size-base * 1.5; // 24px

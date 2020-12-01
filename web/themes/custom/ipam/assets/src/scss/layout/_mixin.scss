@@ -124,4 +124,31 @@
   .view-patent-manual-of-practice-and-procedure .help-link {
     color: darken($color, 20%);
   }
+
+  .emphasis3 {
+    padding: 1rem;
+    background-color: $color;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .emphasis2 {
+    padding: 1rem;
+    background-color: lighten($color, 20%);
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .emphasis1 {
+    padding: 1rem;
+    background-color: $colour-grey;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
 }
