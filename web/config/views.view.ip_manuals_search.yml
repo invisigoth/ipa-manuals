@@ -384,7 +384,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: search/design
+      path: design/search
       display_description: ''
     cache_metadata:
       max-age: -1
@@ -404,7 +404,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: search/trademark
+      path: trademark/search
       display_description: ''
       filters:
         search_api_fulltext:
@@ -558,7 +558,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: search/pbr
+      path: pbr/search
       display_description: ''
       filters:
         search_api_fulltext:
@@ -712,7 +712,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: search/patent
+      path: patent/search
       display_description: ''
       filters:
         search_api_fulltext:
