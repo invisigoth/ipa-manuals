@@ -1,0 +1,40 @@
+curl --include \
+  --request POST \
+  --header 'Content-type: application/hal+json' \
+  --header 'Authorization:Basic dXNlcjpwYXNzd29yZA==' \
+  'https://ipa-manuals.iconinc.com.au/node?_format=hal_json' \
+  --data-binary '{"_links":{"type":{"href":"https://ipa-manuals.iconinc.com.au/rest/type/node/amended_reasons"}},"title":[{"value":"8f4cdab1-cbc4-4c6c-befb-5befd1927677"}],"type":[{"target_id":"amended_reasons"}],"field_date_amended":[{"value":"2020-12-01"}],"field_guid":[{"value":"8f4cdab1-cbc4-4c6c-befb-5befd1927677"}],"field_amended_reason":[{"value":"some reasons blah blah blah"}]}'
+
+
+{
+   "_links":{
+      "type":{
+         "href":"https://ipa-manuals.iconinc.com.au/rest/type/node/amended_reasons"
+      }
+   },
+   "title":[
+      {
+         "value":"8f4cdab1-cbc4-4c6c-befb-5befd1927677"
+      }
+   ],
+   "type":[
+      {
+         "target_id":"amended_reasons"
+      }
+   ],
+   "field_date_amended":[
+      {
+         "value":"2020-12-01"
+      }
+   ],
+   "field_guid":[
+      {
+         "value":"8f4cdab1-cbc4-4c6c-befb-5befd1927677"
+      }
+   ],
+   "field_amended_reason":[
+      {
+         "value":"some reasons blah blah blah"
+      }
+   ]
+}

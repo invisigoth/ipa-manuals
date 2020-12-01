@@ -1,0 +1,66 @@
+curl --include \
+  --request POST \
+  --header 'Content-type: application/hal+json' \
+  --header 'Authorization:Basic dXNlcjpwYXNzd29yZA==' \
+  'https://ipa-manuals.iconinc.com.au/node?_format=hal_json' \
+  --data-binary '{"_links":{"type":{"href":"https://ipa-manuals.iconinc.com.au/rest/type/node/article"}},"title":[{"value":"02 Example page title 1 Dec"}],"type":[{"target_id":"article"}],"path":[{"alias":"/patent/some-page"}],"field_deleted":[{"value":1}],"field_date_amended":[{"value":"2020-12-01"}],"field_date_published":[{"value":"2020-11-11"}],"field_guid":[{"value":"8f4cdab1-cbc4-4c6c-befb-5befd1927677"}],"field_amended_reason":[{"value":"some reasons blah blah blah"}],"field_manual":[{"value":"design"}],"body":[{"value":"<p>Where a meaningful search cannot be made, \n then an advisory opinion is prepared on that basis. &nbsp;<span><strong>However, \n a search is done where practicable</strong></span>.</p><p></p><ul style=\"list-style:disc;\">\n\t<li class=\"Bullet\"><p>indicate a proposed search</p></li>\n\t<li class=\"Bullet\"><p>carry out an \"original\" search in accordance \n\t with <a href=\"/sites/PatentExaminersManual/SitePages/4.1.4-Development-of-the-Search-Strategy.aspx\">4.1.4 \n\t Development of the Search Strategy</a></p></li>\n</ul><p></p><p>In performing the search, the documents which are relevant are those \n which destroy the novelty of the invention as defined in the search statement. \n A search for obviousness is not required.</p><p>The priority date of the Fijian application is taken as the date of \n the petition. The petition should be on the documents accompanying the \n Fijian application.</p><p>The Examiner will download and store all citations relating to the Fijian \n application in the respective International application folder <span class=\"highlightColorYellow\">in \n COMPASS.</span></p>","format":"basic_html"}]}'
+
+
+{
+   "_links":{
+      "type":{
+         "href":"https://ipa-manuals.iconinc.com.au/rest/type/node/article"
+      }
+   },
+   "title":[
+      {
+         "value":"02 Example page title 1 Dec"
+      }
+   ],
+   "type":[
+      {
+         "target_id":"article"
+      }
+   ],
+   "path":[
+      {
+         "alias":"/patent/some-page"
+      }
+   ],
+   "field_deleted":[
+      {
+         "value":1
+      }
+   ],
+   "field_date_amended":[
+      {
+         "value":"2020-12-01"
+      }
+   ],
+   "field_date_published":[
+      {
+         "value":"2020-11-11"
+      }
+   ],
+   "field_guid":[
+      {
+         "value":"8f4cdab1-cbc4-4c6c-befb-5befd1927677"
+      }
+   ],
+   "field_amended_reason":[
+      {
+         "value":"some reasons blah blah blah"
+      }
+   ],
+   "field_manual":[
+      {
+         "value":"design"
+      }
+   ],
+   "body":[
+      {
+         "value":"<p>Where a meaningful search cannot be made, \n then an advisory opinion is prepared on that basis. &nbsp;<span><strong>However, \n a search is done where practicable</strong></span>.</p><p></p><ul style=\"list-style:disc;\">\n\t<li class=\"Bullet\"><p>indicate a proposed search</p></li>\n\t<li class=\"Bullet\"><p>carry out an \"original\" search in accordance \n\t with <a href=\"/sites/PatentExaminersManual/SitePages/4.1.4-Development-of-the-Search-Strategy.aspx\">4.1.4 \n\t Development of the Search Strategy</a></p></li>\n</ul><p></p><p>In performing the search, the documents which are relevant are those \n which destroy the novelty of the invention as defined in the search statement. \n A search for obviousness is not required.</p><p>The priority date of the Fijian application is taken as the date of \n the petition. The petition should be on the documents accompanying the \n Fijian application.</p><p>The Examiner will download and store all citations relating to the Fijian \n application in the respective International application folder <span class=\"highlightColorYellow\">in \n COMPASS.</span></p>",
+         "format":"basic_html"
+      }
+   ]
+}
