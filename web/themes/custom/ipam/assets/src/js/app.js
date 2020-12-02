@@ -79,7 +79,12 @@ $(document).ready(function() {
   $("a.folder").each(function () {
     $(this).parent().next().hide();
     $(this).parent().click(function (e) {
-      e.preventDefault();
+      if(!$(this).children().attr("href")) {
+        e.preventDefault();
+      } else {
+
+      }
+      // e.preventDefault();
       $(this).next().toggle();
       $(this).children().toggleClass("active");
     })
@@ -89,6 +94,8 @@ $(document).ready(function() {
   $(".nested-nav a").each(function () {
     if($(this).attr("href") == url) {
       $(this).parent().addClass("focus");
+      $(this).parent().next().show();
+      $(this).addClass("active");
       $(this).parent().parent().show();
       $(this).parent().parent().prev().children().addClass("active");
       if($(this).parent().parent().parent().length != 0) {
@@ -112,7 +119,7 @@ $(document).ready(function() {
     $(".flyout-container").hide("slide", { direction: "right" }, 500);
   });
 
-  $("a:not([href^='#']):not([href^='/']):not([href^='node/'])").each(function () {
+  $("a:not([href^='#']):not([href^='/']):not([href^='node/']):not([href=''])").each(function () {
     $(this).attr('target', '_blank');
   })
 });

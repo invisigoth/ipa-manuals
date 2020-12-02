@@ -48,7 +48,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "js/chunk/" + ({"vendors~mmenu":"vendors~mmenu"}[chunkId]||chunkId) + "-" + {"0":"2d13d1efcd3dd58887fd","1":"c457108f50355b5d8f43","2":"5ff59aadfe64ab622a09","3":"41ecff32cf02df7a44c2","vendors~mmenu":"7dbc7373e6877ad53991"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "js/chunk/" + ({"vendors~mmenu":"vendors~mmenu"}[chunkId]||chunkId) + "-" + {"0":"2d13d1efcd3dd58887fd","1":"83c5fc3daa39c5ad3427","2":"5ff59aadfe64ab622a09","3":"e5126df73304358ff30c","vendors~mmenu":"7dbc7373e6877ad53991"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -86,7 +86,7 @@
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "css/chunks/" + ({"vendors~mmenu":"vendors~mmenu"}[chunkId]||chunkId) + "-" + "36c4e3fc013660c7" + ".css";
+/******/ 				var href = "css/chunks/" + ({"vendors~mmenu":"vendors~mmenu"}[chunkId]||chunkId) + "-" + "a8f213ad4452d1be" + ".css";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
@@ -471,7 +471,11 @@ jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).ready(function () {
   jquery__WEBPACK_IMPORTED_MODULE_1___default()("a.folder").each(function () {
     jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parent().next().hide();
     jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parent().click(function (e) {
-      e.preventDefault();
+      if (!jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).children().attr("href")) {
+        e.preventDefault();
+      } else {} // e.preventDefault();
+
+
       jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).next().toggle();
       jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).children().toggleClass("active");
     });
@@ -480,6 +484,8 @@ jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).ready(function () {
   jquery__WEBPACK_IMPORTED_MODULE_1___default()(".nested-nav a").each(function () {
     if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr("href") == url) {
       jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parent().addClass("focus");
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parent().next().show();
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).addClass("active");
       jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parent().parent().show();
       jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parent().parent().prev().children().addClass("active");
 
@@ -504,7 +510,7 @@ jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).ready(function () {
       direction: "right"
     }, 500);
   });
-  jquery__WEBPACK_IMPORTED_MODULE_1___default()("a:not([href^='#']):not([href^='/']):not([href^='node/'])").each(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()("a:not([href^='#']):not([href^='/']):not([href^='node/']):not([href=''])").each(function () {
     jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('target', '_blank');
   });
 });
