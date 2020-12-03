@@ -125,6 +125,17 @@
     color: darken($color, 20%);
   }
 
+  [class^="emphasis"] {
+    @extend .row;
+    margin-left: 0;
+    margin-right: 0;
+
+    .section {
+      @extend .col-sm-4;
+      @extend .col-12;
+    }
+  }
+
   .emphasis3 {
     padding: 1rem;
     background-color: $color;

@@ -505,7 +505,7 @@ pre {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1140px; } }
 
-.row, #block-ipam-breadcrumbs {
+.row, body.manual-design [class^="emphasis"], body.manual-patent [class^="emphasis"], body.manual-trademark [class^="emphasis"], body.manual-pbr [class^="emphasis"], #block-ipam-breadcrumbs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -522,7 +522,7 @@ pre {
     padding-right: 0;
     padding-left: 0; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, body.manual-design [class^="emphasis"] .section, body.manual-patent [class^="emphasis"] .section, body.manual-trademark [class^="emphasis"] .section, body.manual-pbr [class^="emphasis"] .section, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
@@ -650,7 +650,7 @@ pre {
           flex: 0 0 91.6666666667%;
   max-width: 91.6666666667%; }
 
-.col-12 {
+.col-12, body.manual-design [class^="emphasis"] .section, body.manual-patent [class^="emphasis"] .section, body.manual-trademark [class^="emphasis"] .section, body.manual-pbr [class^="emphasis"] .section {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
@@ -823,7 +823,7 @@ pre {
         -ms-flex: 0 0 25%;
             flex: 0 0 25%;
     max-width: 25%; }
-  .col-sm-4 {
+  .col-sm-4, body.manual-design [class^="emphasis"] .section, body.manual-patent [class^="emphasis"] .section, body.manual-trademark [class^="emphasis"] .section, body.manual-pbr [class^="emphasis"] .section {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 33.3333333333%;
             flex: 0 0 33.3333333333%;
@@ -10385,6 +10385,10 @@ body.manual-design .nested-nav ul li:hover {
 body.manual-design .view-patent-manual-of-practice-and-procedure .help-link {
   color: #46a155; }
 
+body.manual-design [class^="emphasis"] {
+  margin-left: 0;
+  margin-right: 0; }
+
 body.manual-design .emphasis3 {
   padding: 1rem;
   background-color: #84C98F; }
@@ -10474,6 +10478,10 @@ body.manual-patent .nested-nav ul li:hover {
 
 body.manual-patent .view-patent-manual-of-practice-and-procedure .help-link {
   color: #1b6165; }
+
+body.manual-patent [class^="emphasis"] {
+  margin-left: 0;
+  margin-right: 0; }
 
 body.manual-patent .emphasis3 {
   padding: 1rem;
@@ -10565,6 +10573,10 @@ body.manual-trademark .nested-nav ul li:hover {
 body.manual-trademark .view-patent-manual-of-practice-and-procedure .help-link {
   color: #892715; }
 
+body.manual-trademark [class^="emphasis"] {
+  margin-left: 0;
+  margin-right: 0; }
+
 body.manual-trademark .emphasis3 {
   padding: 1rem;
   background-color: #DE4326; }
@@ -10654,6 +10666,10 @@ body.manual-pbr .nested-nav ul li:hover {
 
 body.manual-pbr .view-patent-manual-of-practice-and-procedure .help-link {
   color: #9f6e0a; }
+
+body.manual-pbr [class^="emphasis"] {
+  margin-left: 0;
+  margin-right: 0; }
 
 body.manual-pbr .emphasis3 {
   padding: 1rem;
