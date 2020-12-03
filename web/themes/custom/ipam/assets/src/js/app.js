@@ -102,9 +102,13 @@ $(document).ready(function() {
         $(this).parent().parent().parent().show();
         $(this).parent().parent().parent().prev().children().addClass("active");
       }
-      if($(this).parent().parent().parent().parent.length != 0) {
+      if($(this).parent().parent().parent().parent().length != 0) {
         $(this).parent().parent().parent().parent().show();
         $(this).parent().parent().parent().parent().prev().children().addClass("active");
+      }
+      if($(this).parent().parent().parent().parent().parent().length != 0) {
+        $(this).parent().parent().parent().parent().parent().show();
+        $(this).parent().parent().parent().parent().parent().prev().children().addClass("active");
       }
 
     }
