@@ -36,7 +36,7 @@ content:
     third_party_settings: {  }
     label: hidden
   field_date_published:
-    weight: 0
+    weight: 1
     label: inline
     settings:
       timezone_override: ''
@@ -46,23 +46,15 @@ content:
     region: content
   field_image:
     type: image
-    weight: 1
+    weight: 0
     region: content
     settings:
       image_style: large
       image_link: ''
     third_party_settings: {  }
     label: hidden
-  field_manual:
-    weight: 5
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   field_status:
-    weight: 6
+    weight: 5
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -86,4 +78,5 @@ hidden:
   field_date_amended: true
   field_deleted: true
   field_guid: true
+  field_manual: true
   search_api_excerpt: true
