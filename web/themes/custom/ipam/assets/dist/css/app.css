@@ -10379,8 +10379,8 @@ body.manual-design .pagination .page-link {
   body.manual-design .pagination .page-link:hover {
     text-decoration: underline; }
 
-body.manual-design .nested-nav ul li:hover {
-  background-color: #a7d9af; }
+body.manual-design .nested-nav ul li:hover, body.manual-design .nested-nav ul li:focus, body.manual-design .nested-nav ul li:active, body.manual-design .nested-nav ul li.focus {
+  background-color: #cbe8d0; }
 
 body.manual-design .view-patent-manual-of-practice-and-procedure .help-link {
   color: #46a155; }
@@ -10473,8 +10473,8 @@ body.manual-patent .pagination .page-link {
   body.manual-patent .pagination .page-link:hover {
     text-decoration: underline; }
 
-body.manual-patent .nested-nav ul li:hover {
-  background-color: #4ac7cf; }
+body.manual-patent .nested-nav ul li:hover, body.manual-patent .nested-nav ul li:focus, body.manual-patent .nested-nav ul li:active, body.manual-patent .nested-nav ul li.focus {
+  background-color: #72d4da; }
 
 body.manual-patent .view-patent-manual-of-practice-and-procedure .help-link {
   color: #1b6165; }
@@ -10567,8 +10567,8 @@ body.manual-trademark .pagination .page-link {
   body.manual-trademark .pagination .page-link:hover {
     text-decoration: underline; }
 
-body.manual-trademark .nested-nav ul li:hover {
-  background-color: #e56952; }
+body.manual-trademark .nested-nav ul li:hover, body.manual-trademark .nested-nav ul li:focus, body.manual-trademark .nested-nav ul li:active, body.manual-trademark .nested-nav ul li.focus {
+  background-color: #eb907f; }
 
 body.manual-trademark .view-patent-manual-of-practice-and-procedure .help-link {
   color: #892715; }
@@ -10661,8 +10661,8 @@ body.manual-pbr .pagination .page-link {
   body.manual-pbr .pagination .page-link:hover {
     text-decoration: underline; }
 
-body.manual-pbr .nested-nav ul li:hover {
-  background-color: #f4be4e; }
+body.manual-pbr .nested-nav ul li:hover, body.manual-pbr .nested-nav ul li:focus, body.manual-pbr .nested-nav ul li:active, body.manual-pbr .nested-nav ul li.focus {
+  background-color: #f7cf7e; }
 
 body.manual-pbr .view-patent-manual-of-practice-and-procedure .help-link {
   color: #9f6e0a; }
@@ -10862,8 +10862,6 @@ table {
     padding-left: 1rem; }
     .nested-nav ul li {
       padding-left: 1rem; }
-      .nested-nav ul li:hover, .nested-nav ul li:focus, .nested-nav ul li:active, .nested-nav ul li.focus {
-        background-color: #deeef0; }
       .nested-nav ul li.focus a {
         font-weight: 700; }
       .nested-nav ul li a {
