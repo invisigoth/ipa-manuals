@@ -9724,8 +9724,10 @@ div.loading {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    #header .site-logo .section-name:hover {
-      text-decoration: none; }
+    #header .site-logo .section-name {
+      padding-left: 1rem; }
+      #header .site-logo .section-name:hover {
+        text-decoration: none; }
     #header .site-logo img {
       height: 66px;
       width: auto;
@@ -9734,8 +9736,7 @@ div.loading {
     #header .site-logo span {
       font-size: 22px;
       color: #ffffff;
-      font-weight: 700;
-      margin-left: 1rem; }
+      font-weight: 700; }
     #header .site-logo:hover {
       text-decoration: none; }
   #header .header-menu {

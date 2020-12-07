@@ -13,6 +13,8 @@
     align-items: center;
     
     .section-name {
+      padding-left: 1rem;
+
       &:hover {
         text-decoration: none;
       }
@@ -29,7 +31,6 @@
       font-size: $large-font-size;
       color: $white;
       font-weight: $weight-bold;
-      margin-left: 1rem;
     }
     
     &:hover {
