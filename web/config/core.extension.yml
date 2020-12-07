@@ -11,7 +11,6 @@ module:
   color: 0
   config: 0
   config_filter: 0
-  config_ignore: 0
   contact: 0
   contextual: 0
   ctools: 0
@@ -29,6 +28,7 @@ module:
   history: 0
   image: 0
   jsonapi: 0
+  layout_discovery: 0
   link: 0
   menu_link_content: 0
   menu_ui: 0
@@ -56,6 +56,7 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  ds: 1
   pathauto: 1
   views: 10
   standard: 1000
