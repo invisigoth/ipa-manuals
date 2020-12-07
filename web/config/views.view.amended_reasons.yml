@@ -239,7 +239,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h2 class="mt-3">Amended Reasons</h2>'
+            value: '<h4 class="mt-3">Amended Reasons</h4>'
             format: basic_html
           plugin_id: text
       footer: {  }
