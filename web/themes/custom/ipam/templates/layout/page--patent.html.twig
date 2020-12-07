@@ -118,8 +118,12 @@
                                         {% include  directory ~ '/templates/_includes/nav/menu_patent.html' %}
                                     </div>
                                     <div class="col-lg-8">
-                                        {{ page.content }}          
-                                        {{ drupal_view('amended_reasons', 'block_1', guid) }}
+                                      {% if deleted == true %}
+                                        {% include  directory ~ '/templates/_includes/deleted.html.twig' %}
+                                      {% else %}
+                                        {{ page.content }}
+                                      {% endif %}
+                                      {{ drupal_view('amended_reasons', 'block_1', guid) }}
                                     </div>
                                 </div>
 

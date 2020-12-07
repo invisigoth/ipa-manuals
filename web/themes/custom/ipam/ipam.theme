@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Form\FormStateInterface;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Implements hook_theme_suggestions_HOOK_alter().
@@ -136,9 +137,15 @@ function ipam_preprocess_page(&$variables) {
 
     if (($node = \Drupal::routeMatch()->getParameter('node')) && $node instanceof \Drupal\node\NodeInterface) {
       $variables['guid'] = '';
+      $variables['deleted'] = '';
+      $variables['page_title'] = $node->title->value;;
       if ($node->field_guid) {
         $variables['guid'] = $node->field_guid->value;
       }
+      if ($node->field_guid) {
+        if ($node->field_deleted->value === '1') {
+          $variables['deleted'] = TRUE;
+        }
+      }
     }
-
 }
