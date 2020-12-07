@@ -9724,6 +9724,8 @@ div.loading {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    #header .site-logo .section-name:hover {
+      text-decoration: none; }
     #header .site-logo img {
       height: 66px;
       width: auto;
@@ -10393,7 +10395,11 @@ body.manual-design .emphasis3 {
   padding: 1rem;
   background-color: #84C98F; }
   body.manual-design .emphasis3 p {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-size: 20px;
+    color: #ffffff; }
+    body.manual-design .emphasis3 p a {
+      color: #ffffff; }
 
 body.manual-design .emphasis2 {
   padding: 1rem;
@@ -10406,6 +10412,51 @@ body.manual-design .emphasis1 {
   background-color: #E5E8EC; }
   body.manual-design .emphasis1 p {
     margin-bottom: 0; }
+
+body.manual-design .view-amended-reasons {
+  width: 100%;
+  color: white;
+  overflow: hidden; }
+  body.manual-design .view-amended-reasons input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1; }
+  body.manual-design .view-amended-reasons label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1em;
+    background: #84C98F;
+    font-weight: bold;
+    cursor: pointer;
+    /* Icon */ }
+    body.manual-design .view-amended-reasons label:hover {
+      background: #61b96f; }
+    body.manual-design .view-amended-reasons label::after {
+      content: "\276F";
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      -webkit-transition: all .35s;
+      transition: all .35s; }
+  body.manual-design .view-amended-reasons .view-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: #84C98F;
+    background: white;
+    -webkit-transition: all .35s;
+    transition: all .35s; }
+  body.manual-design .view-amended-reasons input:checked + label {
+    background: #61b96f; }
+    body.manual-design .view-amended-reasons input:checked + label::after {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
+  body.manual-design .view-amended-reasons input:checked ~ .view-content {
+    max-height: 100vh;
+    padding: 1em; }
 
 body.manual-patent #header {
   border-bottom: 6px solid #30AEB6; }
@@ -10487,7 +10538,11 @@ body.manual-patent .emphasis3 {
   padding: 1rem;
   background-color: #30AEB6; }
   body.manual-patent .emphasis3 p {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-size: 20px;
+    color: #ffffff; }
+    body.manual-patent .emphasis3 p a {
+      color: #ffffff; }
 
 body.manual-patent .emphasis2 {
   padding: 1rem;
@@ -10500,6 +10555,51 @@ body.manual-patent .emphasis1 {
   background-color: #E5E8EC; }
   body.manual-patent .emphasis1 p {
     margin-bottom: 0; }
+
+body.manual-patent .view-amended-reasons {
+  width: 100%;
+  color: white;
+  overflow: hidden; }
+  body.manual-patent .view-amended-reasons input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1; }
+  body.manual-patent .view-amended-reasons label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1em;
+    background: #30AEB6;
+    font-weight: bold;
+    cursor: pointer;
+    /* Icon */ }
+    body.manual-patent .view-amended-reasons label:hover {
+      background: #25878e; }
+    body.manual-patent .view-amended-reasons label::after {
+      content: "\276F";
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      -webkit-transition: all .35s;
+      transition: all .35s; }
+  body.manual-patent .view-amended-reasons .view-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: #30AEB6;
+    background: white;
+    -webkit-transition: all .35s;
+    transition: all .35s; }
+  body.manual-patent .view-amended-reasons input:checked + label {
+    background: #25878e; }
+    body.manual-patent .view-amended-reasons input:checked + label::after {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
+  body.manual-patent .view-amended-reasons input:checked ~ .view-content {
+    max-height: 100vh;
+    padding: 1em; }
 
 body.manual-trademark #header {
   border-bottom: 6px solid #DE4326; }
@@ -10581,7 +10681,11 @@ body.manual-trademark .emphasis3 {
   padding: 1rem;
   background-color: #DE4326; }
   body.manual-trademark .emphasis3 p {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-size: 20px;
+    color: #ffffff; }
+    body.manual-trademark .emphasis3 p a {
+      color: #ffffff; }
 
 body.manual-trademark .emphasis2 {
   padding: 1rem;
@@ -10594,6 +10698,51 @@ body.manual-trademark .emphasis1 {
   background-color: #E5E8EC; }
   body.manual-trademark .emphasis1 p {
     margin-bottom: 0; }
+
+body.manual-trademark .view-amended-reasons {
+  width: 100%;
+  color: white;
+  overflow: hidden; }
+  body.manual-trademark .view-amended-reasons input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1; }
+  body.manual-trademark .view-amended-reasons label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1em;
+    background: #DE4326;
+    font-weight: bold;
+    cursor: pointer;
+    /* Icon */ }
+    body.manual-trademark .view-amended-reasons label:hover {
+      background: #b5341c; }
+    body.manual-trademark .view-amended-reasons label::after {
+      content: "\276F";
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      -webkit-transition: all .35s;
+      transition: all .35s; }
+  body.manual-trademark .view-amended-reasons .view-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: #DE4326;
+    background: white;
+    -webkit-transition: all .35s;
+    transition: all .35s; }
+  body.manual-trademark .view-amended-reasons input:checked + label {
+    background: #b5341c; }
+    body.manual-trademark .view-amended-reasons input:checked + label::after {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
+  body.manual-trademark .view-amended-reasons input:checked ~ .view-content {
+    max-height: 100vh;
+    padding: 1em; }
 
 body.manual-pbr #header {
   border-bottom: 6px solid #F1AC1E; }
@@ -10675,7 +10824,11 @@ body.manual-pbr .emphasis3 {
   padding: 1rem;
   background-color: #F1AC1E; }
   body.manual-pbr .emphasis3 p {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-size: 20px;
+    color: #ffffff; }
+    body.manual-pbr .emphasis3 p a {
+      color: #ffffff; }
 
 body.manual-pbr .emphasis2 {
   padding: 1rem;
@@ -10688,6 +10841,51 @@ body.manual-pbr .emphasis1 {
   background-color: #E5E8EC; }
   body.manual-pbr .emphasis1 p {
     margin-bottom: 0; }
+
+body.manual-pbr .view-amended-reasons {
+  width: 100%;
+  color: white;
+  overflow: hidden; }
+  body.manual-pbr .view-amended-reasons input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1; }
+  body.manual-pbr .view-amended-reasons label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1em;
+    background: #F1AC1E;
+    font-weight: bold;
+    cursor: pointer;
+    /* Icon */ }
+    body.manual-pbr .view-amended-reasons label:hover {
+      background: #cf900d; }
+    body.manual-pbr .view-amended-reasons label::after {
+      content: "\276F";
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      -webkit-transition: all .35s;
+      transition: all .35s; }
+  body.manual-pbr .view-amended-reasons .view-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: #F1AC1E;
+    background: white;
+    -webkit-transition: all .35s;
+    transition: all .35s; }
+  body.manual-pbr .view-amended-reasons input:checked + label {
+    background: #cf900d; }
+    body.manual-pbr .view-amended-reasons input:checked + label::after {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
+  body.manual-pbr .view-amended-reasons input:checked ~ .view-content {
+    max-height: 100vh;
+    padding: 1em; }
 
 body.manual-home #footer, body.path-frontpage #footer {
   margin-top: 3rem;
@@ -10852,6 +11050,9 @@ table {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
+
+.field__label {
+  font-weight: 700; }
 
 .nested-nav {
   padding-left: 0; }

@@ -148,6 +148,12 @@
 
     p {
       margin-bottom: 0;
+      font-size: $main-nav-font-size;
+      color: $white;
+
+      a {
+        color: $white;
+      }
     }
   }
 
@@ -166,6 +172,60 @@
 
     p {
       margin-bottom: 0;
+    }
+  }
+
+  .view-amended-reasons {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+
+    input {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+    }
+
+    label {
+      display: flex;
+      justify-content: space-between;
+      padding: 1em;
+      background: $color;
+      font-weight: bold;
+      cursor: pointer;
+      /* Icon */
+      &:hover {
+        background: darken($color, 10%);
+      }
+      &::after {
+        content: "\276F";
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        transition: all .35s;
+      }
+    }
+
+    .view-content {
+      max-height: 0;
+      padding: 0 1em;
+      color: $color;
+      background: white;
+      transition: all .35s;
+    }
+
+    input:checked {
+      + label {
+        background: darken($color, 10%);
+        &::after {
+          transform: rotate(90deg);
+        }
+      }
+
+      ~ .view-content {
+        max-height: 100vh;
+        padding: 1em;
+      }
     }
   }
 }

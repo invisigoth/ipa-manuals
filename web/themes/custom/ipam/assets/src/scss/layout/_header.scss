@@ -11,6 +11,12 @@
   .site-logo {
     display: flex;
     align-items: center;
+    
+    .section-name {
+      &:hover {
+        text-decoration: none;
+      }
+    }
 
     img {
       height: 66px;

@@ -125,6 +125,9 @@ $(document).ready(function() {
 
   $("a:not([href^='#']):not([href^='/']):not([href^='node/']):not([href=''])").each(function () {
     $(this).attr('target', '_blank');
-  })
+  });
+
+  $(".view-amended-reasons").prepend("<input type='checkbox' id='chck1'>");
+  $(".view-amended-reasons .view-header").replaceWith('<label for="chck1" class="mt-3 h4">Amended Reasons</label>');
 });
 

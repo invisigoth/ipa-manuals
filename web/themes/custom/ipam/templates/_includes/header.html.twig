@@ -3,10 +3,11 @@
     {% block head %}
         <div class="container site-header site-header--hero">
             <div class="row align-items-center py-4">
-                <a href="/" class="col-lg-8 col-md-10 col-sm-12 site-logo">
-                    <img src="{{ base_path ~ directory }}/logo.png" alt="IPA manuals logo">
-                    <span>{{ manual_name }}</span>
-                </a>
+                <div class="col-lg-8 col-md-10 col-sm-12 site-logo">
+                    <a href="/"><img src="{{ base_path ~ directory }}/logo.png" alt="IPA manuals logo"></a>
+                    <a href="{{ manual_root }}" class="section-name"><span>{{ manual_name }}</span></a>
+                </div>
+
                 <div class="col-md-4">
                     <form action="{{ manual_root }}/search" class="input-group">
                         <input type="text" name="keys" class="form-control h-100" placeholder="Search" aria-label="Search" aria-describedby="search">

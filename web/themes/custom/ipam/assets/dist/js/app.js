@@ -86,7 +86,7 @@
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "css/chunks/" + ({"vendors~mmenu":"vendors~mmenu"}[chunkId]||chunkId) + "-" + "2cab9adc87def8db" + ".css";
+/******/ 				var href = "css/chunks/" + ({"vendors~mmenu":"vendors~mmenu"}[chunkId]||chunkId) + "-" + "e46748c89692285d" + ".css";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
@@ -518,6 +518,8 @@ jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).ready(function () {
   jquery__WEBPACK_IMPORTED_MODULE_1___default()("a:not([href^='#']):not([href^='/']):not([href^='node/']):not([href=''])").each(function () {
     jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('target', '_blank');
   });
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()(".view-amended-reasons").prepend("<input type='checkbox' id='chck1'>");
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()(".view-amended-reasons .view-header").replaceWith('<label for="chck1" class="mt-3 h4">Amended Reasons</label>');
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "jquery"), __webpack_require__(/*! drupal */ "drupal")))
 
