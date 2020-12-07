@@ -117,9 +117,15 @@
   }
   
 
-  .nested-nav ul li:hover {
-    background-color: lighten($color, 10%);
+  .nested-nav ul li {
+    &:hover,
+    &:focus,
+    &:active,
+    &.focus {
+      background-color: lighten($color, 20%);
+    }
   }
+
 
   .view-patent-manual-of-practice-and-procedure .help-link {
     color: darken($color, 20%);

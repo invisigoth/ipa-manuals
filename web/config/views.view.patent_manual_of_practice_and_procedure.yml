@@ -584,20 +584,7 @@ display:
             value: "<div class=\"row\">\r\n\t<div class=\"col-md-3\">\r\n\t<a class=\"chapter-tile text-center\" href=\"/\">\r\n\t\t<i class=\"fal fa-book-open\"></i>\r\n\t\t<span>Chapter 1</span>\r\n\t\t<span><strong>International</strong></span>\r\n\t</a>\r\n</div>\r\n<div class=\"col-md-3\">\r\n\t<a class=\"chapter-tile text-center\" href=\"/\">\r\n\t\t<i class=\"fal fa-book-open\"></i>\r\n\t\t<span>Chapter 2</span>\r\n\t\t<span><strong>National</strong></span>\r\n\t</a>\r\n</div>\r\n<div class=\"col-md-3\">\r\n\t<a class=\"chapter-tile text-center\" href=\"/\">\r\n\t\t<i class=\"fal fa-book-open\"></i>\r\n\t\t<span>Chapter 3</span>\r\n\t\t<span><strong>Oppositions, Disputes and Extensions</strong></span>\r\n\t</a>\r\n</div>\r\n<div class=\"col-md-3\">\r\n\t<a class=\"chapter-tile text-center\" href=\"/\">\r\n\t\t<i class=\"fal fa-book-open\"></i>\r\n\t\t<span>Chapter 4</span>\r\n\t\t<span><strong>Search</strong></span>\r\n\t</a>\r\n</div>\r\n</div>\r\n<h1>Recent updates</h1>\r\n"
             format: full_html
           plugin_id: text
-      footer:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content:
-            value: "<strong>Disclaimer</strong>\r\n<p>Cloud bread polaroid austin, stumptown kale chips meggings cliche prism. Cloud bread raw denim tofu, street art pok pok gluten-free umami four dollar toast. Drinking vinegar pickled cray, irony everyday carry post-ironic coloring book knausgaard mustache cronut. Subway tile listicle helvetica gastropub thundercats put a bird on it taxidermy hella cray sriracha 3 wolf moon single-origin coffee XOXO austin cliche.</p>"
-            format: basic_html
-          plugin_id: text
+      footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
