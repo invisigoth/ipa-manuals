@@ -10,10 +10,10 @@
 @import '~jquery.mmenu/dist/jquery.mmenu.all.css';
 
 .mm-menu {
-  --mm-color-background: #{$colour-classic-blue};
-  --mm-color-background-emphasis: #{$colour-classic-blue};
+  --mm-color-background: #{$colour-theme};
+  --mm-color-background-emphasis: #{$colour-theme};
   --mm-color-background-highlight: #{$colour-black};
-  --mm-color-border: #{$colour-classic-blue};
+  --mm-color-border: #{$colour-theme};
   --mm-color-text: $colour-black;
   --mm-color-text-dimmed: #{$colour-black};
   --mm-color-button: #{$white};
