@@ -265,3 +265,13 @@ table {
 .field__label {
   font-weight: $weight-bold;
 }
+
+.text-formatted a {
+  color: $colour-link;
+}
+
+.node--type-article {
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
