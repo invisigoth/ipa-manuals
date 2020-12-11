@@ -505,7 +505,7 @@ pre {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1140px; } }
 
-.row, body.manual-design [class^="emphasis"], body.manual-patent [class^="emphasis"], body.manual-trademark [class^="emphasis"], body.manual-pbr [class^="emphasis"], #block-ipam-breadcrumbs {
+.row, body.manual-design .zone[class*="emphasis"], body.manual-patent .zone[class*="emphasis"], body.manual-trademark .zone[class*="emphasis"], body.manual-pbr .zone[class*="emphasis"], #block-ipam-breadcrumbs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -522,8 +522,8 @@ pre {
     padding-right: 0;
     padding-left: 0; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, body.manual-design [class^="emphasis"] .section, body.manual-patent [class^="emphasis"] .section, body.manual-trademark [class^="emphasis"] .section, body.manual-pbr [class^="emphasis"] .section, .col,
-.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, body.manual-design .zone .section4, body.manual-patent .zone .section4, body.manual-trademark .zone .section4, body.manual-pbr .zone .section4, .col-sm-5, .col-sm-6, body.manual-design .zone .section6, body.manual-patent .zone .section6, body.manual-trademark .zone .section6, body.manual-pbr .zone .section6, .col-sm-7, .col-sm-8, body.manual-design .zone .section8, body.manual-patent .zone .section8, body.manual-trademark .zone .section8, body.manual-pbr .zone .section8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, body.manual-design .zone .section12, body.manual-patent .zone .section12, body.manual-trademark .zone .section12, body.manual-pbr .zone .section12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
 .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
@@ -650,7 +650,7 @@ pre {
           flex: 0 0 91.6666666667%;
   max-width: 91.6666666667%; }
 
-.col-12, body.manual-design [class^="emphasis"] .section, body.manual-patent [class^="emphasis"] .section, body.manual-trademark [class^="emphasis"] .section, body.manual-pbr [class^="emphasis"] .section {
+.col-12 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
@@ -823,7 +823,7 @@ pre {
         -ms-flex: 0 0 25%;
             flex: 0 0 25%;
     max-width: 25%; }
-  .col-sm-4, body.manual-design [class^="emphasis"] .section, body.manual-patent [class^="emphasis"] .section, body.manual-trademark [class^="emphasis"] .section, body.manual-pbr [class^="emphasis"] .section {
+  .col-sm-4, body.manual-design .zone .section4, body.manual-patent .zone .section4, body.manual-trademark .zone .section4, body.manual-pbr .zone .section4 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 33.3333333333%;
             flex: 0 0 33.3333333333%;
@@ -833,7 +833,7 @@ pre {
         -ms-flex: 0 0 41.6666666667%;
             flex: 0 0 41.6666666667%;
     max-width: 41.6666666667%; }
-  .col-sm-6 {
+  .col-sm-6, body.manual-design .zone .section6, body.manual-patent .zone .section6, body.manual-trademark .zone .section6, body.manual-pbr .zone .section6 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
@@ -843,7 +843,7 @@ pre {
         -ms-flex: 0 0 58.3333333333%;
             flex: 0 0 58.3333333333%;
     max-width: 58.3333333333%; }
-  .col-sm-8 {
+  .col-sm-8, body.manual-design .zone .section8, body.manual-patent .zone .section8, body.manual-trademark .zone .section8, body.manual-pbr .zone .section8 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 66.6666666667%;
             flex: 0 0 66.6666666667%;
@@ -863,7 +863,7 @@ pre {
         -ms-flex: 0 0 91.6666666667%;
             flex: 0 0 91.6666666667%;
     max-width: 91.6666666667%; }
-  .col-sm-12 {
+  .col-sm-12, body.manual-design .zone .section12, body.manual-patent .zone .section12, body.manual-trademark .zone .section12, body.manual-pbr .zone .section12 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
@@ -9978,6 +9978,9 @@ body {
 .colour-bright-blue {
   color: #46B3E6; }
 
+.highlightColorYellow {
+  background: #FAED27; }
+
 .weight-bold {
   font-weight: 700 !important; }
 
@@ -10285,7 +10288,8 @@ a.external {
         position: relative;
         font-size: 0.875rem;
         font-family: "Roboto", sans-serif;
-        font-weight: 400; }
+        font-weight: 400;
+        color: #015a96; }
         #footer ul li a:after {
           content: '|';
           position: absolute;
@@ -10337,16 +10341,10 @@ body.manual-design .node-readmore {
       text-decoration: none;
       color: #000 !important; }
 
-body.manual-design .text-formatted a, body.manual-design table a {
-  color: #46a155; }
-
 body.manual-design #footer .disclaimer {
   background-color: #84C98F; }
   body.manual-design #footer .disclaimer:after {
     background-color: #84C98F; }
-
-body.manual-design #footer ul li a {
-  color: #46a155; }
 
 body.manual-design .view-patent-manual-of-practice-and-procedure .view-header h1 {
   color: #84C98F; }
@@ -10388,19 +10386,21 @@ body.manual-design .nested-nav ul li:hover, body.manual-design .nested-nav ul li
 body.manual-design .view-patent-manual-of-practice-and-procedure .help-link {
   color: #46a155; }
 
-body.manual-design [class^="emphasis"] {
+body.manual-design .zone[class*="emphasis"] {
   margin-left: 0;
   margin-right: 0; }
+  body.manual-design .zone[class*="emphasis"] table tr:nth-child(even) {
+    background: transparent; }
 
 body.manual-design .emphasis3 {
   padding: 1rem;
-  background-color: #84C98F; }
+  background-color: #84C98F;
+  font-size: 18px;
+  color: #ffffff; }
   body.manual-design .emphasis3 p {
-    margin-bottom: 0;
-    font-size: 20px;
+    margin-bottom: 0; }
+  body.manual-design .emphasis3 a {
     color: #ffffff; }
-    body.manual-design .emphasis3 p a {
-      color: #ffffff; }
 
 body.manual-design .emphasis2 {
   padding: 1rem;
@@ -10480,16 +10480,10 @@ body.manual-patent .node-readmore {
       text-decoration: none;
       color: #000 !important; }
 
-body.manual-patent .text-formatted a, body.manual-patent table a {
-  color: #1b6165; }
-
 body.manual-patent #footer .disclaimer {
   background-color: #30AEB6; }
   body.manual-patent #footer .disclaimer:after {
     background-color: #30AEB6; }
-
-body.manual-patent #footer ul li a {
-  color: #1b6165; }
 
 body.manual-patent .view-patent-manual-of-practice-and-procedure .view-header h1 {
   color: #30AEB6; }
@@ -10531,19 +10525,21 @@ body.manual-patent .nested-nav ul li:hover, body.manual-patent .nested-nav ul li
 body.manual-patent .view-patent-manual-of-practice-and-procedure .help-link {
   color: #1b6165; }
 
-body.manual-patent [class^="emphasis"] {
+body.manual-patent .zone[class*="emphasis"] {
   margin-left: 0;
   margin-right: 0; }
+  body.manual-patent .zone[class*="emphasis"] table tr:nth-child(even) {
+    background: transparent; }
 
 body.manual-patent .emphasis3 {
   padding: 1rem;
-  background-color: #30AEB6; }
+  background-color: #30AEB6;
+  font-size: 18px;
+  color: #ffffff; }
   body.manual-patent .emphasis3 p {
-    margin-bottom: 0;
-    font-size: 20px;
+    margin-bottom: 0; }
+  body.manual-patent .emphasis3 a {
     color: #ffffff; }
-    body.manual-patent .emphasis3 p a {
-      color: #ffffff; }
 
 body.manual-patent .emphasis2 {
   padding: 1rem;
@@ -10623,16 +10619,10 @@ body.manual-trademark .node-readmore {
       text-decoration: none;
       color: #000 !important; }
 
-body.manual-trademark .text-formatted a, body.manual-trademark table a {
-  color: #892715; }
-
 body.manual-trademark #footer .disclaimer {
   background-color: #DE4326; }
   body.manual-trademark #footer .disclaimer:after {
     background-color: #DE4326; }
-
-body.manual-trademark #footer ul li a {
-  color: #892715; }
 
 body.manual-trademark .view-patent-manual-of-practice-and-procedure .view-header h1 {
   color: #DE4326; }
@@ -10674,19 +10664,21 @@ body.manual-trademark .nested-nav ul li:hover, body.manual-trademark .nested-nav
 body.manual-trademark .view-patent-manual-of-practice-and-procedure .help-link {
   color: #892715; }
 
-body.manual-trademark [class^="emphasis"] {
+body.manual-trademark .zone[class*="emphasis"] {
   margin-left: 0;
   margin-right: 0; }
+  body.manual-trademark .zone[class*="emphasis"] table tr:nth-child(even) {
+    background: transparent; }
 
 body.manual-trademark .emphasis3 {
   padding: 1rem;
-  background-color: #DE4326; }
+  background-color: #DE4326;
+  font-size: 18px;
+  color: #ffffff; }
   body.manual-trademark .emphasis3 p {
-    margin-bottom: 0;
-    font-size: 20px;
+    margin-bottom: 0; }
+  body.manual-trademark .emphasis3 a {
     color: #ffffff; }
-    body.manual-trademark .emphasis3 p a {
-      color: #ffffff; }
 
 body.manual-trademark .emphasis2 {
   padding: 1rem;
@@ -10766,16 +10758,10 @@ body.manual-pbr .node-readmore {
       text-decoration: none;
       color: #000 !important; }
 
-body.manual-pbr .text-formatted a, body.manual-pbr table a {
-  color: #9f6e0a; }
-
 body.manual-pbr #footer .disclaimer {
   background-color: #F1AC1E; }
   body.manual-pbr #footer .disclaimer:after {
     background-color: #F1AC1E; }
-
-body.manual-pbr #footer ul li a {
-  color: #9f6e0a; }
 
 body.manual-pbr .view-patent-manual-of-practice-and-procedure .view-header h1 {
   color: #F1AC1E; }
@@ -10817,19 +10803,21 @@ body.manual-pbr .nested-nav ul li:hover, body.manual-pbr .nested-nav ul li:focus
 body.manual-pbr .view-patent-manual-of-practice-and-procedure .help-link {
   color: #9f6e0a; }
 
-body.manual-pbr [class^="emphasis"] {
+body.manual-pbr .zone[class*="emphasis"] {
   margin-left: 0;
   margin-right: 0; }
+  body.manual-pbr .zone[class*="emphasis"] table tr:nth-child(even) {
+    background: transparent; }
 
 body.manual-pbr .emphasis3 {
   padding: 1rem;
-  background-color: #F1AC1E; }
+  background-color: #F1AC1E;
+  font-size: 18px;
+  color: #ffffff; }
   body.manual-pbr .emphasis3 p {
-    margin-bottom: 0;
-    font-size: 20px;
+    margin-bottom: 0; }
+  body.manual-pbr .emphasis3 a {
     color: #ffffff; }
-    body.manual-pbr .emphasis3 p a {
-      color: #ffffff; }
 
 body.manual-pbr .emphasis2 {
   padding: 1rem;
@@ -11054,6 +11042,12 @@ table {
 .field__label {
   font-weight: 700; }
 
+.text-formatted a {
+  color: #015a96; }
+
+.node--type-article li {
+  margin-bottom: 0.5rem; }
+
 .nested-nav {
   padding-left: 0; }
   .nested-nav > ul {
@@ -11084,6 +11078,10 @@ table {
 
 .path-frontpage .nested-nav {
   padding-left: 15px; }
+
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1470px; } }
 
 @media (max-width: 991.98px) {
   .views-element-container {

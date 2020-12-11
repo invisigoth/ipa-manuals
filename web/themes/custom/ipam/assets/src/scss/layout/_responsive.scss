@@ -3,6 +3,12 @@
 
 }
 
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1470px;
+  }
+}
+
 @include media-breakpoint-down(lg) { //1200px
 
 
