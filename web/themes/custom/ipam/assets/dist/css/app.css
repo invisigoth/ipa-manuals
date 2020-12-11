@@ -10401,6 +10401,8 @@ body.manual-design .emphasis3 {
     margin-bottom: 0; }
   body.manual-design .emphasis3 a {
     color: #ffffff; }
+  body.manual-design .emphasis3 table {
+    font-size: 18px; }
 
 body.manual-design .emphasis2 {
   padding: 1rem;
@@ -10540,6 +10542,8 @@ body.manual-patent .emphasis3 {
     margin-bottom: 0; }
   body.manual-patent .emphasis3 a {
     color: #ffffff; }
+  body.manual-patent .emphasis3 table {
+    font-size: 18px; }
 
 body.manual-patent .emphasis2 {
   padding: 1rem;
@@ -10679,6 +10683,8 @@ body.manual-trademark .emphasis3 {
     margin-bottom: 0; }
   body.manual-trademark .emphasis3 a {
     color: #ffffff; }
+  body.manual-trademark .emphasis3 table {
+    font-size: 18px; }
 
 body.manual-trademark .emphasis2 {
   padding: 1rem;
@@ -10818,6 +10824,8 @@ body.manual-pbr .emphasis3 {
     margin-bottom: 0; }
   body.manual-pbr .emphasis3 a {
     color: #ffffff; }
+  body.manual-pbr .emphasis3 table {
+    font-size: 18px; }
 
 body.manual-pbr .emphasis2 {
   padding: 1rem;
