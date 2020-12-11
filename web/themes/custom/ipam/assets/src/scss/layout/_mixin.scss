@@ -124,6 +124,7 @@
       @extend .row;
       margin-left: 0;
       margin-right: 0;
+      margin-bottom: 1rem;
 
       table {
         tr:nth-child(even) {
@@ -153,18 +154,22 @@
     padding: 1rem;
     background-color: $color;
     font-size: $med-font-size;
-    color: $white;
+    color: $black;
 
     p {
       margin-bottom: 0;
     }
 
     a {
-      color: $white;
+      color: $black;
     }
 
     table {
       font-size: $med-font-size;
+
+      tr {
+        border-bottom-color: $black;
+      }
     }
   }
 

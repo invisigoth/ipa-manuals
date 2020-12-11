@@ -10388,7 +10388,8 @@ body.manual-design .view-patent-manual-of-practice-and-procedure .help-link {
 
 body.manual-design .zone[class*="emphasis"] {
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+  margin-bottom: 1rem; }
   body.manual-design .zone[class*="emphasis"] table tr:nth-child(even) {
     background: transparent; }
 
@@ -10396,13 +10397,15 @@ body.manual-design .emphasis3 {
   padding: 1rem;
   background-color: #84C98F;
   font-size: 18px;
-  color: #ffffff; }
+  color: #000; }
   body.manual-design .emphasis3 p {
     margin-bottom: 0; }
   body.manual-design .emphasis3 a {
-    color: #ffffff; }
+    color: #000; }
   body.manual-design .emphasis3 table {
     font-size: 18px; }
+    body.manual-design .emphasis3 table tr {
+      border-bottom-color: #000; }
 
 body.manual-design .emphasis2 {
   padding: 1rem;
@@ -10529,7 +10532,8 @@ body.manual-patent .view-patent-manual-of-practice-and-procedure .help-link {
 
 body.manual-patent .zone[class*="emphasis"] {
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+  margin-bottom: 1rem; }
   body.manual-patent .zone[class*="emphasis"] table tr:nth-child(even) {
     background: transparent; }
 
@@ -10537,13 +10541,15 @@ body.manual-patent .emphasis3 {
   padding: 1rem;
   background-color: #30AEB6;
   font-size: 18px;
-  color: #ffffff; }
+  color: #000; }
   body.manual-patent .emphasis3 p {
     margin-bottom: 0; }
   body.manual-patent .emphasis3 a {
-    color: #ffffff; }
+    color: #000; }
   body.manual-patent .emphasis3 table {
     font-size: 18px; }
+    body.manual-patent .emphasis3 table tr {
+      border-bottom-color: #000; }
 
 body.manual-patent .emphasis2 {
   padding: 1rem;
@@ -10670,7 +10676,8 @@ body.manual-trademark .view-patent-manual-of-practice-and-procedure .help-link {
 
 body.manual-trademark .zone[class*="emphasis"] {
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+  margin-bottom: 1rem; }
   body.manual-trademark .zone[class*="emphasis"] table tr:nth-child(even) {
     background: transparent; }
 
@@ -10678,13 +10685,15 @@ body.manual-trademark .emphasis3 {
   padding: 1rem;
   background-color: #DE4326;
   font-size: 18px;
-  color: #ffffff; }
+  color: #000; }
   body.manual-trademark .emphasis3 p {
     margin-bottom: 0; }
   body.manual-trademark .emphasis3 a {
-    color: #ffffff; }
+    color: #000; }
   body.manual-trademark .emphasis3 table {
     font-size: 18px; }
+    body.manual-trademark .emphasis3 table tr {
+      border-bottom-color: #000; }
 
 body.manual-trademark .emphasis2 {
   padding: 1rem;
@@ -10811,7 +10820,8 @@ body.manual-pbr .view-patent-manual-of-practice-and-procedure .help-link {
 
 body.manual-pbr .zone[class*="emphasis"] {
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+  margin-bottom: 1rem; }
   body.manual-pbr .zone[class*="emphasis"] table tr:nth-child(even) {
     background: transparent; }
 
@@ -10819,13 +10829,15 @@ body.manual-pbr .emphasis3 {
   padding: 1rem;
   background-color: #F1AC1E;
   font-size: 18px;
-  color: #ffffff; }
+  color: #000; }
   body.manual-pbr .emphasis3 p {
     margin-bottom: 0; }
   body.manual-pbr .emphasis3 a {
-    color: #ffffff; }
+    color: #000; }
   body.manual-pbr .emphasis3 table {
     font-size: 18px; }
+    body.manual-pbr .emphasis3 table tr {
+      border-bottom-color: #000; }
 
 body.manual-pbr .emphasis2 {
   padding: 1rem;
