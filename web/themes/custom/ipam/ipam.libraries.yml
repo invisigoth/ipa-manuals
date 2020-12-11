@@ -9,6 +9,7 @@ global-styling:
     theme:
       assets/fonts/fontawesome/css/all.css: {}
       assets/dist/css/app.css: {}
+      overrides.css: {}
   dependencies:
       - core/jquery
       - core/jquery.once
