@@ -9993,6 +9993,9 @@ body {
 .weight-light {
   font-weight: 300 !important; }
 
+.fontSizeMedium {
+  font-size: 0.75rem; }
+
 a {
   color: #2E78BD; }
 

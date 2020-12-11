@@ -2,10 +2,10 @@
  * Just some basic overrides to normal theme.
  */
 .mm-menu {
-  --mm-color-background: #2E78BD;
-  --mm-color-background-emphasis: #2E78BD;
+  --mm-color-background: #0d252c;
+  --mm-color-background-emphasis: #0d252c;
   --mm-color-background-highlight: #231f20;
-  --mm-color-border: #2E78BD;
+  --mm-color-border: #0d252c;
   --mm-color-text: $colour-black;
   --mm-color-text-dimmed: #231f20;
   --mm-color-button: #ffffff;
@@ -45,4 +45,4 @@
   font-weight: 700; }
 
 
-/*# sourceMappingURL=1-7a77b7d08319b4a5.css.map*/
+/*# sourceMappingURL=1-99a9ad85c535fcaa.css.map*/
