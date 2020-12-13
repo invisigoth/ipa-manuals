@@ -9981,6 +9981,9 @@ body {
 .highlightColorYellow {
   background: #FAED27; }
 
+.fontColorRed {
+  color: #EA4335 !important; }
+
 .weight-bold {
   font-weight: 700 !important; }
 
@@ -11068,8 +11071,15 @@ table {
 .text-formatted a {
   color: #015a96; }
 
+.text-formatted table {
+  border: 1px solid #ccc; }
+
 .node--type-article li {
   margin-bottom: 0.5rem; }
+
+hr {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
 
 .nested-nav {
   padding-left: 0; }

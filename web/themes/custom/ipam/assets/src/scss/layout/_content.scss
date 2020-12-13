@@ -266,12 +266,24 @@ table {
   font-weight: $weight-bold;
 }
 
-.text-formatted a {
-  color: $colour-link;
+.text-formatted {
+  a {
+    color: $colour-link;
+  }
+
+  table {
+    border: 1px solid #ccc;
+  }
 }
+
 
 .node--type-article {
   li {
     margin-bottom: 0.5rem;
   }
+}
+
+hr {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
