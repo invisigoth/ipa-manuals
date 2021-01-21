@@ -10,10 +10,14 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Mmenu; });
-/* harmony import */ var _scss_dynamic_menu_mobile_theme_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../scss/dynamic/menu-mobile-theme.scss */ "./assets/src/scss/dynamic/menu-mobile-theme.scss");
-/* harmony import */ var _scss_dynamic_menu_mobile_theme_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_dynamic_menu_mobile_theme_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "jquery");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es6_regexp_split__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.regexp.split */ "./node_modules/core-js/modules/es6.regexp.split.js");
+/* harmony import */ var core_js_modules_es6_regexp_split__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_split__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _scss_dynamic_menu_mobile_theme_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../scss/dynamic/menu-mobile-theme.scss */ "./assets/src/scss/dynamic/menu-mobile-theme.scss");
+/* harmony import */ var _scss_dynamic_menu_mobile_theme_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scss_dynamic_menu_mobile_theme_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ "jquery");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
+
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -35,8 +39,8 @@ var Mmenu = /*#__PURE__*/function () {
 
     _classCallCheck(this, Mmenu);
 
-    this.icon = jquery__WEBPACK_IMPORTED_MODULE_1___default()('#mobile-menu-button');
-    this.nav = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.nested-nav');
+    this.icon = jquery__WEBPACK_IMPORTED_MODULE_2___default()('#mobile-menu-button');
+    this.nav = jquery__WEBPACK_IMPORTED_MODULE_2___default()('.nested-nav');
     this.nav[0].removeAttribute('style');
     this.nav[0].removeAttribute('hidden');
     __webpack_require__.e(/*! import() | mmenu */ "vendors~mmenu").then(__webpack_require__.t.bind(null, /*! jquery.mmenu/dist/jquery.mmenu.all.js */ "./node_modules/jquery.mmenu/dist/jquery.mmenu.all.js", 7)).then(function () {
@@ -49,6 +53,8 @@ var Mmenu = /*#__PURE__*/function () {
     value: function bind() {
       var _this2 = this;
 
+      var url = window.location.pathname;
+      url = url.split("/")[1];
       var config = {
         extensions: {
           "all": ["position-right", "pagedim-black"],
@@ -82,7 +88,7 @@ var Mmenu = /*#__PURE__*/function () {
         searchfield: {
           form: {
             method: 'get',
-            action: '/search'
+            action: '/' + url + '/search'
           },
           input: {
             name: 'keywords'
@@ -127,4 +133,4 @@ var Mmenu = /*#__PURE__*/function () {
 /***/ })
 
 }]);
-//# sourceMappingURL=1-226dc22c7136c38e9fbf.js.map
+//# sourceMappingURL=1-c6f5f5e7cbd12baeb248.js.map

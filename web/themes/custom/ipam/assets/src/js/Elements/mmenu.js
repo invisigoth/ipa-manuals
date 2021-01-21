@@ -25,6 +25,9 @@ export default class Mmenu {
     }
 
     bind() {
+      let url = window.location.pathname;
+      url = url.split("/")[1];
+
       let config = {
         extensions  : {
           "all": ["position-right", "pagedim-black"],
@@ -63,7 +66,7 @@ export default class Mmenu {
         searchfield: {
           form: {
             method: 'get',
-            action: '/search'
+            action: '/' + url + '/search'
           },
           input: {
             name: 'keywords'
