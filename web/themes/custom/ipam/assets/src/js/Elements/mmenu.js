@@ -13,15 +13,17 @@ export default class Mmenu {
 
       this.icon = $('#mobile-menu-button')
       this.nav = $('.nested-nav')
-      this.nav[0].removeAttribute('style')
-      this.nav[0].removeAttribute('hidden')
+      if(this.nav.length != 0) {
+        this.nav[0].removeAttribute('style')
+        this.nav[0].removeAttribute('hidden')
 
-      import(
-        /* webpackChunkName: "mmenu" */
-        'jquery.mmenu/dist/jquery.mmenu.all.js'
-      ).then(() => {
-        this.bind()
-      })
+        import(
+          /* webpackChunkName: "mmenu" */
+          'jquery.mmenu/dist/jquery.mmenu.all.js'
+          ).then(() => {
+          this.bind()
+        })
+      }
     }
 
     bind() {
