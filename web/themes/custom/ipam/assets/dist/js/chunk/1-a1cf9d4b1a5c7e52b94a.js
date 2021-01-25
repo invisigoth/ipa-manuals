@@ -40,12 +40,15 @@ var Mmenu = /*#__PURE__*/function () {
     _classCallCheck(this, Mmenu);
 
     this.icon = jquery__WEBPACK_IMPORTED_MODULE_2___default()('#mobile-menu-button');
-    if (jquery__WEBPACK_IMPORTED_MODULE_2___default()('.nested-nav')) this.nav = jquery__WEBPACK_IMPORTED_MODULE_2___default()('.nested-nav');
-    this.nav[0].removeAttribute('style');
-    this.nav[0].removeAttribute('hidden');
-    __webpack_require__.e(/*! import() | mmenu */ "vendors~mmenu").then(__webpack_require__.t.bind(null, /*! jquery.mmenu/dist/jquery.mmenu.all.js */ "./node_modules/jquery.mmenu/dist/jquery.mmenu.all.js", 7)).then(function () {
-      _this.bind();
-    });
+    this.nav = jquery__WEBPACK_IMPORTED_MODULE_2___default()('.nested-nav');
+
+    if (this.nav.length != 0) {
+      this.nav[0].removeAttribute('style');
+      this.nav[0].removeAttribute('hidden');
+      __webpack_require__.e(/*! import() | mmenu */ "vendors~mmenu").then(__webpack_require__.t.bind(null, /*! jquery.mmenu/dist/jquery.mmenu.all.js */ "./node_modules/jquery.mmenu/dist/jquery.mmenu.all.js", 7)).then(function () {
+        _this.bind();
+      });
+    }
   }
 
   _createClass(Mmenu, [{
@@ -91,7 +94,7 @@ var Mmenu = /*#__PURE__*/function () {
             action: '/' + url + '/search'
           },
           input: {
-            name: 'keywords'
+            name: 'key'
           },
           submit: true
         }
@@ -133,4 +136,4 @@ var Mmenu = /*#__PURE__*/function () {
 /***/ })
 
 }]);
-//# sourceMappingURL=1-71742ee1008bd1c0626b.js.map
+//# sourceMappingURL=1-a1cf9d4b1a5c7e52b94a.js.map

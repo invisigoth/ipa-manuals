@@ -42,14 +42,13 @@ var Mmenu = /*#__PURE__*/function () {
     this.icon = jquery__WEBPACK_IMPORTED_MODULE_2___default()('#mobile-menu-button');
     this.nav = jquery__WEBPACK_IMPORTED_MODULE_2___default()('.nested-nav');
 
-    if (this.nav !== 'undefined') {
+    if (this.nav.length != 0) {
       this.nav[0].removeAttribute('style');
       this.nav[0].removeAttribute('hidden');
+      __webpack_require__.e(/*! import() | mmenu */ "vendors~mmenu").then(__webpack_require__.t.bind(null, /*! jquery.mmenu/dist/jquery.mmenu.all.js */ "./node_modules/jquery.mmenu/dist/jquery.mmenu.all.js", 7)).then(function () {
+        _this.bind();
+      });
     }
-
-    __webpack_require__.e(/*! import() | mmenu */ "vendors~mmenu").then(__webpack_require__.t.bind(null, /*! jquery.mmenu/dist/jquery.mmenu.all.js */ "./node_modules/jquery.mmenu/dist/jquery.mmenu.all.js", 7)).then(function () {
-      _this.bind();
-    });
   }
 
   _createClass(Mmenu, [{
@@ -95,7 +94,7 @@ var Mmenu = /*#__PURE__*/function () {
             action: '/' + url + '/search'
           },
           input: {
-            name: 'keywords'
+            name: 'keys'
           },
           submit: true
         }
@@ -137,4 +136,4 @@ var Mmenu = /*#__PURE__*/function () {
 /***/ })
 
 }]);
-//# sourceMappingURL=1-2b3ef800df3e90b85c97.js.map
+//# sourceMappingURL=1-58c7bb6a728c884ee764.js.map

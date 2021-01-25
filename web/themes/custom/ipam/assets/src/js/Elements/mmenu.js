@@ -71,7 +71,7 @@ export default class Mmenu {
             action: '/' + url + '/search'
           },
           input: {
-            name: 'keywords'
+            name: 'keys'
           },
           submit: true
         }
